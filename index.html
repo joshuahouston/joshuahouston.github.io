@@ -1,95 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Maps</title>
-<link type="text/css" rel="stylesheet" href="css/mystyle.css"/>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-</head>
-<body>
-	<div id="wrapper">
-		<div id="canvas"> 
-			<div id="header">
-				<img src="images/header6.JPG">
-			</div>
-			<div id="content">
-				<div class="post">
-					<h3>New Trail</h3>
-					<p>They're putting in a new trail north of the existing trail that cuts through the muskeg.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/newtrail/index.html"><img src="images/newTrail.JPG" width='640'>
-					</a>					
-				</div>
-				<div class="post">
-					<h3>Yesterday's Kayak</h3>
-					<p>Updated 11/11/2014. The thing I like about this map is that you can rotate it and line it up with the direction
-					of travel. It makes a lot more sense when you can picture the path you were on with the memory of where islands
-					and whales were. If you notice Whale Island and Kayak Island have no form, it's because Mapbox updates its coastline
-					very infrequently.  I've made hundreds of changes to the coastline around Sitka and during the last coastline update
-					I hadn't quite figured out how to tag islands.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/yesterdayskayak/index.html"><img src="images/yestKayak.JPG" width='640'>
-					</a>					
-				</div>
-				<div class="post">
-					<h3>Voting Precincts</h3>
-					<p>Working on a voting precinct map</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/vote/index.html"><img src="images/votingDists2.png" width='640'>
-					</a>					
-				</div>
-				<div class="post">
-					<h3>Watercolor Test</h3>
-					<p>I finally got <a href="https://dl.dropboxusercontent.com/u/20134615/watercolor/index.html">
-					this</a> Stamen-watercolor map to work. To see the process of making the watercolor map, go here:  
-					<a href="http://content.stamen.com/watercolor_process">
-					http://content.stamen.com/watercolor_process
-					</a>
-					</p>
-				</div>
-				<div class="post">
-					<h3>Map for Sitka Visit</h3>
-					<p>This is a map for my brother and his family's visit to Sitka.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/sitkarevisit/index.html">
-					<img src="images/revisit.png" width='640'>
-					</a>
-				</div>
-				<div class="post">
-					<h3>Trails Map</h3>
-					<p>I haven't figured out how to make my external GeoJson files have properties
-					that pop-up.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/trails/index.html">
-					<img src="images/trails.jpg">
-					</a>
-				</div>
-				<div class="post">
-					<h3>Yakutat Trip</h3>
-					<p>I am working on making a map that has campsites, bear-sightings, and the best pictures geo-located.
-					I'm still struggling with GeoJson and how to add them to the map with functionality. Also, I'm taking
-					a while on the icons for the bears and stuff.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/yakutat/index.html">
-					<img src="images/yakutat.jpg">
-					</a>
-				</div>
-				<div class="post">
-					<h3>Totem Pole Map</h3>
-					<p>This was my first map for practicing leaflet. I hope to make a totem pole icon. 
-					Also, it would be awesome if I could make a pop-up with an image that you could scroll
-					up and down and see the entire totem pole.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/totems/index.html">
-					<img src="images/totems.jpg">
-					</a>
-				</div>
-				<div class="post">
-					<h3>Sitka Ride (Bus Map)</h3>
-					<p>This is one I was asked to help on. I would like to make it easily modifiable so 
-					hopefully, I can figure out how to have it hosted on
-					Github or some method that allows the GeoJson Bus Stops to be edited later. Also, 
-					I recently figured out how to do layers so I'm thinking the different bus routes
-					would make great use of the layers feature.</p>
-					<a href="https://dl.dropboxusercontent.com/u/20134615/communityride/index.html">
-					<img src="images/theride.jpg">
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
