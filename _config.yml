@@ -3,7 +3,7 @@ title: Joshua's Blog
 email: email@email.com
 description: > # this means to ignore newlines until "baseurl:"
   This blog is about stuff.
-baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://joshuahouston.org" # the base hostname & protocol for your site
 twitter_username: sleepyjoshua
 github_username:  joshuahouston
