@@ -13,4 +13,4 @@ I'm just learning how to run this website that is running on Jekyll so bear with
 
 
 [source]:   http://www.enchantedlearning.com/usa/states/area.shtml
-[map]: http://www.joshuahouston.org/lower48
+[map]: http://www.joshuahouston.org/maps/lower48
