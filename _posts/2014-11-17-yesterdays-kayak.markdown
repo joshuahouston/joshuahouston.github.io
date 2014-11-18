@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Map of the USA (plus lower 48)"
+title:  "Yesterday's Paddle"
 date:   2014-11-17 04:04:31
 categories: maps
 ---
