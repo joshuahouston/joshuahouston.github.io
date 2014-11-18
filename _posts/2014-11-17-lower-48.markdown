@@ -2,7 +2,7 @@
 layout: post
 title:  "Map of the USA (plus lower 48)"
 date:   2014-11-17 02:58:31
-categories: maps, alaska
+categories: maps
 ---
 For Alaskans, we feel a bit under-appreciated when it comes to maps of the USA. Of the 3,794,083 square miles we think of as the land of stars and stripes, 663,267 square miles are thanks to the 49th State of Alaska. [source] That's 17%!!
 
