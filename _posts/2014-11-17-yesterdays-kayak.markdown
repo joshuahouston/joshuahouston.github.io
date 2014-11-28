@@ -12,7 +12,7 @@ Next up: learn how to post images from flickr, learn how to embed maps into my p
 
 Edit: 2014-11-28
 Here is a photo ![alt text][id]
-Okay that photo does not look right on the mobile...
+Success! I took out the HTML syntax and wrote the very easy markdown syntax and that fixed the 
 I used html when I think it would be better to use something Jekyll could manipulate
 This is a test to show some code
 {% highlight html %}
