@@ -14,6 +14,9 @@ I was with them most of the time so the map wasn't really that necessary, but on
 L.marker([57.0509, -135.3415]).addTo(map)
 .bindPopup("Farmer's market. 10am - 1pm").openPopup();
 {% endhighlight %}
+
 It looked like this
-![USA map]({{ site.url }}/assets/farmersMarket.jpg)
+
+![Farmer's Market]({{ site.url }}/assets/farmersMarket.jpg)
+
 [map]: http://www.joshuahouston.org/maps/sitkavisit
