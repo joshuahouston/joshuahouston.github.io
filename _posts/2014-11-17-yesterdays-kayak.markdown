@@ -12,15 +12,7 @@ Next up: learn how to post images from flickr, learn how to embed maps into my p
 
 Edit: 2014-11-28
 Here is a photo ![alt text][id]
-Success! I took out the HTML syntax and wrote the very easy markdown syntax and that fixed the 
-I used html when I think it would be better to use something Jekyll could manipulate
-This is a test to show some code
-{% highlight html %}
-<a href="https://farm8.staticflickr.com/7567/15621362089_43919037b4_c.jpg">
-<img src="https://farm8.staticflickr.com/7567/15621362089_43919037b4_c.jpg" width="800" height="450" alt="IMG_4029">
-</a>
-{% endhighlight %}
-
+Success! I took out the HTML syntax and wrote the very easy markdown syntax and that fixed the image.
 
 [id]: https://farm8.staticflickr.com/7567/15621362089_43919037b4_c.jpg "Kayaking"
 [map]: http://www.joshuahouston.org/maps/yesterdayspaddle
