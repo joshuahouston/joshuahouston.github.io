@@ -18,5 +18,7 @@ L.marker([57.0509, -135.3415]).addTo(map)
 It looked like this
 
 ![Farmer's Market]({{ site.url }}/assets/farmersMarket.jpg)
+.
+
 
 [map]: http://www.joshuahouston.org/maps/sitkavisit
