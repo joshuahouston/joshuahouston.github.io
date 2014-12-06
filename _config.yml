@@ -4,9 +4,10 @@ email: joshuahouston@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   This blog is about stuff.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.joshuahouston.org" # the base hostname & protocol for your site
+url: "http://jfact0ry.com" # the base hostname & protocol for your site
 twitter_username: sleepyjoshua
 github_username:  joshuahouston
-data_source: data
+
 # Build settings
 markdown: kramdown
+data_source: data
