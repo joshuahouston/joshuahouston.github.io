@@ -1,4 +1,4 @@
 joshuahouston.github.io
 =======================
 So... this is my personal website. At this moment in time I basically have no idea what I'm doing.
-It's at www.joshuahouston.org atm
+It's at jfact0ry.com atm
