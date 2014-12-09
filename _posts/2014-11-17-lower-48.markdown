@@ -15,5 +15,5 @@ I'm just learning how to run this website that is running on Jekyll so bear with
 
 
 [1]:   http://www.enchantedlearning.com/usa/states/area.shtml "http://www.enchantedlearning.com/usa/states/area.shtml"
-[map]: http://www.joshuahouston.org/maps/lower48
+[map]: /maps/lower48
 [this]: https://www.mapbox.com/mapbox.js/example/v1.0.0/inset-hawaii-alaska/

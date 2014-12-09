@@ -8,7 +8,7 @@ My brother, his wife and two daughters visited me this summer. It was great havi
 
 This is the map I made for their visit but I didn't have the stylization of the marker icons working until a while after they left.
 
-![map](https://farm8.staticflickr.com/7464/15795327059_2985223892_c.jpg "Sitka Visit Map")
+[![map](https://farm8.staticflickr.com/7463/15979417611_fe4e25ce3d_c.jpg "Sitka Visit Map")](/maps/sitkavisit)
 
 I was with them most of the time so the map wasn't really that necessary, but once in a while we'd split up and maybe we used it a couple of times. I can't really remember, but it was fun. I enjoyed updating the map to show something relevant. For instance, Saturday morning was the Farmer's market and Abby and I went to check that out. I updated the map to zoom in on that location with a marker in case Michael needed to know where we were. :)
 
@@ -32,6 +32,3 @@ L.marker([57.0509, -135.3415]).addTo(map)
 It looked like this
 
 ![Farmer's Market]({{ site.url }}/assets/farmersMarket.jpg)
-
-
-[map]: /maps/sitkavisit
