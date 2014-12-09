@@ -15,4 +15,4 @@ Here is a photo ![alt text][id]
 Success! I took out the HTML syntax and wrote the very easy markdown syntax and that fixed the image.
 
 [id]: https://farm8.staticflickr.com/7567/15621362089_43919037b4_c.jpg "Kayaking"
-[map]: http://www.joshuahouston.org/maps/yesterdayspaddle
+[map]: /maps/yesterdayspaddle
