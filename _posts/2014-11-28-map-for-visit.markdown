@@ -8,6 +8,8 @@ My brother, his wife and two daughters visited me this summer. It was great havi
 
 This is a [map] I made for their visit but I didn't have the stylization of the marker icons working until a while after they left.
 
+
+
 I was with them most of the time so the map wasn't really that necessary, but once in a while we'd split up and maybe we used it a couple of times. I can't really remember, but it was fun. I enjoyed updating the map to show something relevant. For instance, Saturday morning was the Farmer's market and Abby and I went to check that out. I updated the map to zoom in on that location with a marker in case Michael needed to know where we were. :)
 
 You can specify the spot you want the map to zoom in on and you pick the level of zoom.
@@ -32,4 +34,4 @@ It looked like this
 ![Farmer's Market]({{ site.url }}/assets/farmersMarket.jpg)
 
 
-[map]: http://www.joshuahouston.org/maps/sitkavisit
+[map]: /maps/sitkavisit
