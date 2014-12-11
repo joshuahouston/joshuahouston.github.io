@@ -7,7 +7,7 @@ categories: maps
 #Cross Trail Map
 There's a new trail going in between Yaw Drive and Gavan Hill trail. It is just north of the old trail that cuts through some muskeg and has quite a few rough spots. The new trail continues the wide-lane and fine gravel surface that the cross trail has seen with the recent extensions. I made a little map over the Thanksgiving holiday to say I was thankful for Sitka's trails. I run on them a lot and almost always am GPS-tracing my running. So with a lot of GPS traces together in QGIS, I trace a line at roughly a happy median. :wink:
 
---Wow, I just got Emoji working on this site. All I have to type is `:smile:` and it does :smile:--
+--Wow, I just got Emoji working on this site. All I have to type is ` :smile: ` and it does :smile:--
 
 This is how the GPS traces look in QGIS. Really pretty I think! I want to make an interactive map that looks like this. I hope the black background of the picture on the white background of this webpage looks okay.
 
