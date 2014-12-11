@@ -12,7 +12,7 @@ This is how the GPS traces look in QGIS. Really pretty I think! I want to make a
 ![GPS Traces in QGIS][qgis]
 
 #Embedded ArcGIS map
-Below is a map embedded in this post which is a test. I'm seeing how this post will look on desk/lap-top vs. mobile browsers. I know the Leaflet and Mapbox maps use a `<div>` element but the ArcGIS map below uses an `<iframe>` tag so I'm not sure if they'll all work the same. Initiate experiment. :rocket:
+Below is an interactive map embedded in this post which is a test. The pushpins have pictures that will pop-up when clicked. I'm seeing how this post will look on desk/lap-top vs. mobile browsers. I know the Leaflet and Mapbox maps use a `<div>` element but the ArcGIS map below uses an `<iframe>` tag so I'm not sure if they'll all work the same. Initiate experiment. :rocket:
 
 <iframe width="720" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.arcgis.com/home/webmap/templates/OnePane/basicviewer/embed.html?webmap=6ab8d722b1f84ffab1bb379ea600b946&amp;gcsextent=-135.3278,57.0582,-135.3082,57.0648&amp;home=true&amp;displayslider=true&amp;displaylegend=true"></iframe><br /><small><a href="/maps/arcgis/newtrail" style="color:#0000FF;text-align:left" target="_blank">Full screen map</a></small>
 
