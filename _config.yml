@@ -11,3 +11,4 @@ github_username:  joshuahouston
 # Build settings
 markdown: kramdown
 data_source: data
+gems: ["emoji_for_jekyll"]
