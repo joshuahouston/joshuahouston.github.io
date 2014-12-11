@@ -14,7 +14,7 @@ I was with them most of the time so the map wasn't really that necessary, but on
 
 You can specify the spot you want the map to zoom in on and you pick the level of zoom.
 {% highlight javascript %}
-var map = L.map('map', {
+    var map = L.map('map', {
 	center: [57.049, -135.322],
 	zoom: 16,
 	layers: [streets, playgrounds, walks], // layers that will be on when the map loads
