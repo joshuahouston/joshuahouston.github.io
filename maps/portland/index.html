@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset=utf-8 />
 <title>Portland Visit</title>
-	<link rel='stylesheet' href='style.css'/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,7 +13,6 @@
 </head>
 <body>
 <div id="map"></div>
-<script>
 		<script>
 var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',{
   attribution: '© OpenStreetMap contributors, © CartoDB'
@@ -21,18 +20,17 @@ var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.
 
 var map = L.map('map', {
     scrollWheelZoom: false,
-    center: [45.507, -122.615],
-    zoom: 13
+    center: [45.5, -122.615],
+    zoom: 14
 });
 
 map.addLayer(layer);
-    		
+
 /*L.marker([45.5081, -122.61148]).addTo(map)
 .bindPopup("Yoga Union 2043 SE 50th Ave");		
     		
 L.marker([45.5069, -122.62216]).addTo(map)
 .bindPopup("Mike & Abby's 3919 SE Grant Ct"); */
-		
-</script>
+						</script>
 </body>
 </html>
