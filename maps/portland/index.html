@@ -78,6 +78,19 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+
+		map.locate({setView: true, maxZoom: 16});
+			
+			function onLocationFound(e) {
+ 				  var radius = e.accuracy / 2;
+
+		    L.marker(e.latlng).addTo(map)
+        		.bindPopup("You are somewhere around here").openPopup();
+
+	    L.circle(e.latlng, radius).addTo(map);
+			}
+
+		map.on('locationfound', onLocationFound);
 						</script>
 </body>
 </html>
