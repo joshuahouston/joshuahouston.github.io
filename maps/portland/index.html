@@ -68,6 +68,12 @@ L.marker([45.51804, -122.65554]).addTo(map)
 L.marker([45.52928, -122.65793]).addTo(map)
 .bindPopup("Lloyd Farmers Market - Tues 10 - 2");
 
+L.marker([45.52232, -122.65941]).addTo(map)
+.bindPopup("Nong's");
+
+L.marker([45.51924, -122.63695]).addTo(map)
+.bindPopup("Canteen");
+
 var popup = L.popup();
 
 function onMapClick(e) {
@@ -83,9 +89,6 @@ map.on('click', onMapClick);
 			
 			function onLocationFound(e) {
  				  var radius = e.accuracy / 2;
-
-		    L.marker(e.latlng).addTo(map)
-        		.bindPopup("You are somewhere around here").openPopup();
 
 	    L.circle(e.latlng, radius).addTo(map);
 			}
