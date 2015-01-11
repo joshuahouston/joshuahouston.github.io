@@ -20,7 +20,6 @@ var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.
 });
 
 var map = L.map('map', {
-    scrollWheelZoom: false,
     center: [45.507, -122.622],
     zoom: 14
 });
@@ -90,14 +89,44 @@ L.marker([45.50789, -122.60725], {icon: yellowIcon}).addTo(map)
 L.marker([45.50464, -122.62393], {icon: orangeIcon}).addTo(map)
 .bindPopup("Little Big Burger - Tasty burgers and truffle fries");
 
+L.marker([45.52698, -122.72555], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4562");
+
+L.marker([45.52737, -122.72942], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4565");
+
+L.marker([45.52737, -122.72945], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4567");
+
+L.marker([45.52563, -122.71802], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4559");
+
+L.marker([45.51089, -122.71765], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4557");
+
+L.marker([45.53028, -122.72251], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4568");
+
+L.marker([45.5451, -122.72982], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4572");
+
+L.marker([45.54674, -122.729], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4594");
+
+L.marker([45.54554, -122.73106], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4578");
+
+L.marker([45.53603, -122.7224], {icon: grayIcon}).addTo(map)
+.bindPopup("IMG_4570");
+
 var forestPark = new L.geoJson(forestPark).addTo(map);
 
 /* L.marker([], {}).addTo(map)
-.bindPopup("")*/
+.bindPopup("")
 
 var popup = L.popup();
 
-/* function onMapClick(e) {
+ function onMapClick(e) {
     popup
         .setLatLng(e.latlng)
         .setContent(e.latlng.toString())
