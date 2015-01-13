@@ -15,8 +15,8 @@
    id="svg4460"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="mud.svg"
-   inkscape:export-filename="/Users/Joshua/Google Drive/Maps/Symbols/svg/custom/playground.png"
+   sodipodi:docname="green.svg"
+   inkscape:export-filename="/Users/Joshua/joshuahouston.github.io/markers/red.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -254,16 +254,16 @@
          inkscape:export-xdpi="90"
          transform="matrix(4.8421052,0,0,4.8421052,264.10526,-4880.4441)"
          id="g15422"
-         style="fill:#5fd35f;fill-opacity:1;stroke:#afe9af;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
+         style="fill:#d35f5f;fill-opacity:1;stroke:#e9afaf;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
         <path
-           style="opacity:0.29999999999999999;color:#000000;fill:#5fd35f;fill-opacity:1;fill-rule:nonzero;stroke:#afe9af;stroke-width:1.23913045000000022;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+           style="opacity:0.29999999999999999;color:#000000;fill:#d35f5f;fill-opacity:1;fill-rule:nonzero;stroke:#e9afaf;stroke-width:1.23913045000000022;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
            d="m -53,1266.8622 c 0,3.5 -5,9.5 -6.5,11.5 -1.5,-2 -6.5,-8 -6.5,-11.5 0,-3.5 3.27126,-6.5 6.5,-6.5 3.22874,0 6.5,3 6.5,6.5 z"
            id="path15235"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="scsss" />
         <g
            transform="translate(-173.99314,956.00001)"
-           style="fill:#5fd35f;fill-opacity:1;stroke:#afe9af;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+           style="fill:#d35f5f;fill-opacity:1;stroke:#e9afaf;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
            id="marker-15-7-6-8-1"
            inkscape:label="marker-15">
           <path
@@ -271,7 +271,7 @@
              inkscape:connector-curvature="0"
              id="path7962-4-3-5-3"
              d="m 120.99314,310.86219 c 0,3.5 -5,9.5 -6.5,11.5 -1.5,-2 -6.5,-8 -6.5,-11.5 0,-3.5 3.27126,-6.5 6.5,-6.5 3.22874,0 6.5,3 6.5,6.5 z"
-             style="color:#000000;fill:#5fd35f;fill-opacity:1;fill-rule:nonzero;stroke:#afe9af;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+             style="color:#000000;fill:#d35f5f;fill-opacity:1;fill-rule:nonzero;stroke:#e9afaf;stroke-width:1.23913045000000022;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
         </g>
       </g>
       <rect
