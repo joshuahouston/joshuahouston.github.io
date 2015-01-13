@@ -29,17 +29,17 @@ map.addLayer(layer);
 var myIcon = L.Icon.extend({
 	options: {
 		shadowUrl: 'shadow.png',
-		iconSize:     [44, 44],
+		iconSize:     [36, 36],
 		shadowSize:   [30, 30],
-		iconAnchor:   [21, 45],
+		iconAnchor:   [18, 35],
 		shadowAnchor: [4, 30],
 		popupAnchor:  [2, -42]
 	}
 });
 
 var blueIcon = new myIcon({iconUrl: 'blue.png'}),
-	redIcon = new myIcon({iconUrl: 'red.png'}),
-	greenIcon = new myIcon({iconUrl: 'green.png'}),
+	redIcon = new myIcon({iconUrl: 'red.svg'}),
+	greenIcon = new myIcon({iconUrl: 'green.svg'}),
 	orangeIcon = new myIcon({iconUrl: 'orange.png'}),
 	yellowIcon = new myIcon({iconUrl: 'yellow.png'}),
 	grayIcon = new myIcon({iconUrl: 'gray.png'});
