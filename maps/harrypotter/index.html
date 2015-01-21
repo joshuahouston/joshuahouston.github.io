@@ -9,9 +9,9 @@
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
-<SCRIPT language="JavaScript">
-<!--hide
+</style><!--
+<script>
+<!
 
 var password;
 
@@ -34,9 +34,7 @@ else
    {
     window.location="http://www.mugglesRus.com";
     }
-
-//-->
-</SCRIPT>
+</script> -->
 </head>
 <body>
 <div id='map'></div>
@@ -45,6 +43,19 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15);
 
+var myIcon = L.icon({
+	iconUrl: 'bolt.png'
+	/* iconRetinaUrl: 'bolt1.png',
+	iconSize: [38, 95],
+	iconAnchor: [22, 94],
+	popupAnchor: [-3, -76],
+	shadowUrl: 'my-icon-shadow.png',
+	shadowRetinaUrl: 'my-icon-shadow@2x.png',
+	shadowSize: [68, 95],
+	shadowAnchor: [22, 94] */
+});
+
+L.marker([-135.33, 57.05], {icon: myIcon}).addTo(map);
 </script>
 </body>
 </html>
