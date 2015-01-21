@@ -9,9 +9,8 @@
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
-</style><!--
+</style>
 <script>
-<!
 
 var password;
 
@@ -26,7 +25,7 @@ var pass9=" IsolemnlyswearthatIamuptonogood";
 var pass10=" isolemnlyswearthatiamuptonogood";
 var pass11=" i solemnly swear that i am up to no good";
 
-password=prompt('STATE YOUR BUSINESS!',' ');
+password=prompt('STATE YOUR BUSINESS!','');
 
 if (password==pass1 || password==pass2 || password==pass3 || password==pass4 || password==pass5 || password==pass6 || password==pass7 || password==pass8 || password==pass9 || password==pass10 || password==pass11)
   alert('LUMOS!');
@@ -34,28 +33,43 @@ else
    {
     window.location="http://www.mugglesRus.com";
     }
-</script> -->
+</script>
 </head>
 <body>
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-L.mapbox.map('map', 'jfactory.714fd5c2')
+var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15);
 
-var myIcon = L.icon({
-	iconUrl: 'bolt.png'
-	/* iconRetinaUrl: 'bolt1.png',
-	iconSize: [38, 95],
-	iconAnchor: [22, 94],
-	popupAnchor: [-3, -76],
-	shadowUrl: 'my-icon-shadow.png',
-	shadowRetinaUrl: 'my-icon-shadow@2x.png',
-	shadowSize: [68, 95],
-	shadowAnchor: [22, 94] */
-});
 
-L.marker([-135.33, 57.05], {icon: myIcon}).addTo(map);
+	var myIcon = L.icon({
+		iconUrl: 'bolt.png',
+		iconRetinaUrl: 'boltx2.png',
+		iconSize: [18, 46],
+		iconAnchor: [5, 44],
+		popupAnchor: [0, -40],
+		shadowUrl: 'shadow.png',
+		shadowRetinaUrl: 'shadowx2.png',
+		shadowSize: [27, 16],
+		shadowAnchor: [13, 6]
+	});
+
+
+L.marker([57.05238, -135.31644], {icon: myIcon}).addTo(map)
+.bindPopup("<h6><b>Owlery</b></h6><p>The central post office for all wizards and witches on Baranof Island and the home for their owls, too.</p>");
+
+L.marker([57.04796, -135.31719], {icon: myIcon}).addTo(map)
+.bindPopup("<h6><b>Ollivander's Wand Shop</b></h6><p></p>");
+
+L.marker([57.04995, -135.33471], {icon: myIcon}).addTo(map)
+.bindPopup("<h6><b>Gringott's Wizarding Bank</b></h6><p>Store and exchange galleons and muggle money. Ain't no safer place on all of Baranof Island. Well, except for maybe 100 8/4 Kelly St.</p>");
+
+L.marker([57.05027, -135.32298], {icon: myIcon}).addTo(map)
+.bindPopup("<h6><b>Flourish & Blotts</b></h6><p>Books on all of the best subjects: quidditch, herbology, potions, quidditch.</p>");
+
+L.marker([57.05111, -135.33483], {icon: myIcon}).addTo(map)
+.bindPopup("<h6><b>Madam Malkin's Robes For All Occasions</b></h6><p>Fine selection of wizard and witch clothes or muggle clothes for those \"special\" occasions.</p>");
 </script>
 </body>
 </html>
