@@ -1,0 +1,362 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Owlery",
+        "level": 1,
+        "desc": "Pick up all your letters, parcels, and howlers here, home of Baranof Island's best-trained owls."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.316372,
+            57.052399
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ollivander's Wand Shop",
+        "level": 2,
+        "desc": "Take a walk through Ollivander's shop and let the wand choose you."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.317235,
+            57.046333
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Daily Prophet",
+        "level": 1,
+        "desc": "Run by one of the oldest Wizarding families on Baranof Island and with strong ties to the Ministry of Magic."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.337181,
+            57.050332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gringott's Wizarding Bank",
+        "level": 2,
+        "desc": "Operated by goblins. Go here to exchange muggle money for galleons."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.334663,
+            57.049958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flourish & Blotts",
+        "level": 1,
+        "desc": "The best place for Hogwarts students to purchase their schoolbooks. Beware the monster book of monsters! Purchasing books via owl delivery also available."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.322782,
+            57.050195
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madam Malkin's Robes For All Occasions",
+        "level": 2,
+        "desc": "Fine selection of wizard and witch dress robes, traveling cloaks, and, if you can find it, an invisibility cloak. Also a selection of muggle clothes for special occasions. Regular Business Hours Monday 6:00 - 8:00 p.m Thursday Noon to 3:00 p.m Saturday Noon to 3:00 p.m."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.334862,
+            57.051151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ministry of Magic",
+        "level": 1,
+        "desc": "Run by Marcus Gourmet Fudge, but don't let the muggle offices fool you, there is a vast floo network in the bathrooms on the 3rd floor."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.338748,
+            57.04894
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wizarding Wireless Network",
+        "level": 2,
+        "desc": "Featuring music programs like \"The Witching Hour\" and news bulletins for the wizarding world, the Cable House has been charmed to appear as a coffee shop."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.339312,
+            57.048607
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forbidden Forest",
+        "level": 1,
+        "desc": "An ancient forest that holds many secrets and creatures, some dark and dangerous, others friendly. Off-limits to students except in the case of detention or Care of Magical Creatures lessons. "
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.317542,
+            57.05005
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quidditch Pitch",
+        "level": 2,
+        "desc": "Find 7th year Quidditch Hufflepuff Captain Davidagog Kreissbridge-Tompkmycus and ask him when Quidditch practice is."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.323642,
+            57.050967
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madam Primpernelle's Beautifying Potions",
+        "level": 3,
+        "desc": "This store helps witches get rid of warts and worse."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.331763,
+            57.051382
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fortescue's Ice Cream Parlour",
+        "level": 3,
+        "desc": "Try our newest flavor: Butterbeer!"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.338131,
+            57.049158
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quality Quidditch Supplies",
+        "level": 2,
+        "desc": "Upset your 'Reparo' charm isn't working? Come in today and get 25% off a broomstick repair kit."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.336203,
+            57.04963
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Leaky Cauldron",
+        "level": 2,
+        "desc": "A popular wizarding pub and inn. The gateway between the non-wizarding world and Diagon Alley."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.332207,
+            57.051244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Potage's Cauldron Shop",
+        "level": 2,
+        "desc": "Sells all sizes of all types of cauldrons: copper, brass, pewter, silver, self-stirring, and collapsable."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.333175,
+            57.051879
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Auror Training Academy",
+        "level": 2,
+        "desc": "A 3-year stringent program for only the best and brightest wizards. One has to have a minimum of 5 N.E.W.T.s in challenging subjects, highly recommended are: Potions, Defense Against the Dark Arts, Transfiguration, Herbology, and Charms, with top grades of either 'Outstanding' or 'Exceeds Expectations'. Currently accepting volunteers over the age of 17 to endure the imperius curse and subsequently perform a variety of field tests."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.321047,
+            57.054647
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Twilfitt and Tatting's",
+        "level": 2,
+        "desc": "A wizarding clothing shop preferred by upperclass Slytherins. "
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.337415,
+            57.049331
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Great Lake",
+        "level": 4,
+        "desc": "Don't swim in it! Ellenus Chenoburbeth once got attacked by merpeople!"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.337316,
+            57.056887
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Scribbulus Writing Instruments",
+        "level": 3,
+        "desc": "Sells quills, color-changing ink, and parchment."
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.333707,
+            57.050422
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rosa Lee Teabag",
+        "level": 3,
+        "desc": "Wizarding book publisher with a range of titles including <i>Fantastic Beasts and Where to Find Them</i>"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.336993,
+            57.04997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Obscurus Books",
+        "level": 3,
+        "desc": "Hope you don't see the Grim at the bottom of your cup in this tea shop!"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.336846,
+            57.049812
+          ]
+        ]
+      }
+    }
+  ]
+}
