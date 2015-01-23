@@ -50,7 +50,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	shadowRetinaUrl: 'shadowx2.png',
 	shadowSize: [27, 16],
 	shadowAnchor: [13, 6]
-}); */
+});
 
 $.getJSON($('hp.json', function(data) {
     var geojson = L.geoJson(data, {
@@ -62,7 +62,7 @@ $.getJSON($('hp.json', function(data) {
       }
     });
     geojson.addTo(map);
-/*	  
+*/  
   	$.getJSON($('link[rel="ell"]').attr("href"), function(data) {
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
@@ -70,7 +70,7 @@ $.getJSON($('hp.json', function(data) {
     $.getJSON($('link[rel="jas"]').attr("href"), function(data) {
     	var jasmine = L.geoJson(data);
     	jasmine.addTo(map);
-	}); */
+	}); 
 </script>
 </body>
 </html>
