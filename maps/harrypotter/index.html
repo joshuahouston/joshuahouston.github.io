@@ -57,7 +57,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
   	});
-    $.getJSON($('link[rel="jas"]').attr("href"), function(data) {
+    $.getJSON('jas.json', function(data) {
     	var jasmine = L.geoJson(data);
     	jasmine.addTo(map);
 	});
