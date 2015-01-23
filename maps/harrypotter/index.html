@@ -7,7 +7,7 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
- <link rel="points" type="application/json" href="hp.geojson">
+ <link rel="points" type="application/json" href="hp.json">
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -37,7 +37,7 @@ else
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.714fd5c2')
-	.setView([57.0496, -135.3286], 15);
+	.setView([57.0496, -135.3286], 15); 
 	
 	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
 	    var geojson = L.geoJson(data, {
