@@ -43,6 +43,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
 				var myIcon = new L.Icon({
+					options: {
 					iconUrl: 'bolt.png',
 					iconRetinaUrl: 'boltx2.png',
 					iconSize: [18, 46],
@@ -52,6 +53,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 					shadowRetinaUrl: 'shadowx2.png',
 					shadowSize: [27, 16],
 					shadowAnchor: [13, 6]
+					}
 				}
 			});
 			return L.marker(latlng, {icon: myIcon});
