@@ -7,6 +7,7 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<link >
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -51,7 +52,7 @@ var myIcon = L.icon({
 	shadowAnchor: [13, 6]
 });
 
-$.getJSON($('hp.geojson', function(data) {
+$.getJSON($('hp.json', function(data) {
     var geojson = L.geoJson(data, {
 		//pointToLayer: function(feature, latlng) {
 		//	return L.marker(latlng, {icon: myIcon})
@@ -62,7 +63,7 @@ $.getJSON($('hp.geojson', function(data) {
     });
     geojson.addTo(map);
 });
-	  
+/*	  
   	$.getJSON($('link[rel="ell"]').attr("href"), function(data) {
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
@@ -70,7 +71,7 @@ $.getJSON($('hp.geojson', function(data) {
     $.getJSON($('link[rel="jas"]').attr("href"), function(data) {
     	var jasmine = L.geoJson(data);
     	jasmine.addTo(map);
-	});
+	}); */
 </script>
 </body>
 </html>
