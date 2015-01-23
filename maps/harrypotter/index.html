@@ -16,15 +16,17 @@ var password;
 
 var pass1="I solemnly swear that I am up to no good.";
 var pass2="I solemnly swear that I am up to no good";
+var pass3="isolemnlyswearthatiamuptonogood";
+var pass4="IsolemnlyswearthatIamuptonogood";
 var pass6="i solemnly swear that i am up to no good";
 
-password=prompt('STATE YOUR BUSINESS!','');
+password=prompt('STATE YOUR BUSINESS! If you are suspected to be a muggle you will be redirected to mugglenews.com','');
 
-if (password==pass1 || password==pass2 || password==pass6)
+if (password==pass1 || password==pass2 || password==pass3 || password==pass4 || password==pass6)
   alert('LUMOS!');
 else
    {
-    window.location="http://www.mugglesnews.com";
+    window.location="http://www.mugglenews.com";
     }
 </script>
 </head>
@@ -37,8 +39,8 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 
 
 	var myIcon = L.icon({
-		iconUrl: 'bolt3.png',
-		iconRetinaUrl: 'bolt3x2.png',
+		iconUrl: 'bolt.png',
+		iconRetinaUrl: 'boltx2.png',
 		iconSize: [18, 46],
 		iconAnchor: [5, 44],
 		popupAnchor: [0, -40],
