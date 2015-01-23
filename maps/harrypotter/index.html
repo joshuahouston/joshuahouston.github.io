@@ -40,9 +40,7 @@ else
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15); 
-L.popup(
-	maxHeight: 600;
-)
+
 	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
 	    var geojson = L.geoJson(data, {
 	      onEachFeature: function (feature, layer) {
