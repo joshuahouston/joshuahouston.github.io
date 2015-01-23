@@ -44,7 +44,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
 	    var geojson = L.geoJson(data, {
 	      onEachFeature: function (feature, layer) {
-			  layer.bindPopup('<b>' + feature.properties.name + '</b><br><p>' + feature.properties.desc + '</p>');
+			  layer.bindPopup(feature.properties.name + '\<br\>' + feature.properties.desc);
 	      }
 	    });
 	    geojson.addTo(map);
