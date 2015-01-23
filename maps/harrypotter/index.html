@@ -53,7 +53,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    geojson.addTo(map);
 	  });
 	  
-  	$.getJSON($('ell.json'), function(data) {
+  	$.getJSON('ell.json', function(data) {
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
   	});
