@@ -51,8 +51,8 @@ var myIcon = L.icon({
 	shadowSize: [27, 16],
 	shadowAnchor: [13, 6]
 });
-/*
-$.getJSON($('hp.json'), function(data) {
+
+ $.getJSON($('hp.json'), function(data) {
     var geojson = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {icon: myIcon})
@@ -62,16 +62,12 @@ $.getJSON($('hp.json'), function(data) {
       }
     });
     geojson.addTo(map);
-*/
+});
 	  
   	$.getJSON($('ell.json'), function(data) {
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
   	});
-    $.getJSON($('jas.json'), function(data) {
-    	var jasmine = L.geoJson(data);
-    	jasmine.addTo(map);
-	}); 
 </script>
 </body>
 </html>
