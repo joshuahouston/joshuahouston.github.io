@@ -42,7 +42,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	$.getJSON($('hp.geojson', function(data) {
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
-				var myIcon = L.icon({
+				var myIcon = L.Icon({
 					iconUrl: 'bolt.png',
 					iconRetinaUrl: 'boltx2.png',
 					iconSize: [18, 46],
