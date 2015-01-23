@@ -4,7 +4,6 @@
 <meta charset=utf-8 />
 <title>The Marauder's Map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <link >
@@ -40,39 +39,18 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15); 
 
-var myIcon = L.icon({
-	iconUrl: 'bolt.png',
-	iconRetinaUrl: 'boltx2.png',
-	iconSize: [18, 46],
-	iconAnchor: [5, 44],
-	popupAnchor: [0, -40],
-	shadowUrl: 'shadow.png',
-	shadowRetinaUrl: 'shadowx2.png',
-	shadowSize: [27, 16],
-	shadowAnchor: [13, 6]
-});
-/*
- $.getJSON('hp.json'), function(data) {
+ $.getJSON('hp.json', function(data) {
 	 var geojson = L.geoJson (data, {
 		 onEachFeature: function (feature, layer) {
 			 layer.bindPopup(feature.properties.name);
 		 }
 	 });
 	 geojson.addTo(map);
-*/
-$.getJSON($('hp.json'), function(data) {
-    var pointsOne = L.geoJson(data, {
-      onEachFeature: function (feature, layer) {
-  layer.bindPopup(feature.properties.name);
-      }
-    });
+	 
+$.getJSON('ell.json', function(data) {
+    var pointsOne = L.geoJson(data);
      pointsOne.addTo(map);
   });
-  
-  $.getJSON($('ell.json'), function(data) {
-     var pointsTwo = L.geoJson(data);
-      pointsTwo.addTo(map);
-   });
 </script>
 </body>
 </html>
