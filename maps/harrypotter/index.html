@@ -8,6 +8,8 @@
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
  <link rel="points" type="application/json" href="hp.json">
+ <link rel="ell" type="application/json" href="ell.json">
+ <link rel="jas" type="application/json" href="jas.json">
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -42,11 +44,16 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
 	    var geojson = L.geoJson(data, {
 	      onEachFeature: function (feature, layer) {
-			  layer.bindPopup(feature.properties.name && feature.properties.desc);
+			  layer.bindPopup(feature.properties.name);
 	      }
 	    });
 	    geojson.addTo(map);
 	  });
+	  
+  	$.getJSON($('link[rel="ell"]').attr("href"), function(data) {
+  	    var ellen = L.geoJson(data);
+  	    geojson.addTo(map);
+  	  });
 
 
 	var myIcon = L.icon({
