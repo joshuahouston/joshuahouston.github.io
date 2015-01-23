@@ -7,9 +7,6 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
- <link rel="points" type="application/json" href="hp.json">
- <link rel="ell" type="application/json" href="ell.json">
- <link rel="jas" type="application/json" href="jas.json">
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -38,27 +35,27 @@ else
 <div id='map'></div>
 <script>
 
-var myIcon = L.icon({
-	iconUrl: 'bolt.png',
-	iconRetinaUrl: 'boltx2.png',
-	iconSize: [18, 46],
-	iconAnchor: [5, 44],
-	popupAnchor: [0, -40],
-	shadowUrl: 'shadow.png',
-	shadowRetinaUrl: 'shadowx2.png',
-	shadowSize: [27, 16],
-	shadowAnchor: [13, 6]
-});
-
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15); 
 
-	$.getJSON($('link[rel="points"]').attr("href"), function(data) {
+	$.getJSON($('hp.geojson', function(data) {
 	    var geojson = L.geoJson(data, {
-			style: function (feature) {
-				return {icon: myIcon};
-			},
+			pointToLayer: function(feature, latlng) {
+				var myIcon = L.icon({
+					iconUrl: 'bolt.png',
+					iconRetinaUrl: 'boltx2.png',
+					iconSize: [18, 46],
+					iconAnchor: [5, 44],
+					popupAnchor: [0, -40],
+					shadowUrl: 'shadow.png',
+					shadowRetinaUrl: 'shadowx2.png',
+					shadowSize: [27, 16],
+					shadowAnchor: [13, 6]
+				}
+			});
+			return L.marker(latlng, {icon: myIcon});
+		},
 	      onEachFeature: function (feature, layer) {
 			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
 	      }
