@@ -52,18 +52,6 @@ var myIcon = L.icon({
 	shadowAnchor: [13, 6]
 });
 
- $.getJSON($('hp.json'), function(data) {
-    var geojson = L.geoJson(data, {
-		//pointToLayer: function(feature, latlng) {
-		//	return L.marker(latlng, {icon: myIcon})
-		//},
-      	onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
-      }
-    });
-    geojson.addTo(map);
-});
-	  
   	$.getJSON($('ell.json'), function(data) {
   	    var ellen = L.geoJson(data);
   	    ellen.addTo(map);
