@@ -52,7 +52,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	  
   	$.getJSON($('link[rel="ell"]').attr("href"), function(data) {
   	    var ellen = L.geoJson(data);
-  	    geojson.addTo(map);
+  	    ellen.addTo(map);
   	  });
 
 
