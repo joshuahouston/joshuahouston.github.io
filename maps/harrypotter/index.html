@@ -42,7 +42,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	$.getJSON($('hp.geojson', function(data) {
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
-				var myIcon = new L.icon({
+				var myIcon = new L.Icon({
 					iconUrl: 'bolt.png',
 					iconRetinaUrl: 'boltx2.png',
 					iconSize: [18, 46],
@@ -59,7 +59,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
 	      }
 	    });
-	    geojson.addTo(map);
+	    geojson.addTo(markers.addTo(map));
 	  });
 	  
   	$.getJSON($('link[rel="ell"]').attr("href"), function(data) {
