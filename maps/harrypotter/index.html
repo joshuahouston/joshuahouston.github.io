@@ -50,13 +50,13 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    geojson.addTo(map);
 	  });
 	  
-  	$.getJSON('ell.json', function(data) {
+  	$.getJSON('kayak.json', function(data) {
   	    var ellen = L.geoJson(data);
-  	    ellen.addTo(map);
+  	    kayak.addTo(map);
   	});
-    $.getJSON('jas.json', function(data) {
-    	var jasmine = L.geoJson(data);
-    	jasmine.addTo(map);
+    $.getJSON('bridge.json', function(data) {
+    	var bridge = L.geoJson(data);
+    	bridge.addTo(map);
 	});
 
 
