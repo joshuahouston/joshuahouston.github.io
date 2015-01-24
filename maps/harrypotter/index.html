@@ -49,17 +49,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    });
 	    geojson.addTo(map);
 	  });
-	  
-  	$.getJSON('kayak.json', function(data) {
-  	    var ellen = L.geoJson(data);
-  	    kayak.addTo(map);
-  	});
-    $.getJSON('bridge.json', function(data) {
-    	var bridge = L.geoJson(data);
-    	bridge.addTo(map);
-	});
-
-
+	
 	var myIcon = L.icon({
 		iconUrl: 'bolt.png',
 		iconRetinaUrl: 'boltx2.png',
@@ -73,5 +63,6 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	});
 
 </script>
+<script src="kayak.js"></script>
 </body>
 </html>
