@@ -3,7 +3,7 @@
 var invis = {
 	opacity: 0.0
 };
-var bridge = { type: 'LineString', coordinates: [
+var geojson = { type: 'LineString', coordinates: [
 	[
 	            -135.32124,
 	            57.04883
@@ -4085,29 +4085,29 @@ var bridge = { type: 'LineString', coordinates: [
 	            57.054054
 	          ]
         ] };
-var beginning = [1, 1];
-var velocity = [1, 1];
+var start = [1, 1];
+var momentum = [1, 1];
 
 for (var i = 0; i < .5; i++) {
-    beginning[0] += momentum[0];
-    beginning[1] += momentum[1];
-    if (beginning[1] > 60 || beginning[1] < -60) momentum[1] *= -1;
-    if (beginning[0] > 170 || beginning[0] < -170) momentum[0] *= -1;
-    bridge.coordinates.push(beginning.slice());
+    start[0] += momentum[0];
+    start[1] += momentum[1];
+    if (start[1] > 60 || start[1] < -60) momentum[1] *= -1;
+    if (start[0] > 170 || start[0] < -170) momentum[0] *= -1;
+    geojson.coordinates.push(start.slice());
 }
 
 // Add this generated geojson object to the map.
-L.geoJson(bridge, {
+L.geoJson(geojson, {
 	style: invis
 }).addTo(map);
 
 // Create a counter with a value of 0.
-var k = 0;
+var j = 0;
 
 // Create a marker and add it to the map.
 var marker = L.marker([0, 0], {
   icon: L.mapbox.marker.icon({
-    'marker-color': '#000000'
+    'marker-color': '#2d2d2d'
   })
 }).addTo(map);
 
@@ -4116,10 +4116,10 @@ function tick() {
     // Set the marker to be at the same point as one
     // of the segments or the line.
     marker.setLatLng(L.latLng(
-        bridge.coordinates[k][1],
-        bridge.coordinates[k][0]));
+        geojson.coordinates[j][1],
+        geojson.coordinates[j][0]));
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++j < bridge.coordinates.length) setTimeout(tick, 750);
+    if (++j < geojson.coordinates.length) setTimeout(tick, 750);
 }

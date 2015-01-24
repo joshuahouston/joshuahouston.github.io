@@ -9639,7 +9639,7 @@ var j = 0;
 // Create a marker and add it to the map.
 var marker = L.marker([0, 0], {
   icon: L.mapbox.marker.icon({
-    'marker-color': '#f86767'
+    'marker-color': '#2d2d2d'
   })
 }).addTo(map);
 
