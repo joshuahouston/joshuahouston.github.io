@@ -3,7 +3,7 @@
 var invis = {
 	opacity: 0.0
 };
-var geojson = { type: 'LineString', coordinates: [
+var kayak = { type: 'LineString', coordinates: [
 			  [
 	            -135.32375,
 	            57.048798
@@ -9617,27 +9617,27 @@ var geojson = { type: 'LineString', coordinates: [
 	            57.026012
 	          ]
         ] };
-var start = [1, 1];
-var momentum = [1, 1];
+var starti = [1, 1];
+var momentumi = [1, 1];
 
-for (var i = 0; i < .5; i++) {
-    start[0] += momentum[0];
-    start[1] += momentum[1];
-    if (start[1] > 60 || start[1] < -60) momentum[1] *= -1;
-    if (start[0] > 170 || start[0] < -170) momentum[0] *= -1;
-    geojson.coordinates.push(start.slice());
+for (var x = 0; x < .5; x++) {
+    starti[0] += momentumi[0];
+    starti[1] += momentumi[1];
+    if (starti[1] > 60 || starti[1] < -60) momentumi[1] *= -1;
+    if (starti[0] > 170 || starti[0] < -170) momentumi[0] *= -1;
+    kayak.coordinates.push(starti.slice());
 }
 
 // Add this generated geojson object to the map.
-L.geoJson(geojson, {
+L.geoJson(kayak, {
 	style: invis
 }).addTo(map);
 
 // Create a counter with a value of 0.
-var j = 0;
+var y = 0;
 
 // Create a marker and add it to the map.
-var marker = L.marker([0, 0], {
+var kayaker = L.marker([0, 0], {
   icon: L.mapbox.marker.icon({
     'marker-color': '#2d2d2d'
   })
@@ -9648,10 +9648,10 @@ function tick() {
     // Set the marker to be at the same point as one
     // of the segments or the line.
     marker.setLatLng(L.latLng(
-        geojson.coordinates[j][1],
-        geojson.coordinates[j][0]));
+        kayak.coordinates[j][1],
+        kayak.coordinates[j][0]));
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++j < geojson.coordinates.length) setTimeout(tick, 750);
+    if (++y < kayak.coordinates.length) setTimeout(tick, 750);
 }
