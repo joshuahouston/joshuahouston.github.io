@@ -136,7 +136,7 @@ map.attributionControl
 
 	// 2nd path
 	// debut, elan, r, markerTwo, tock
-	var geojsonTwo = { type: 'LineString', coordinates: kelly };
+	var geojsonTwo = { type: 'LineString', coordinates: center };
 	var debut = [1, 1];
 	var elan = [1, 1];
 
@@ -171,7 +171,7 @@ map.attributionControl
 
 	    // Move to the next point of the line
 	    // until `j` reaches the length of the array.
-	    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 1200);
+	    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 1600);
 	};
 	
 	// 3rd path
