@@ -58,6 +58,12 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 		iconAnchor: [5, 44]
 	});
 	
+	var connie = L.icon({
+		iconUrl: 'connie.png',
+		iconSize: [100, 100],
+		iconAnchor: [5, 44]
+	})
+	
 	var myIcon = L.icon({
 		iconUrl: 'bolt.png',
 		iconRetinaUrl: 'boltx2.png',
@@ -112,7 +118,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	};
 
 	//2nd path
-	var geojsonTwo = { type: 'LineString', coordinates: seakayak };
+	var geojsonTwo = { type: 'LineString', coordinates: kelly };
 	var debut = [1, 1];
 	var elan = [1, 1];
 
@@ -134,7 +140,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 
 	// Create a marker and add it to the map.
 	var ellen = L.marker([57.04875, -135.32422], {
-	 icon: barty
+	 icon: connie
 	}).addTo(map);
 
 	tock();
