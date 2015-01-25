@@ -42,8 +42,8 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 })
 	.setView([57.0496, -135.3286], 15);
 
-map.attributionControl
-	.addAttribution('Moony, Wormtail, Padfoot, and Prongs');
+//map.attributionControl
+//	.addAttribution('Moony, Wormtail, Padfoot, and Prongs');
 	
 	$.getJSON('hp.json', function(data) {
 	    var geojson = L.geoJson(data, {
