@@ -4,42 +4,41 @@
 <meta charset=utf-8 />
 <title>The Marauder's Map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+<script>
+
+var password;
+
+var pass1="I solemnly swear that I am up to no good.";
+var pass2="I solemnly swear that I am up to no good";
+var pass3="isolemnlyswearthatiamuptonogood";
+var pass4="IsolemnlyswearthatIamuptonogood";
+var pass6="i solemnly swear that i am up to no good";
+
+password=prompt('STATE YOUR BUSINESS! If you are suspected to be a muggle you will be redirected to mugglenews.com','');
+
+if (password==pass1 || password==pass2 || password==pass3 || password==pass4 || password==pass6)
+  alert('LUMOS!');
+else
+   {
+    window.location="http://www.mugglenews.com";
+    }
+</script>
 </head>
 <body>
-	
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	.setView([57.0496, -135.3286], 15);
-	
-	$.getJSON('hp.json', function(data) {
-	    var geojson = L.geoJson(data, {
-			pointToLayer: function(feature, latlng) {
-				return L.marker(latlng, {icon: myIcon})
-			},
-	      onEachFeature: function (feature, layer) {
-			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
-	      }
-	    });
-	    geojson.addTo(map);
-	  });
-	  
-	var barty = L.icon({
-		iconUrl: 'barty.png',
-		iconSize: [90, 90],
-		iconAnchor: [45, 45]
-	});
-	
-	var connie = L.icon({
-		iconUrl: 'connie.png',
-		iconSize: [100, 100],
-		iconAnchor: [50, 50]
-	});
-	
+
+
 	var myIcon = L.icon({
 		iconUrl: 'bolt.png',
 		iconRetinaUrl: 'boltx2.png',
@@ -51,6 +50,18 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 		shadowSize: [27, 16],
 		shadowAnchor: [13, 6]
 	});
+
+	$.getJSON('hp.json', function(data) {
+	    var geojson = L.geoJson(data, {
+			pointToLayer: function(feature, latlng) {
+				return L.marker(latlng, {icon: myIcon})
+			},
+	      onEachFeature: function (feature, layer) {
+			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
+	      }
+	    });
+	    geojson.addTo(map);
+	  });
 </script>
 </body>
 </html>
