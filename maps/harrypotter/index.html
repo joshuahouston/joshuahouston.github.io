@@ -6,10 +6,8 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<script src="paths.js"></script>
+<script src="http://jfact0ry.com/maps/harrypotter/paths.js"></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-
-
 <!--<script>
 
 var password;
@@ -73,11 +71,11 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 		shadowSize: [27, 16],
 		shadowAnchor: [13, 6]
 	});
-
+/*
 	// Generate a GeoJSON line. You could also load GeoJSON via AJAX
 	// or generate it some other way.
 	// Enter seakayak or seawalk
-	var geojson = { type: 'LineString', coordinates: borgin };
+	var geojsonOne = { type: 'LineString', coordinates: borgin };
 	var start = [1, 1];
 	var momentum = [1, 1];
 
@@ -86,11 +84,11 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    start[1] += momentum[1];
 	    if (start[1] > 60 || start[1] < -60) momentum[1] *= -1;
 	    if (start[0] > 170 || start[0] < -170) momentum[0] *= -1;
-	    geojson.coordinates.push(start.slice());
+	    geojsonOne.coordinates.push(start.slice());
 	}
 
 	// Add this generated invisible geojson object to the map.
-	L.geoJson(geojson, {
+	L.geoJson(geojsonOne, {
 		//invisible? or no
 	    opacity: 0
 	}).addTo(map);
@@ -107,12 +105,12 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    // Set the marker to be at the same point as one
 	    // of the segments or the line.
 	    marker.setLatLng(L.latLng(
-	        geojson.coordinates[j][1],
-	        geojson.coordinates[j][0]));
+	        geojsonOne.coordinates[j][1],
+	        geojsonOne.coordinates[j][0]));
 
 	    // Move to the next point of the line
 	    // until `j` reaches the length of the array.
-	    if (++j < geojson.coordinates.length) setTimeout(tick, 1000);
+	    if (++j < geojsonOne.coordinates.length) setTimeout(tick, 1000);
 	};
 
 	//2nd path
@@ -153,7 +151,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    // until `j` reaches the length of the array.
 	    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 1200);
 	};
-
+*/
 </script>
 </body>
 </html>
