@@ -9654,4 +9654,4 @@ function tick() {
     // Move to the next point of the line
     // until `j` reaches the length of the array.
     if (++y < kayak.coordinates.length) setTimeout(tick, 750);
-}
+};

@@ -1,10 +1,8 @@
-L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'examples.map-i87786ca').setView([57.0487, -135.322], 13);
 
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
 // Enter seakayak or seawalk
-var geojson = { type: 'LineString', coordinates: borgin };
+var geojson = { type: 'LineString', coordinates: seawalk };
 var start = [1, 1];
 var momentum = [1, 1];
 
@@ -19,15 +17,17 @@ for (var i = 0; i < 300; i++) {
 // Add this generated invisible geojson object to the map.
 L.geoJson(geojson, {
 	//invisible? or no
-    opacity: 0.5
+    opacity: 0
 }).addTo(map);
 
 // Create a counter with a value of 0.
 var j = 0;
 
 // Create a marker and add it to the map.
-var marker = L.marker([57.050441, -135.339867], {
-  icon: barty
+var marker = L.marker([57.05170393, -135.35179074], {
+  icon: L.mapbox.marker.icon({
+    'marker-color': '#f86767'
+  })
 }).addTo(map);
 
 tick();
@@ -58,7 +58,7 @@ for (var i = 0; i < 300; i++) {
 
 // Add this generated invisible geojson object to the map.
 L.geoJson(geojsonTwo, {
-	opacity: 0.5
+	opacity: 0
 }).addTo(map);
 
 // Create a counter with a value of 0.
@@ -81,6 +81,5 @@ function tock() {
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 5);
+    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 600);
 };
-
