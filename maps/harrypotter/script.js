@@ -4,7 +4,7 @@ var map = L.mapbox.map('map', 'examples.map-i87786ca').setView([57.0487, -135.32
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
 // Enter seakayak or seawalk
-var geojson = { type: 'LineString', coordinates: seawalk };
+var geojson = { type: 'LineString', coordinates: borgin };
 var start = [1, 1];
 var momentum = [1, 1];
 
@@ -26,10 +26,8 @@ L.geoJson(geojson, {
 var j = 0;
 
 // Create a marker and add it to the map.
-var marker = L.marker([57.05170393, -135.35179074], {
-  icon: L.mapbox.marker.icon({
-    'marker-color': '#f86767'
-  })
+var marker = L.marker([57.050441, -135.339867], {
+  icon: barty
 }).addTo(map);
 
 tick();
@@ -85,3 +83,4 @@ function tock() {
     // until `j` reaches the length of the array.
     if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 5);
 };
+
