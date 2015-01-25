@@ -1,0 +1,11 @@
+Two markers, working
+http://jsfiddle.net/Jfact0ry/zkj1mkyj/
+
+Barty
+
+
+
+
+Last coordinates of... borgin?
+              -135.339867,
+              57.050441

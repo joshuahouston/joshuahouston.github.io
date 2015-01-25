@@ -12,7 +12,21 @@
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
+  .leaflet-control-locate {
+    border:1px solid rgba(0,0,0,0.4);
+    }
+  .leaflet-control-locate a {
+    background-color:#fff;
+    background-position:-3px, -2px;
+    }
+  .leaflet-control-locate.active a {
+    background-position:-33px -2px;
+    }
 </style>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+
+
 <!--<script>
 
 var password;
@@ -34,11 +48,14 @@ else
 </script> -->
 </head>
 <body>
+	
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.714fd5c2')
-	.setView([57.0496, -135.3286], 15); 
+var map = L.mapbox.map('map', 'jfactory.714fd5c2');
+	.setView([57.0496, -135.3286], 15);
+
+L.control.locate().addTo(map);
 	
 	$.getJSON('hp.json', function(data) {
 	    var geojson = L.geoJson(data, {
