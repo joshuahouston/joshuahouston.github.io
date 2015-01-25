@@ -7,7 +7,6 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <script src="paths.js"></script>
-<script src="pointclouds.js"></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 
 
@@ -121,7 +120,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 	    // until `j` reaches the length of the array.
 	    if (++j < geojson.coordinates.length) setTimeout(tick, 1000);
 	};
-/*
+
 	//2nd path
 	var geojsonTwo = { type: 'LineString', coordinates: kelly };
 	var debut = [1, 1];
@@ -144,7 +143,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 	var r = 0;
 
 	// Create a marker and add it to the map.
-	var ellen = L.marker([57.04875, -135.32422], {
+	var ellen = L.marker([57.04896513, -135.32097969], {
 	 icon: connie
 	}).addTo(map);
 
@@ -160,7 +159,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 	    // until `j` reaches the length of the array.
 	    if (++r < geojsonTwo.coordinates.length) setTimeout(tock, 1200);
 	};
-*/
+
 </script>
 </body>
 </html>
