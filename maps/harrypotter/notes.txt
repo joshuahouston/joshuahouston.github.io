@@ -41,11 +41,11 @@ seakayak
               -135.3234064,
               57.0494941
 	
-eng			french		german		  italian	   polish
-geojsonOne, geojsonTwo, geojsonThree, geojsonFour, geojsonFive
-start,		debut,		anfang,		  inizio,	   poczatek
-momentum,	elan,		schwung,	  impulso,	   ped
-j,			r,			k,			  s,		   l
-markerOne,	markerTwo,  markerThree,  markerFour,  markerFive
-tick,		tock,		tack,		  teck,		   tuck
+eng			french		german		  italian	   polish		portugese
+geojsonOne, geojsonTwo, geojsonThree, geojsonFour, geojsonFive,	geojsonSix
+start,		debut,		anfang,		  inizio,	   poczatek,	comeco
+momentum,	elan,		schwung,	  impulso,	   ped,			impeto
+j,			r,			k,			  s,		   l,			t
+markerOne,	markerTwo,  markerThree,  markerFour,  markerFive,	markerSix
+tick,		tock,		tack,		  teck,		   tuck,		tyck
 	
