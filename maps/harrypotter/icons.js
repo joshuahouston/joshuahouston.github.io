@@ -5,50 +5,50 @@
 	});
 	
 	var connie = L.icon({
-		iconUrl: 'connie.png',
+		iconUrl: 'http://jfact0ry.com/maps/harrypotter/connie.png',
 		iconSize: [100, 100],
 		iconAnchor: [50, 50]
 	});
 	
 	var jazz = L.icon({
-		iconUrl: 'jazz.png',
+		iconUrl: 'http://jfact0ry.com/maps/harrypotter/jazz.png',
 		iconSize: [96, 44],
 		iconAnchor: [48, 27]
 	});
 	
 	var ellen = L.icon({
-		iconUrl: 'ellen.png',
+		iconUrl: 'http://jfact0ry.com/maps/harrypotter/ellen.png',
 		iconSize: [136, 44],
 		iconAnchor: [69, 25]
 	});
 	
 	var joshua = L.icon({
-		iconUrl: 'joshua.png',
+		iconUrl: 'http://jfact0ry.com/maps/harrypotter/joshua.png',
 		iconSize: [120, 60],
 		iconAnchor: [57, 33]
 	});
 	
 	var hagrid = L.icon({
-			iconUrl: 'hagrid.png',
+			iconUrl: 'http://jfact0ry.com/maps/harrypotter/hagrid.png',
 			iconSize: [88, 40],
 			iconAnchor: [41, 33]
 		});
 	
 	var fudge = L.icon({
-			iconUrl: 'fudge.png',
+			iconUrl: 'http://jfact0ry.com/maps/harrypotter/fudge.png',
 			iconSize: [141, 44],
 			iconAnchor: [87, 28]
 		});
 	
 	
 	var myIcon = L.icon({
-		iconUrl: 'bolt.png',
-		iconRetinaUrl: 'boltx2.png',
+		iconUrl: 'http://jfact0ry.com/maps/harrypotter/bolt.png',
+		iconRetinaUrl: 'http://jfact0ry.com/maps/harrypotter/boltx2.png',
 		iconSize: [18, 46],
 		iconAnchor: [5, 44],
 		popupAnchor: [0, -40],
-		shadowUrl: 'shadow.png',
-		shadowRetinaUrl: 'shadowx2.png',
+		shadowUrl: 'http://jfact0ry.com/maps/harrypotter/shadow.png',
+		shadowRetinaUrl: 'http://jfact0ry.com/maps/harrypotter/shadowx2.png',
 		shadowSize: [27, 16],
 		shadowAnchor: [13, 6]
 	});
