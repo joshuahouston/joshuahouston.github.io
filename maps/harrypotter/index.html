@@ -12,25 +12,6 @@
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
-<!--<script>
-
-var password;
-
-var pass1="I solemnly swear that I am up to no good.";
-var pass2="I solemnly swear that I am up to no good";
-var pass3="isolemnlyswearthatiamuptonogood";
-var pass4="IsolemnlyswearthatIamuptonogood";
-var pass6="i solemnly swear that i am up to no good";
-
-password=prompt('STATE YOUR BUSINESS! If you are suspected to be a muggle you will be redirected to mugglenews.com','');
-
-if (password==pass1 || password==pass2 || password==pass3 || password==pass4 || password==pass6)
-  alert('LUMOS!');
-else
-   {
-    window.location="http://www.mugglenews.com";
-    }
-</script> -->
 </head>
 <body>
 	
@@ -111,10 +92,10 @@ map.attributionControl
 		shadowSize: [27, 16],
 		shadowAnchor: [13, 6]
 	});
-	/*
+	
 	// 1st path
 	// geojsonOne, start, momentum, j, markerOne, tick
-	var geojsonOne = { type: 'LineString', coordinates: ministry };
+	var geojsonOne = { type: 'LineString', coordinates: seakayak };
 	var start = [1, 1];
 	var momentum = [1, 1];
 
@@ -137,7 +118,7 @@ map.attributionControl
 
 	// Create a marker and add it to the map.
 	var markerOne = L.marker([0,0], {
-	  icon: fudge 
+	  icon: ellen 
 	}).addTo(map);
 
 	tick();
@@ -155,7 +136,7 @@ map.attributionControl
 
 	// 2nd path
 	// debut, elan, r, markerTwo, tock
-	var geojsonTwo = { type: 'LineString', coordinates: owlery };
+	var geojsonTwo = { type: 'LineString', coordinates: forest };
 	var debut = [1, 1];
 	var elan = [1, 1];
 
@@ -177,7 +158,7 @@ map.attributionControl
 
 	// Create a marker and add it to the map.
 	var markerTwo = L.marker([0,0], {
-	 icon: barty
+	 icon: hagrid
 	}).addTo(map);
 
 	tock();
@@ -234,7 +215,7 @@ map.attributionControl
 	};
 	// 4th path
 	// geojsonFour, inizio, impulso, s, markerFour, teck
-	var geojsonFour = { type: 'LineString', coordinates: seakayak  };
+	var geojsonFour = { type: 'LineString', coordinates: owlery  };
 	var inizio = [1, 1];
 	var impulso = [1, 1];
 
@@ -256,7 +237,7 @@ map.attributionControl
 
 	// Create a marker and add it to the map.
 	var markerFour = L.marker([0,0], {           
-	 icon: ellen
+	 icon: joshua
 	}).addTo(map);
 
 	teck();
@@ -271,129 +252,7 @@ map.attributionControl
 	    // until `j` reaches the length of the array.
 	    if (++s < geojsonFour.coordinates.length) setTimeout(teck, 600);
 	};
-	*/
-	// 5th path
-	// geojsonFive, poczatek, ped, l, markerFive, tuck
-	
-	var geojsonFive = { type: 'LineString', coordinates: ministry };
-	var poczatek = [1, 1];
-	var ped = [1, 1];
 
-	for (var i = 0; i < 300; i++) {
-	    poczatek[0] += ped[0];
-	    poczatek[1] += ped[1];
-	    if (poczatek[1] > 60 || poczatek[1] < -60) ped[1] *= -1;
-	    if (poczatek[0] > 170 || poczatek[0] < -170) ped[0] *= -1;
-	    geojsonFive.coordinates.push(poczatek.slice());
-	}
-
-	// Add this generated invisible geojson object to the map.
-	L.geoJson(geojsonFive, {
-		opacity: 0
-	}).addTo(map);
-
-	// Create a counter with a value of 0.
-	var l = 0;
-
-	// Create a marker and add it to the map.
-	var markerFive = L.marker([], {           
-	 icon: fudge
-	}).addTo(map);
-
-	tuck();
-	function tuck() {
-	    // Set the marker to be at the same point as one
-	    // of the segments or the line.
-	    markerFive.setLatLng(L.latLng(
-	        geojsonFive.coordinates[l][1],
-	        geojsonFive.coordinates[l][0]));
-
-	    // Move to the next point of the line
-	    // until `l` reaches the length of the array.
-	    if (++l < geojsonFive.coordinates.length) setTimeout(tuck, 1200);
-	};
-
-	// 6th path
-	// geojsonSix, comeco, impeto, t, markerSix, tyck
-	
-	var geojsonSix = { type: 'LineString', coordinates: borgin };
-	var comeco = [1, 1];
-	var impeto = [1, 1];
-
-	for (var i = 0; i < 300; i++) {
-	    comeco[0] += impeto[0];
-	    comeco[1] += impeto[1];
-	    if (comeco[1] > 60 || comeco[1] < -60) impeto[1] *= -1;
-	    if (comeco[0] > 170 || comeco[0] < -170) impeto[0] *= -1;
-	    geojsonSix.coordinates.push(comeco.slice());
-	}
-
-	// Add this generated invisible geojson object to the map.
-	L.geoJson(geojsonSix, {
-		opacity: 0
-	}).addTo(map);
-
-	// Create a counter with a value of 0.
-	var t = 0;
-
-	// Create a marker and add it to the map.
-	var markerSix = L.marker([], {           
-	 icon: barty
-	}).addTo(map);
-
-	tyck();
-	function tyck() {
-	    // Set the marker to be at the same point as one
-	    // of the segments or the line.
-	    markerSix.setLatLng(L.latLng(
-	        geojsonSix.coordinates[t][1],
-	        geojsonSix.coordinates[t][0]));
-
-	    // Move to the next point of the line
-	    // until `j` reaches the length of the array.
-	    if (++t < geojsonSix.coordinates.length) setTimeout(tyck, 1200);
-	};
-	// 7th path
-	// geojsonSeven, cychwyn, momentwm, l, markerSeven, tiick
-	
-	var geojsonSeven = { type: 'LineString', coordinates: center };
-	var cychwyn = [1, 1];
-	var momentwm = [1, 1];
-
-	for (var i = 0; i < 300; i++) {
-	    cychwyn[0] += momentwm[0];
-	    cychwyn[1] += momentwm[1];
-	    if (cychwyn[1] > 60 || cychwyn[1] < -60) momentwm[1] *= -1;
-	    if (cychwyn[0] > 170 || cychwyn[0] < -170) momentwm[0] *= -1;
-	    geojsonSeven.coordinates.push(cychwyn.slice());
-	}
-
-	// Add this generated invisible geojson object to the map.
-	L.geoJson(geojsonSeven, {
-		opacity: 0
-	}).addTo(map);
-
-	// Create a counter with a value of 0.
-	var m = 0;
-
-	// Create a marker and add it to the map.
-	var markerSeven = L.marker([], {           
-	 icon: connie
-	}).addTo(map);
-
-	tiick();
-	function tiick() {
-	    // Set the marker to be at the same point as one
-	    // of the segments or the line.
-	    markerSeven.setLatLng(L.latLng(
-	        geojsonSeven.coordinates[m][1],
-	        geojsonSeven.coordinates[m][0]));
-
-	    // Move to the next point of the line
-	    // until `j` reaches the length of the array.
-	    if (++m < geojsonSeven.coordinates.length) setTimeout(tiick, 1200);
-	};
-	
 </script>
 </body>
 </html>
