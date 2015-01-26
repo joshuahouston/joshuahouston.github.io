@@ -1,5 +1,5 @@
 	var barty = L.icon({
-		iconUrl: 'barty.png',
+		iconUrl: './barty.png',
 		iconSize: [90, 90],
 		iconAnchor: [45, 45]
 	});
