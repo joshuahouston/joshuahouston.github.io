@@ -80,7 +80,25 @@ map.attributionControl
 		iconUrl: 'ellen.png',
 		iconSize: [136, 44],
 		iconAnchor: [69, 25]
-	})
+	});
+	
+	var joshua = L.icon({
+		iconUrl: 'joshua.png',
+		iconSize: [120, 60],
+		iconAnchor: [57, 33]
+	});
+	
+	var hagrid = L.icon({
+			iconUrl: 'hagrid.png',
+			iconSize: [88, 40],
+			iconAnchor: [41, 33]
+		});
+	
+	var marcus = L.icon({
+			iconUrl: 'marcus.png',
+			iconSize: [180, 56],
+			iconAnchor: [87, 28]
+		});
 	
 	var myIcon = L.icon({
 		iconUrl: 'bolt.png',
@@ -96,7 +114,7 @@ map.attributionControl
 	
 	// 1st path
 	// geojsonOne, start, momentum, j, markerOne, tick
-	var geojsonOne = { type: 'LineString', coordinates: borgin };
+	var geojsonOne = { type: 'LineString', coordinates: owlery };
 	var start = [1, 1];
 	var momentum = [1, 1];
 
@@ -136,7 +154,7 @@ map.attributionControl
 
 	// 2nd path
 	// debut, elan, r, markerTwo, tock
-	var geojsonTwo = { type: 'LineString', coordinates: center };
+	var geojsonTwo = { type: 'LineString', coordinates: forest };
 	var debut = [1, 1];
 	var elan = [1, 1];
 
@@ -176,7 +194,7 @@ map.attributionControl
 	
 	// 3rd path
 	// geojsonThree, anfang, schwung, k, markerThree, tack
-	var geojsonThree = { type: 'LineString', coordinates: seawalk };
+	var geojsonThree = { type: 'LineString', coordinates: ministry };
 	var anfang = [1, 1];
 	var schwung = [1, 1];
 
