@@ -15,9 +15,9 @@
 </style>
 </head>
 <body>
-	
 <div id='map'></div>
 <script>
+
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 	infoControl: false,
@@ -40,10 +40,10 @@ map.attributionControl
 	    geojson.addTo(map);
 	  });
 
-	  var path = function (person,place) { 
-	  var geojson = { type: 'LineString', coordinates: place }; 
-	  var start = [10, 20]; 
-	  var momentum = [3, 3]; 
+var path = function (person,place) { 
+var geojson = { type: 'LineString', coordinates: place };
+var start = [10, 20];
+var momentum = [3, 3]; 
 
 	  for (var i = 0; i < 300; i++) { 
 	      start[0] += momentum[0]; 
@@ -88,12 +88,7 @@ map.attributionControl
 	  path(connie,kelly);
 	  path(jasmine,seakayak);
 	  path(ellen,uas);
-	  path(joshua,obscurus);
-	  path(hagrid,forest);
-	  path(fudge,borgin);
-	  path(hermione,flourish);
-	  path(snape,center);
-	  path(harry,ministry);
+	  
 </script>
 </body>
 </html>
