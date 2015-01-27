@@ -8,76 +8,76 @@ var myIcon = L.icon({
 	shadowRetinaUrl: 'shadowx2.png',
 	shadowSize: [27, 16],
 	shadowAnchor: [13, 6]
-});
+	});
 
 var barty = L.icon({
     iconUrl: 'barty.png',
-	iconRetinaUrl: 'bartyx2'
+	iconRetinaUrl: 'bartyx2',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
 	});
 
 var connie = L.icon({
     iconUrl: 'connie.png',
-	iconRetinaUrl: 'conniex2'
+	iconRetinaUrl: 'conniex2',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
 	});
 	
 var jasmine = L.icon({
     iconUrl: 'jasmine.png',
-	iconRetinaUrl: 'jasminex2.png'
+	iconRetinaUrl: 'jasminex2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
 	});
 
 var ellen = L.icon({
 	iconUrl: 'ellen.png',
-	iconRetinaUrl: 'ellenx2.png'
+	iconRetinaUrl: 'ellenx2.png',
 	iconSize: [150, 56],
 	iconAnchor: [74, 29]
 	});
 	
 var joshua = L.icon({
 	iconUrl: 'joshua.png',
-	iconRetinaUrl: 'joshuax2.png'
+	iconRetinaUrl: 'joshuax2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
-});
+	});
 	
 var hagrid = L.icon({
 	iconUrl: 'hagrid.png',
-	iconRetinaUrl: 'hagridx2.png'
+	iconRetinaUrl: 'hagridx2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
-});
+	});
 	
 var fudge = L.icon({
 	iconUrl: 'fudge.png',
-	iconRetinaUrl: 'fudgex2.png'
+	iconRetinaUrl: 'fudgex2.png',
 	iconSize: [160, 50],
 	iconAnchor: [79, 24]
-});
+	});
 	
 var harry = L.icon({
 	iconUrl: 'harry.png',
-	iconRetinaUrl: 'harryx2.png'
+	iconRetinaUrl: 'harryx2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
-});
+	});
 
 var hermione = L.icon({
 	iconUrl: 'hermione.png',
-	iconRetinaUrl: 'hermionex2.png'
+	iconRetinaUrl: 'hermionex2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
-});
+	});
 
 var snape = L.icon({
 	iconUrl: 'snape.png',
-	iconRetinaUrl: 'snapex2.png'
+	iconRetinaUrl: 'snapex2.png',
 	iconSize: [150, 56],
 	iconAnchor: [75, 29]
-});
+	});
 	
 	
