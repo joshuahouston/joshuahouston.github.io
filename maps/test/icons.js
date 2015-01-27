@@ -11,63 +11,73 @@ var myIcon = L.icon({
 });
 
 var barty = L.icon({
-	iconUrl: 'barty.png',
-	iconSize: [90, 90],
-	iconAnchor: [45, 45]
-});
+    iconUrl: 'barty.png',
+	iconRetinaUrl: 'bartyx2'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
+	});
 
 var connie = L.icon({
-	iconUrl: 'connie.png',
-	iconSize: [100, 100],
-	iconAnchor: [50, 50]
-});
+    iconUrl: 'connie.png',
+	iconRetinaUrl: 'conniex2'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
+	});
 	
 var jasmine = L.icon({
-	iconUrl: 'jasmine.png',
-	iconSize: [96, 44],
-	iconAnchor: [48, 27]
-});
+    iconUrl: 'jasmine.png',
+	iconRetinaUrl: 'jasminex2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
+	});
 
 var ellen = L.icon({
 	iconUrl: 'ellen.png',
-	iconSize: [136, 44],
-	iconAnchor: [69, 25]
-});
+	iconRetinaUrl: 'ellenx2.png'
+	iconSize: [150, 56],
+	iconAnchor: [74, 29]
+	});
 	
 var joshua = L.icon({
 	iconUrl: 'joshua.png',
-	iconSize: [120, 60],
-	iconAnchor: [57, 33]
+	iconRetinaUrl: 'joshuax2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
 });
 	
 var hagrid = L.icon({
 	iconUrl: 'hagrid.png',
-	iconSize: [88, 40],	
-	iconAnchor: [41, 33]
+	iconRetinaUrl: 'hagridx2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
 });
 	
 var fudge = L.icon({
 	iconUrl: 'fudge.png',
-	iconSize: [141, 44],
-	iconAnchor: [87, 28]
+	iconRetinaUrl: 'fudgex2.png'
+	iconSize: [160, 50],
+	iconAnchor: [79, 24]
 });
 	
 var harry = L.icon({
 	iconUrl: 'harry.png',
-	iconSize: [90, 90],
-	iconAnchor: [45, 45]
+	iconRetinaUrl: 'harryx2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
 });
 
 var hermione = L.icon({
 	iconUrl: 'hermione.png',
-	iconSize: [90, 90],
-	iconAnchor: [45, 45]
+	iconRetinaUrl: 'hermionex2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
 });
 
-var luna = L.icon({
-	iconUrl: 'luna.png',
-	iconSize: [90, 90],
-	iconAnchor: [45, 45]
+var snape = L.icon({
+	iconUrl: 'snape.png',
+	iconRetinaUrl: 'snapex2.png'
+	iconSize: [150, 56],
+	iconAnchor: [75, 29]
 });
 	
 	
