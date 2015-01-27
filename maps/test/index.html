@@ -4,53 +4,30 @@
 <meta charset=utf-8 />
 <title>The Marauder's Map</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<script src="http://jfact0ry.com/maps/harrypotter/paths.js"></script>
+<script src="http://jfact0ry.com/maps/harrypotter/icons.js"></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
-<script>
-
-var password;
-
-var pass1="I solemnly swear that I am up to no good.";
-var pass2="I solemnly swear that I am up to no good";
-var pass3="isolemnlyswearthatiamuptonogood";
-var pass4="IsolemnlyswearthatIamuptonogood";
-var pass6="i solemnly swear that i am up to no good";
-
-password=prompt('STATE YOUR BUSINESS! If you are suspected to be a muggle you will be redirected to mugglenews.com','');
-
-if (password==pass1 || password==pass2 || password==pass3 || password==pass4 || password==pass6)
-  alert('LUMOS!');
-else
-   {
-    window.location="http://www.mugglenews.com";
-    }
-</script>
 </head>
 <body>
+	
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.714fd5c2')
+var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
+	infoControl: false,
+	attributionControl: true
+})
 	.setView([57.0496, -135.3286], 15);
 
-
-	var myIcon = L.icon({
-		iconUrl: 'bolt.png',
-		iconRetinaUrl: 'boltx2.png',
-		iconSize: [18, 46],
-		iconAnchor: [5, 44],
-		popupAnchor: [0, -40],
-		shadowUrl: 'shadow.png',
-		shadowRetinaUrl: 'shadowx2.png',
-		shadowSize: [27, 16],
-		shadowAnchor: [13, 6]
-	});
-
+map.attributionControl
+	.addAttribution('Moony, Wormtail, Padfoot, and Prongs');
+	
 	$.getJSON('hp.json', function(data) {
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
@@ -62,6 +39,58 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2')
 	    });
 	    geojson.addTo(map);
 	  });
+
+	  var path = function (person,place) { 
+	  var geojson = { type: 'LineString', coordinates: place }; 
+	  var start = [10, 20]; 
+	  var momentum = [3, 3]; 
+
+	  for (var i = 0; i < 300; i++) { 
+	      start[0] += momentum[0]; 
+	      start[1] += momentum[1]; 
+	      if (start[1] > 60 || start[1] < -60) momentum[1] *= -1; 
+	      if (start[0] > 170 || start[0] < -170) momentum[0] *= -1; 
+	      geojson.coordinates.push(start.slice()); 
+	  } 
+
+	  // Add this generated geojson object to the map. 
+	      L.geoJson(geojson, { 
+	          opacity: 0 
+	      }).addTo(map); 
+
+	  // Create a counter with a value of 0. 
+	  var j = 0; 
+
+	  // Create a marker and add it to the map. 
+	  var marker = L.marker([0, 0], { 
+	      icon: person 
+	  }).addTo(map); 
+
+	  tick(); 
+	  function tick() { 
+	      // Set the marker to be at the same point as one 
+	      // of the segments or the line. 
+	      marker.setLatLng(L.latLng( 
+	          geojson.coordinates[j][1], 
+	          geojson.coordinates[j][0])); 
+
+	      // Move to the next point of the line 
+	      // until `j` reaches the length of the array. 
+	      if (++j < geojson.coordinates.length) setTimeout(tick, 600); 
+	  } 
+	  }; 
+	  //persons: barty,connie,jasmine,ellen,joshua,hagrid,fudge
+	  //harry,hermione,luna
+	  
+	  //places: owlery,forest,yoga,flourish,ministry,obscurus
+	  //uas,borgin,kelly,seawalk,seakayak,center
+	  path(barty,owlery); 
+	  path(connie,center); 
+	  path(jasmine,seakayak);
+	  path(ellen,uas);
+	  path(joshua,obscurus);
+	  path(hagrid,forest);
+	  path(fudge,kelly);
 </script>
 </body>
 </html>
