@@ -9,43 +9,6 @@ http://jsfiddle.net/Jfact0ry/ggtw598q/
 jfactory.714fd5c2
 examples.map-8ced9urs
 
-Barty
-First points
-seakayak  -135.32375,
-              57.048798
 
-
-
-
-Last coordinates of... borgin? yep
-              -135.339867,
-              57.050441
-Kelly -135.32097969,
-              57.04896513
-UAS 
-              -135.351726,
-              57.051658
-            ]];
-			
-Obscurus
-                -135.336828,
-                57.049826
-				
-Ministry  -135.338853,
-              57.048962
-			  
-flourish -135.322988,
-              57.050303
-
-seakayak
-              -135.3234064,
-              57.0494941
-	
-eng			french		german		  italian	   polish		portugese		welsh
-geojsonOne, geojsonTwo, geojsonThree, geojsonFour, geojsonFive,	geojsonSix,		geojsonSeven
-start,		debut,		anfang,		  inizio,	   poczatek,	comeco,			cychwyn
-momentum,	elan,		schwung,	  impulso,	   ped,			impeto,			momentwm
-j,			r,			k,			  s,		   l,			t,				m
-markerOne,	markerTwo,  markerThree,  markerFour,  markerFive,	markerSix,		markerSeven
-tick,		tock,		tack,		  teck,		   tuck,		tyck,			tiick
+"name": "I <img class='emoji' title=':heart:' alt=':heart:' src='https://assets.github.com/images/icons/emoji/unicode/2764.png' height='20' width='20' align='absmiddle'> Hogwarts!"
 	

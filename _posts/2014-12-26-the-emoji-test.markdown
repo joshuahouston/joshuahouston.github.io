@@ -5,7 +5,7 @@ date:   2014-12-11 07:16:31
 categories: code
 ---
 #Emoji
-:laughing: :rage: :cry: :joy: :rocket:
+:laughing: :rage: :cry: :joy: :rocket: :heart:
 
 ##This has been an Emoji Test
 ##:laughing:

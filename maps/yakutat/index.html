@@ -2,52 +2,25 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>The Marauder's Map</title>
+<title>Yakutat Trip</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <script src="paths.js"></script>
-<script src="icons.js"></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
 </style>
-<script src="password.js"></script>
 </head>
 <body>
-<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
-<!--[if lt IE 9]>
-<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.ie.css' rel='stylesheet' />
-<![endif]-->
-
-<style>
-.leaflet-control-locate {
-  border:1px solid rgba(0,0,0,0.4);
-  }
-.leaflet-control-locate a {
-  background-color:#fff;
-  background-position:-3px, -2px;
-  }
-.leaflet-control-locate.active a {
-  background-position:-33px -2px;
-  }
-</style>
 <div id='map'></div>
 <script>
-
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
-	infoControl: false,
-	attributionControl: true
-})
-	.setView([57.0496, -135.3286], 15);
-	L.control.locate().addTo(map);
+var map = L.mapbox.map('map', 'jfactory.l3pal08p')
+    .setView([59.59, -139.3], 12);
 
-map.attributionControl
-	.addAttribution('Moony, Wormtail, Padfoot, and Prongs');
-	
+/*
 	$.getJSON('hp.json', function(data) {
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
@@ -59,6 +32,7 @@ map.attributionControl
 	    });
 	    geojson.addTo(map);
 	  });
+*/
 
 var path = function (person,place) { 
 var geojson = { type: 'LineString', coordinates: place };
@@ -96,24 +70,10 @@ var momentum = [3, 3];
 
 	      // Move to the next point of the line 
 	      // until `j` reaches the length of the array. 
-	      if (++j < geojson.coordinates.length) setTimeout(tick, 50); 
+	      if (++j < geojson.coordinates.length) setTimeout(tick, 500); 
 	  } 
 	  }; 
-	  //persons: barty,connie,jasmine,ellen,joshua,hagrid,fudge
-	  //harry,hermione,snape
-	  
-	  //places: owlery,forest,yoga,flourish,ministry,obscurus
-	  //uas,borgin,kelly,seawalk,seakayak,center
-	  path(barty,owlery);
-	  path(connie,kelly);
-	  path(jasmine,seakayak);
-	  path(ellen,uas);
-	  path(joshua,yoga);
-	  path(hagrid,forest);
-	  path(fudge,borgin);
-	  path(hermione,flourish);
-	  path(snape,center);
-	  path(harry,ministry);
+
 </script>
 </body>
 </html>
