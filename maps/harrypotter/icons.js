@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var myIcon = L.icon({
 	iconUrl: 'bolt.png',
 	iconRetinaUrl: 'boltx2.png',
@@ -38,6 +39,36 @@ var ellen = L.icon({
 	iconAnchor: [75, 29]
 	});
 	
+=======
+	var barty = L.icon({
+		iconUrl: 'barty.png',
+		iconRetinaUrl: 'bartyx2.png',
+		iconSize: [150, 56],
+		iconAnchor: [75, 29]
+	});
+	
+	var connie = L.icon({
+		iconUrl: 'connie.png',
+		iconRetinaUrl: 'conniex2.png',
+		iconSize: [150, 56],
+		iconAnchor: [75, 29]
+	});
+	
+	var jasmine = L.icon({
+		iconUrl: 'jasmine.png',
+		iconRetinaUrl: 'jasminex2.png',
+		iconSize: [150, 56],
+		iconAnchor: [75, 29]
+	});
+	
+	var ellen = L.icon({
+		iconUrl: 'ellen.png',
+		iconRetinaUrl: 'ellenx2.png',
+		iconSize: [150, 56],
+		iconAnchor: [75, 29]
+	});
+	
+>>>>>>> FETCH_HEAD
 var joshua = L.icon({
 	iconUrl: 'joshua.png',
 	iconRetinaUrl: 'joshuax2.png',
@@ -81,3 +112,18 @@ var snape = L.icon({
 	});
 	
 	
+<<<<<<< HEAD
+=======
+var myIcon = L.icon({
+	iconUrl: 'http://jfact0ry.com/maps/harrypotter/bolt.png',
+	iconRetinaUrl: 'http://jfact0ry.com/maps/harrypotter/boltx2.png',
+	iconSize: [18, 46],
+	iconAnchor: [5, 44],
+	popupAnchor: [0, -40],
+	shadowUrl: 'http://jfact0ry.com/maps/harrypotter/shadow.png',
+	shadowRetinaUrl: 'http://jfact0ry.com/maps/harrypotter/shadowx2.png',
+	shadowSize: [27, 16],
+	shadowAnchor: [13, 6]
+});
+	
+>>>>>>> FETCH_HEAD
