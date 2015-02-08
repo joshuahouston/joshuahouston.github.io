@@ -4,6 +4,7 @@
 <meta charset=utf-8 />
 <title>Starrigavan Area</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <script src="landslide.js"></script>
@@ -18,22 +19,42 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.125, -135.328], 14);
 
+$.getJSON('photos.json', function(data) {
+    var geojson = L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {icon: L.mapbox.marker.icon({
+    'marker-size': 'small',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'camera'
+  })})
+		},
+      onEachFeature: function (feature, layer) {
+		  layer.bindPopup(feature.properties.desc);
+      }
+    });
+    geojson.addTo(map);
+  });
+
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
-var geojson = { type: 'LineString', coordinates: landslide };
-var start = [10, 20];
-var momentum = [3, 3];
+var path = function (place) {
+var geojson = { type: 'LineString', coordinates: place };
+var start = [-135.326375, 57.05361];
+var momentum = [0, 0];
 
 for (var i = 0; i < 300; i++) {
     start[0] += momentum[0];
     start[1] += momentum[1];
-    if (start[1] > 60 || start[1] < -60) momentum[1] *= -1;
-    if (start[0] > 170 || start[0] < -170) momentum[0] *= -1;
+    if (start[1] > 0 || start[1] < 0) momentum[1] *= -1;
+    if (start[0] > 0 || start[0] < 0) momentum[0] *= -1;
     geojson.coordinates.push(start.slice());
 }
 
 // Add this generated geojson object to the map.
-L.geoJson(geojson).addTo(map);
+L.geoJson(geojson, {
+    color: '#2f4f4f',
+    opacity: 0.5
+}).addTo(map);
 
 // Create a counter with a value of 0.
 var j = 0;
@@ -41,7 +62,8 @@ var j = 0;
 // Create a marker and add it to the map.
 var marker = L.marker([0, 0], {
   icon: L.mapbox.marker.icon({
-    'marker-color': '#f86767'
+    'marker-color': '#f86767',
+	'marker-size': 'small'
   })
 }).addTo(map);
 
@@ -57,6 +79,8 @@ function tick() {
     // until `j` reaches the length of the array.
     if (++j < geojson.coordinates.length) setTimeout(tick, 10);
 }
+};
+path(landslide);
 </script>
 </body>
 </html>
