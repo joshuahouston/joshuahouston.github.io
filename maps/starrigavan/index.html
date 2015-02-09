@@ -31,7 +31,7 @@ $.getJSON('markers.json', function(data) {
 		},
       onEachFeature: function (feature, layer) {
 		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>', {
-			  maxWidth: 500
+			  maxWidth: 512
 		  });
       }
     });
