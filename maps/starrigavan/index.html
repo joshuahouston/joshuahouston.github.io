@@ -19,7 +19,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.125, -135.328], 14);
 
-$.getJSON('photos.json', function(data) {
+$.getJSON('markers.json', function(data) {
     var geojson = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {icon: L.mapbox.marker.icon({
@@ -29,7 +29,7 @@ $.getJSON('photos.json', function(data) {
   })})
 		},
       onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<p\>' + feature.properties.desc + '\</p\>');
+		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
       }
     });
     geojson.addTo(map);
