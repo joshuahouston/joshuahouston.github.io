@@ -1,4 +1,4 @@
-var flourish = [[
+var flourish = [
 			[
               -135.323054,
               57.050124
