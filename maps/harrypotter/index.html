@@ -42,7 +42,7 @@ var map = L.mapbox.map('map', 'jfactory.714fd5c2', {
 	infoControl: false,
 	attributionControl: true
 })
-	.setView([57.051, -135.319], 15);
+	.setView([57.0493, -135.317], 16);
 	L.control.locate().addTo(map);
 
 map.attributionControl
@@ -90,7 +90,7 @@ var momentum = [3, 3];
 	          geojson.coordinates[j][1], 
 	          geojson.coordinates[j][0])); 
 
-	      if (++j < geojson.coordinates.length) setTimeout(tick, 500); 
+	      if (++j < geojson.coordinates.length) setTimeout(tick, 600); 
 	  } 
 	}; 
 
