@@ -6,74 +6,54 @@
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<script src="paths.js"></script>
+<script src="script.js"></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
+<link href='style.css' rel='stylesheet' />
 </head>
 <body>
 <div id='map'></div>
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.l3pal08p')
-    .setView([59.59, -139.3], 12);
 
-/*
-	$.getJSON('hp.json', function(data) {
-	    var geojson = L.geoJson(data, {
-			pointToLayer: function(feature, latlng) {
-				return L.marker(latlng, {icon: myIcon})
-			},
-	      onEachFeature: function (feature, layer) {
-			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>');
-	      }
-	    });
-	    geojson.addTo(map);
-	  });
-*/
-
-var path = function (person,place) { 
-var geojson = { type: 'LineString', coordinates: place };
-var start = [10, 20];
-var momentum = [3, 3]; 
-
-	  for (var i = 0; i < 300; i++) { 
-	      start[0] += momentum[0]; 
-	      start[1] += momentum[1]; 
-	      if (start[1] > 60 || start[1] < -60) momentum[1] *= -1; 
-	      if (start[0] > 170 || start[0] < -170) momentum[0] *= -1; 
-	      geojson.coordinates.push(start.slice()); 
-	  } 
-
-	  // Add this generated geojson object to the map. 
-	      L.geoJson(geojson, { 
-	          opacity: 0 
-	      }).addTo(map); 
-
-	  // Create a counter with a value of 0. 
-	  var j = 0; 
-
-	  // Create a marker and add it to the map. 
-	  var marker = L.marker([0, 0], { 
-	      icon: person 
-	  }).addTo(map); 
-
-	  tick(); 
-	  function tick() { 
-	      // Set the marker to be at the same point as one 
-	      // of the segments or the line. 
-	      marker.setLatLng(L.latLng( 
-	          geojson.coordinates[j][1], 
-	          geojson.coordinates[j][0])); 
-
-	      // Move to the next point of the line 
-	      // until `j` reaches the length of the array. 
-	      if (++j < geojson.coordinates.length) setTimeout(tick, 500); 
-	  } 
-	  }; 
-
-</script>
+<article id='narrative'>
+  <div class='sections prose'>
+    <section id='cover' class='cover active'>
+      <h2>Kayaking Russell Fiord to Hubbard Glacier</h2>
+        <p>Yakutat, Alaska - Population: 800. Cell-service: none. If Yakutat was the only place in Alaska you ever visited, you might have a skewed perception of Alaska. Just ask Andy Callender.</p>
+      <small class='scroll quiet'>Scroll &#x25BE;</small>
+    </section>
+    <section id='portage'>
+        <h3>Portaging</h3>
+        <p>Portaging was a grueling .7 miles of carrying the kayaks and all the gear. Several trips back and forth were made.</p>
+    </section>
+    <section id='night1'>
+      <h3>First night in Russell Fiord Wilderness</h3>
+      <p>Cheese on cheese. We also lost the little thing to grab the pots and pans. That was a pain. We were all exhausted from the portage.</p>
+    </section>
+    <section id='night2'>
+      <h3>Cape Enchantment</h3>
+      <p>Holmes and Watson's investigations take them across London. Sherlock deduces that West was murdered elsewhere, then moved to Aldgate Station to create the illusion that he was crushed on the tracks by a train. On their way to Woolwich Sherlock dispatches a telegram to Mycroft at London Bridge: "Send list of all foreign spies known to be in England, with full address."</p>
+    </section>
+    <section id='night3'>
+      <h3>Glacier View</h3>
+      <p>While investigating at Woolwich Arsenal Sherlock learns that West did not have the three keys&mdash;door, office, and safe&mdash;necessary to steal the papers. The train station clerk mentions seeing an agitated West boarding the 8:15 train to London Bridge. Sherlock suspects West of following someone who had access to the Woolwich chief's keyring with all three keys.</p>
+    </section>
+    <section id='glacier'>
+        <h3>Imax theater presents: Hubbard Glacier. Showing times: 24/7</h3>
+      <p>Mycroft responds to Sherlock's telegram and mentions several spies. Hugo Oberstein of 13 Caulfield Gardens catches Sherlock's eye. He heads to the nearby Gloucester Road station to investigate and learns that the windows of Caulfield Gardens open over rail tracks where trains stop frequently.</p>
+    </section>
+    <section id='night4'>
+      <h3>Wild Strawberries and Nagoon Berries</h3>
+      <p>Holmes deduces that the murderer placed West atop a stopped train at Caulfield Gardens. The train traveled to Aldgate Station before West's body finally toppled off. Backtracking to the criminal's apartment, Holmes finds a series of classified ads from <em>The Daily Telegraph</em> stashed away. All are under the name Pierrot: "Monday night after nine. Two taps. Only ourselves. Do not be so suspicious. Payment in hard cash when goods delivered."</p>
+    </section>
+    <section id='night5'>
+      <h3>Recommended by Bob</h3>
+      <p>Holmes and Watson head to The Daily Telegraph and place an ad to draw out the criminal. It reads: "To-night. Same hour. Same place. Two taps. Most vitally important. Your own safety at stake. Pierrot." The trap works and Holmes catches the criminal: Colonel Valentine Walter, the brother of Woolwich Arsenal's chief. He confesses to working for Hugo Oberstein to obtain the submarine plans in order to pay off his debts.</p>
+    </section>
+    <section id='night6'>
+      <h3>Brussel Sprouts</h3>
+      <p>Walter writes to Oberstein and convinces him to meet in the smoking room of the Charing Cross Hotel where he promises additional plans for the submarine in exchange for money. The plan works and Holmes and Watson catch both criminals.
+        Walter writes to Oberstein and convinces him to meet in the smoking room of the Charing Cross Hotel where he promises additional plans for the submarine in exchange for money. The plan works and Holmes and Watson catch both criminals.Walter writes to Oberstein and convinces him to meet in the smoking room of the Charing Cross Hotel where he promises additional plans for the submarine in exchange for money. The plan works and Holmes and Watson catch both criminals.Walter writes to Oberstein and convinces him to meet in the smoking room of the Charing Cross Hotel where he promises additional plans for the submarine in exchange for money. The plan works and Holmes and Watson catch both criminals.</p>
+    </section>
+  </div>
+</article>
 </body>
 </html>
