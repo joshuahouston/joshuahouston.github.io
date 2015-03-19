@@ -15,7 +15,7 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-139.45224, 59.97916] },
  properties: { id: "night3" }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.46664, 59.98678] },
- properties: { id: "glacier", zoom: 13 }, type: 'Feature' },
+ properties: { id: "glacier", zoom: 14 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.25067, 59.86049] },
   properties: { id: "night4" }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.281, 59.82794] },
