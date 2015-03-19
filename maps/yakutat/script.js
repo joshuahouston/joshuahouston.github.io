@@ -24,7 +24,7 @@ var places = { type: 'FeatureCollection', features: [
   properties: { id: "night6" }, type: 'Feature' }
 ]};
 
-var map = L.mapbox.map('map', 'jfactory.b075256a', {
+var map = L.mapbox.map('map', 'jfactory.7db4726a', {
     zoomControl: false
 });
 
