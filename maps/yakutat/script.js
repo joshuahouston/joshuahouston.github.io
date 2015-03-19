@@ -7,7 +7,7 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-139.644084, 59.5008] },
   properties: { id: "cover", zoom: 9 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.375176, 59.59879] },
-  properties: { id: "portage", zoom: 14 }, type: 'Feature' },
+  properties: { id: "portage", zoom: 15 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.26559, 59.666921] },
   properties: { id: "night1" }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-139.31807, 59.85517] },
