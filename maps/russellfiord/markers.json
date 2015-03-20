@@ -7,7 +7,7 @@
         "name": "Russell Fiord Wilderness",
         "img": 1232,
         "link": "https://farm3.staticflickr.com/2908/14492987029_4ee8787a70_b.jpg",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7640/16249392443_3ed6d5e411_n.jpg\">"
+        "desc": "<img src=\"https://farm8.staticflickr.com/7640/16249392443_3ed6d5e411_n.jpg\" width=\"320\" height=\"240\" alt=\"The sign welcoming us to Russell Fiord Wilderness.\">"
       },
       "geometry": {
         "type": "Point",
@@ -23,7 +23,7 @@
         "name": "Yellow Kayaks",
         "img": 1877,
         "link": "https://farm4.staticflickr.com/3901/14492906640_65d3bf6552_b.jpg",
-        "desc": "<img src=\"https://farm9.staticflickr.com/8713/16868193932_b878d72c05_n.jpg\">"
+        "desc": "<img src=\"https://farm9.staticflickr.com/8713/16868193932_b878d72c05_n.jpg\" width=\"320\" height=\"240\" alt=\"Jasmine and Ellen in their bright yellow kayaks.\">"
       },
       "geometry": {
         "type": "Point",
@@ -39,7 +39,7 @@
         "name": "Bears",
         "img": 1858,
         "link": "https://farm4.staticflickr.com/3858/14678840512_3e45f99a53_b.jpg",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7586/16249621363_41526151be_n.jpg\">"
+        "desc": "<img src=\"https://farm8.staticflickr.com/7586/16249621363_41526151be_n.jpg\" width=\"320\" height=\"240\" alt=\"A sow and two cubs. They hid soon after seeing us.\">"
       },
       "geometry": {
         "type": "Point",
@@ -55,7 +55,7 @@
         "name": "Sea-green",
         "img": 1915,
         "link": "https://farm4.staticflickr.com/3908/14676649234_7460acf8b6_b.jpg",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7598/16868248722_3806bfb866_n.jpg\">"
+        "desc": "<img src=\"https://farm8.staticflickr.com/7598/16868248722_3806bfb866_n.jpg\" width=\"320\" height=\"240\" alt=\"The sun came out and the color of the sea was marvelous.\">"
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +71,7 @@
         "name": "Scoot",
         "img": 1901,
         "link": "https://farm3.staticflickr.com/2898/14492354380_93dfdca02c_b.jpg",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7620/16683324829_b9536c9f00_n.jpg\">"
+        "desc": "<img src=\"https://farm8.staticflickr.com/7620/16683324829_b9536c9f00_n.jpg\" width=\"320\" height=\"240\" alt=\"The fastest of the boats.\">"
       },
       "geometry": {
         "type": "Point",
@@ -87,7 +87,7 @@
         "name": "Waterfall",
         "img": 1369,
         "link": "https://farm3.staticflickr.com/2928/14492956029_7e3d0b650a_b.jpg",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7627/16682139110_7b30f6db13_n.jpg\">"
+        "desc": "<img src=\"https://farm8.staticflickr.com/7627/16682139110_7b30f6db13_n.jpg\" width=\"320\" height=\"240\" alt=\"Lots of waterfalls in the fjords.\">"
       },
       "geometry": {
         "type": "Point",
@@ -103,7 +103,7 @@
         "name": "Glacier Panorama",
         "img": 2097,
         "link": "https://farm9.staticflickr.com/8579/16861358541_49ff68f3da_b.jpg",
-        "desc": "<img src=\"https://farm9.staticflickr.com/8579/16861358541_49ff68f3da_n.jpg\">"
+        "desc": "<img src=\"https://farm9.staticflickr.com/8579/16861358541_49ff68f3da.jpg\" width=\"500\" height=\"138\" alt=\"A panorama of the glacier.\">"
       },
       "geometry": {
         "type": "Point",
