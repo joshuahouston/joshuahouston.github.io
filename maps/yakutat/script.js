@@ -31,6 +31,23 @@ var map = L.mapbox.map('map', 'jfactory.7db4726a', {
 var placesLayer = L.mapbox.featureLayer(places)
     .addTo(map);
 
+$.getJSON('markers.json', function(data) {
+    var geojson = L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {icon: L.mapbox.marker.icon({
+    'marker-size': 'small',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'camera'
+  })})
+		},
+      onEachFeature: function (feature, layer) {
+		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>', {
+			  maxWidth: 520
+		  });
+      }
+    });
+    geojson.addTo(map);
+  });
 // Ahead of time, select the elements we'll need -
 // the narrative container and the individual sections
 var narrative = document.getElementById('narrative'),
