@@ -63,7 +63,7 @@ function setId(newId) {
     // marker to a different color and zooming to it.
     placesLayer.eachLayer(function(layer) {
         if (layer.feature.properties.id === newId) {
-            map.setView(layer.getLatLng(), layer.feature.properties.zoom || 10);
+            map.setView(layer.getLatLng(), layer.feature.properties.zoom || 11);
             layer.setIcon(L.mapbox.marker.icon({
                 'marker-color': '#a8f'
             }));
