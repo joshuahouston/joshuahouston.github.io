@@ -96,22 +96,6 @@
           59.81177
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Glacier Panorama",
-        "img": 2097,
-        "link": "https://farm9.staticflickr.com/8579/16861358541_49ff68f3da_b.jpg",
-        "desc": "<img src=\"https://farm9.staticflickr.com/8579/16861358541_49ff68f3da_n.jpg\">"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -139.4666,
-          59.9883
-        ]
-      }
     }
   ]
 }
