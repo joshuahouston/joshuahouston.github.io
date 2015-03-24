@@ -25,14 +25,21 @@ $.getJSON('20150322.json', function(data) {
 		style: myStyle
 	 }).addTo(map);
 	 });
+  */
+  
+var myStyle = {
+  "color": "#ff7800",
+  "weight": 5,
+  "opacity": 0.7
+  };
   
 $.getJSON('20150322w.json', function(data) {
-	    L.geoJson(data).addTo(map);
-	  };
+	    L.geoJson(data, {
+		style: myStyle
+	}).addTo(map);
+});
 	  
-*/
-
-var garmin = omnivore.gpx('20150322k.gpx')
+var garmin = omnivore.gpx('20150322.gpx')
     .on('ready', function() {
         map.fitBounds(garmin.getBounds());
     })
