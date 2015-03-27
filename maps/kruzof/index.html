@@ -24,6 +24,11 @@ var map = L.map('map', {
   {id: 'examples.map-20v6611k'});
   
 map.addLayer(layer);
+
+	$.getJSON('kruzof.geojson', function(data) {
+	    var geojson = L.geoJson(data);
+	    geojson.addTo(map);
+	  });
 </script>
 </body>
 </html>
