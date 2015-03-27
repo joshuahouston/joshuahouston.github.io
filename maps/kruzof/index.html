@@ -26,7 +26,11 @@ var map = L.map('map', {
 map.addLayer(layer);
 
 	$.getJSON('kruzof.geojson', function(data) {
-	    var geojson = L.geoJson(data);
+	    var geojson = L.geoJson(data, {
+			onEachFeature: function (feature, layer) {
+			  layer.bindPopup('Kruzof Island');
+	      }
+	    });
 	    geojson.addTo(map);
 	  });
 </script>
