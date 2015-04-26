@@ -8541,31 +8541,7 @@ var jjh = [[
             [
               -135.326736,
               57.053526
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "ACTIVE LOG122828",
-        "cmt": null,
-        "desc": null,
-        "src": null,
-        "link1_href": null,
-        "link1_text": null,
-        "link1_type": null,
-        "link2_href": null,
-        "link2_text": null,
-        "link2_type": null,
-        "number": null,
-        "type": null
-      },
-      "geometry": {
-        "type": "MultiLineString",
-        "coordinates": [
-          [
+            ],
             [
               -135.293685,
               57.047435
