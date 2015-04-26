@@ -18,7 +18,7 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.051, -135.293], 15);
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.054, -135.288], 15);
 
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
@@ -63,7 +63,7 @@ function tick() {
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++j < geojson.coordinates.length) setTimeout(tick, 50);
+    if (++j < geojson.coordinates.length) setTimeout(tick, 35);
 }
 };
 
