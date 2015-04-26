@@ -62,14 +62,14 @@ map.attributionControl
 
 var path = function (person,place) { 
 var geojson = { type: 'LineString', coordinates: place };
-var start = [10, 20];
-var momentum = [3, 3]; 
+var start = [0, 0];
+var momentum = [0, 0]; 
 
 	  for (var i = 0; i < 300; i++) { 
 	      start[0] += momentum[0]; 
 	      start[1] += momentum[1]; 
-	      if (start[1] > 60 || start[1] < -60) momentum[1] *= -1; 
-	      if (start[0] > 170 || start[0] < -170) momentum[0] *= -1; 
+	      if (start[1] > 0 || start[1] < 0) momentum[1] *= -1; 
+	      if (start[0] > 0 || start[0] < 0) momentum[0] *= -1; 
 	      geojson.coordinates.push(start.slice()); 
 	  } 
 
