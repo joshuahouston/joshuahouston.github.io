@@ -22,10 +22,12 @@ var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.054, -135.288], 1
 
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
-var red = '#f86767'
-var blue = '#1087BF'
-var yellow = '#ffff33'
-var path = function (place,color) {
+var red = '#f86767';
+var blue = '#1087BF';
+var yellow = '#ffff33';
+var quick = 20;
+var slow = 60;
+var path = function (place,color,speed) {
 var geojson = { type: 'LineString', coordinates: place };
 var start = [-135.279400, 57.056217];
 var momentum = [0, 0];
@@ -63,13 +65,13 @@ function tick() {
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++j < geojson.coordinates.length) setTimeout(tick, 35);
+    if (++j < geojson.coordinates.length) setTimeout(tick, speed);
 }
 };
 
-path(jjh,red);
-path(jar,blue);
-path(jaj,yellow);
+path(jjh,red,quick);
+path(jar,blue,slow);
+path(jaj,yellow,quick);
 </script>
 </body>
 </html>
