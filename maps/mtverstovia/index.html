@@ -26,7 +26,7 @@ var red = '#f86767';
 var yellow = '#ffff33';
 var path = function (place,color) {
 var geojson = { type: 'LineString', coordinates: place };
-var start = [-135.279400, 57.056217];
+var start = [-135.293924, 57.047308];
 var momentum = [0, 0];
 
 for (var i = 0; i < 300; i++) {
@@ -62,7 +62,7 @@ function tick() {
 
     // Move to the next point of the line
     // until `j` reaches the length of the array.
-    if (++j < geojson.coordinates.length) setTimeout(tick, speed);
+    if (++j < geojson.coordinates.length) setTimeout(tick, 16.67);
 }
 };
 
