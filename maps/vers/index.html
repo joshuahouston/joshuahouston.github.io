@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Verstovia Ghost Race</title>
+<title>Verstovia Hike</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-<script src="http://jfact0ry.com/maps/verstovia/verstovia.js"></script>
+<script src="MtVerstovia.js"></script>
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -23,11 +23,8 @@ var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.054, -135.288], 1
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
 var red = '#f86767';
-var blue = '#1087BF';
 var yellow = '#ffff33';
-var quick = 20;
-var slow = 60;
-var path = function (place,color,speed) {
+var path = function (place,color) {
 var geojson = { type: 'LineString', coordinates: place };
 var start = [-135.279400, 57.056217];
 var momentum = [0, 0];
@@ -69,9 +66,8 @@ function tick() {
 }
 };
 
-path(jjh,red,quick);
-path(jar,blue,slow);
-path(jaj,yellow,quick);
+path(versJo,red);
+path(versJa,yellow);
 </script>
 </body>
 </html>
