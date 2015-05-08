@@ -1,6 +1,6 @@
 define( [ 'module'	// to set .baseURL
-	, './threex.suzanne'
+	, './threex.fedora'
 	], function(module){
 	// set baseUrl for this extension
-	THREEx.Suzanne.baseUrl	= module.uri+'/../';
+	THREEx.Fedora.baseUrl	= module.uri+'/../';
 });

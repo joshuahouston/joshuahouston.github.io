@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <script src='vendor/three.js/build/three.js'></script>
-<script src='../threex.suzanne.js'></script>
+<script src='../threex.fedora.js'></script>
 <style>body {margin: 0px; background-color: #bbbbbb; overflow: hidden;}</style>
 </head>
 <body>
@@ -20,7 +20,7 @@
 	//		comment								//
 	//////////////////////////////////////////////////////////////////////////////////
 	
-	new THREEx.Suzanne.GeometryLoader(function onLoad(geometry){
+	new THREEx.Fedora.GeometryLoader(function onLoad(geometry){
 		// create a mesh with it
 		var material	= new THREE.MeshNormalMaterial()
 		var mesh	= new THREE.Mesh( geometry, material )

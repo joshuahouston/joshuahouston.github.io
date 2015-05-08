@@ -4,17 +4,17 @@
  */
 var THREEx	= THREEx	|| {}
 
-THREEx.Suzanne		= {}
+THREEx.Fedora		= {}
 
-THREEx.Suzanne.baseUrl	= '../'
+THREEx.Fedora.baseUrl	= '../'
 
 /**
  * THREEx extension
  * 
  * @constructor
  */
-THREEx.Suzanne.GeometryLoader	= function(onLoad){
-	var url		= THREEx.Suzanne.baseUrl + 'models/Suzanne.js'
+THREEx.Fedora.GeometryLoader	= function(onLoad){
+	var url		= THREEx.Fedora.baseUrl + 'models/fedora.js'
 	var loader	= new THREE.JSONLoader()
 	loader.load(url, function( geometry ){
 		// make the monkey to face the camera
