@@ -5,9 +5,9 @@ date:   2015-05-17 12:55:31
 categories: code
 ---
 #New Map
-The last time I mapped Sitka's new Cross Trail I didn't know how to add a line, polygon, and markers to a map from an external file, I had only done that through hard-coding it in to the html. Since my recent GeoJson post, I've realized I can redo my Cross Trail map using Leaflet.
+The last time I mapped Sitka's new Cross Trail I didn't know how to add a line, polygon, and markers to a map from an external file, I had only done that through hard-coding it in to the html. Since my recent GeoJson post, I've realized I can redo my Cross Trail map using Leaflet and adding the GeoJson efficiently through an external file.
 
-In the time that has passed, Sitka's Parks and Recreation have added a new path along Yaw Drive and are now working on a new path from the Old City Cemetery and the Moose Cemetery that will connect along the base of Gavan, bypassing the muskeg area.
+In the time that has passed, Sitka's Parks and Recreation have added a new path along Yaw Drive and are now working on a new path from the Old City Cemetery and the Moose Cemetery that will connect along the base of Gavan, bypassing the muskeg area. (This new part is not on the map at this time)
 
 As always, I GPS'd the new trails and admired the beauty of mapping in QGIS.
 
