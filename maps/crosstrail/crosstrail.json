@@ -4,12 +4,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sitka Cross Trail",
-        "Caption": "The sign posted at both ends of the new trail.",
-        "IMG": "IMG_4112.jpg",
-        "img_date": "2014:11:25 13:37:40",
-        "url": "https://farm8.staticflickr.com/7535/15697558728_1502df2904_n.jpg",
-        "link": "https://flic.kr/p/pV96jh"
+        "name": "Sitka Cross Trail",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7535/15697558728_1502df2904_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4112\">The sign posted at both ends of the new trail",
+        "link": "<a href=\"https://flic.kr/p/pV96jh\">https://flic.kr/p/pV96jh</a>"
       },
       "geometry": {
         "type": "Point",
@@ -22,12 +19,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Rocks",
-        "Caption": "Rocks to be crushed",
-        "IMG": "IMG_4136.jpg",
-        "img_date": "2014:11:25 13:42:59",
-        "url": "https://farm9.staticflickr.com/8643/15265421333_ae5f3537a4_n.jpg",
-        "link": "https://flic.kr/p/pfXgVx"
+        "name": "Rocks",
+        "desc": "<img src=\"https://farm9.staticflickr.com/8643/15265421333_ae5f3537a4_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4136\">Rocks to be crushed",
+        "link": "<a href=\"https://flic.kr/p/pfXgVx\">https://flic.kr/p/pfXgVx</a>"
       },
       "geometry": {
         "type": "Point",
@@ -40,12 +34,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Wide path",
-        "Caption": "The new trail is much wider than the old one",
-        "IMG": "IMG_4142.jpg",
-        "img_date": "2014:11:25 13:45:53",
-        "url": "https://farm8.staticflickr.com/7558/15697757870_6b2c88aa29_n.jpg",
-        "link": "https://flic.kr/p/pVa7vL"
+        "name": "Wide path",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7558/15697757870_6b2c88aa29_n.jpg\" width=\"300\" height=\"87\" alt=\"IMG_4142\">The new trail is much wider than the old one",
+        "link": "<a href=\"https://flic.kr/p/pVa7vL\">https://flic.kr/p/pVa7vL</a>"
       },
       "geometry": {
         "type": "Point",
@@ -58,12 +49,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Turns and views",
-        "Caption": "Turns are smoother and the views can't be beat",
-        "IMG": "IMG_4144.jpg",
-        "img_date": "2014:11:25 13:48:03",
-        "url": "https://farm8.staticflickr.com/7579/15697552588_9cd1f67bdb_n.jpg",
-        "link": "https://flic.kr/p/pV94uq"
+        "name": "Turns and views",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7579/15697552588_9cd1f67bdb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4144\">Turns are smoother and the views can't be beat",
+        "link": "<a href=\"https://flic.kr/p/pV94uq\">https://flic.kr/p/pV94uq</a>"
       },
       "geometry": {
         "type": "Point",
@@ -76,12 +64,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Rock delivery",
-        "Caption": "Rocks being delivered to where they will be crushed",
-        "IMG": "IMG_4145.JPG",
-        "img_date": "2014:11:25 13:50:31",
-        "url": "https://farm8.staticflickr.com/7463/15697763720_e88fe9f6fd_n.jpg",
-        "link": "https://flic.kr/p/pVa9fC"
+        "name": "Rock delivery",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7463/15697763720_e88fe9f6fd_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4145\">Rocks being delivered to where they will be crushed",
+        "link": "<a href=\"https://flic.kr/p/pVa9fC\">https://flic.kr/p/pVa9fC</a>"
       },
       "geometry": {
         "type": "Point",
@@ -94,12 +79,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "More Views",
-        "Caption": "Verstovia on the right and to the left (not pictured) is a good view of the Sisters",
-        "IMG": "IMG_4147.jpg",
-        "img_date": "2014:11:25 13:51:20",
-        "url": "https://farm8.staticflickr.com/7569/15699297927_f611d7abdb_n.jpg",
-        "link": "https://flic.kr/p/pVi1jt"
+        "name": "More Views",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7569/15699297927_f611d7abdb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4147\">Verstovia on the right and to the left (not pictured) is a good view of the Sisters",
+        "link": "<a href=\"https://flic.kr/p/pVi1jt\">https://flic.kr/p/pVi1jt</a>"
       },
       "geometry": {
         "type": "Point",
@@ -112,12 +94,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Water",
-        "Caption": "For runners, you had to plan on getting your sneakers muddy",
-        "IMG": "IMG_4157.jpg",
-        "img_date": "2014:11:25 13:55:58",
-        "url": "https://farm8.staticflickr.com/7574/15883071171_bbd3b96d72_n.jpg",
-        "link": "https://flic.kr/p/qcwTGF"
+        "name": "Water",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7574/15883071171_bbd3b96d72_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4157\">For runners, you had to plan on getting your sneakers muddy",
+        "link": "<a href=\"https://flic.kr/p/qcwTGF\">https://flic.kr/p/qcwTGF</a>"
       },
       "geometry": {
         "type": "Point",
@@ -130,12 +109,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Xtratufs",
-        "Caption": "Casual hikers were best off wearing Xtratufs",
-        "IMG": "IMG_4159.jpg",
-        "img_date": "2014:11:25 13:56:51",
-        "url": "https://farm8.staticflickr.com/7512/15699293907_f750f365ba_n.jpg",
-        "link": "https://flic.kr/p/pVhZ8a"
+        "name": "Xtratufs",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7512/15699293907_f750f365ba_n.jpg\" width=\"300\" height=\"87\" alt=\"IMG_4159\">Casual hikers were best off wearing Xtratufs",
+        "link": "<a href=\"https://flic.kr/p/pVhZ8a\">https://flic.kr/p/pVhZ8a</a>"
       },
       "geometry": {
         "type": "Point",
@@ -148,12 +124,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Sharp turns",
-        "Caption": "It was pretty tough to bike, even on the flat parts",
-        "IMG": "IMG_4163.jpg",
-        "img_date": "2014:11:25 13:57:47",
-        "url": "https://farm9.staticflickr.com/8646/15859239586_c6d7996862_n.jpg",
-        "link": "https://flic.kr/p/qaqKph"
+        "name": "Sharp turns",
+        "desc": "<img src=\"https://farm9.staticflickr.com/8646/15859239586_c6d7996862_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4163\">It was pretty tough to bike, even on the flat parts",
+        "link": "<a href=\"https://flic.kr/p/qaqKph\">https://flic.kr/p/qaqKph</a>"
       },
       "geometry": {
         "type": "Point",
@@ -166,12 +139,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Jump",
-        "Caption": "Leaping over puddles and logs was common",
-        "IMG": "IMG_4169.jpg",
-        "img_date": "2014:11:25 13:59:53",
-        "url": "https://farm8.staticflickr.com/7476/15859238096_bc9c1b3720_n.jpg",
-        "link": "https://flic.kr/p/qaqJXA"
+        "name": "Jump",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7476/15859238096_bc9c1b3720_n.jpg\" width=\"300\" height=\"87\" alt=\"IMG_4169\">Leaping over puddles and logs was common",
+        "link": "<a href=\"https://flic.kr/p/qaqJXA\">https://flic.kr/p/qaqJXA</a>"
       },
       "geometry": {
         "type": "Point",
@@ -184,12 +154,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Views",
-        "Caption": "The views are always pretty though",
-        "IMG": "IMG_4175.jpg",
-        "img_date": "2014:11:25 14:02:43",
-        "url": "https://farm9.staticflickr.com/8669/15699014449_97cdcc1098_n.jpg",
-        "link": "https://flic.kr/p/pVgy3V"
+        "name": "Views",
+        "desc": "<img src=\"https://farm9.staticflickr.com/8669/15699014449_97cdcc1098_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4175\">The views are always pretty, no matter what trail you're on",
+        "link": "<a href=\"https://flic.kr/p/pVgy3V\">https://flic.kr/p/pVgy3V</a>"
       },
       "geometry": {
         "type": "Point",
@@ -202,12 +169,9 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Old & New",
-        "Caption": "The old trail next to the new trail.",
-        "IMG": "IMG_4185.jpg",
-        "img_date": "2014:11:25 14:06:45",
-        "url": "https://farm9.staticflickr.com/8604/15262795094_56364bf4d4_n.jpg",
-        "link": "https://flic.kr/p/pfHPey"
+        "name": "Old & New",
+        "desc": "<img src=\"https://farm9.staticflickr.com/8604/15262795094_56364bf4d4_n.jpg\" width=\"300\" height=\"87\" alt=\"IMG_4185\">The old trail next to the new trail.",
+        "link": "<a href=\"https://flic.kr/p/pfHPey\">https://flic.kr/p/pfHPey</a>"
       },
       "geometry": {
         "type": "Point",
@@ -220,7 +184,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Name": "Old Cross Trail"
+        "name": "Old Cross Trail",
+		"desc": "The old trail in all of its charm"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -569,7 +534,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New Trail"
+        "name": "New Trail",
+		"desc": "The new multi-modal trail"
       },
       "geometry": {
         "type": "MultiLineString",
@@ -738,7 +704,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New Trail"
+        "name": "New Trail",
+		"desc": "The new multi-modal trail"
       },
       "geometry": {
         "type": "MultiLineString",

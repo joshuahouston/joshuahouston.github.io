@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Cross Trail, New Map"
-date:   2015-05-17 09:26:31
+date:   2015-05-17 12:16:31
 categories: code
 ---
 #New Map
@@ -13,8 +13,8 @@ As always, I GPS'd the new trails and admired the beauty of mapping in QGIS.
 
 ![GPS Traces in QGIS][qgis]
 
-My original intention of this map was to show some photos of the nice improvements of the new trail and how it was relocated away from the muskeg.
+My original intention of this map was to show some photos of the nice improvements of the new trail, document the conditions of the old trail, and show how they relate to the surrounding muskeg spots. The old map I made with ArcGIS required me uploading shp files of the muskeg boundaries. Using OpenStreetMap allows me to simply edit the data and then I can use their rendered tiles as my background, there is no uploading required.
 
-<iframe src="http://jfact0ry.com/maps/crosstrail/index.html" frameborder="0" width="100%" height="320">Here is where the map should be</iframe>
+<iframe src="http://jfact0ry.com/maps/crosstrail/index.html" frameborder="0" width="100%" height="520">Here is where the map should be</iframe>
 
 [qgis]: https://c1.staticflickr.com/9/8871/17599401568_25b549f745_c.jpg "New trails in QGIS"

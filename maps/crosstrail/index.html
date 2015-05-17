@@ -14,10 +14,13 @@
 </head>
 <body>
 <div id='map'></div>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/Leaflet.fullscreen.min.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v0.0.4/leaflet.fullscreen.css' rel='stylesheet' />
 <script>
 // create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('map').setView([57.06, -135.316], 16);
 
+L.control.fullscreen().addTo(map);
 // add an OpenStreetMap tile layer
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -29,7 +32,7 @@ $.getJSON('crosstrail.json', function(data) {
 			return L.marker(latlng)
 		},
       onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.url + '\</p\>', {
+		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>', {
 			  maxWidth: 420
 		  });
       }
