@@ -52,7 +52,7 @@
     {
       "type": "Feature",
       "properties": {
-        "desc": "<img src=\"https://farm8.staticflickr.com/7298/16283614518_0a863bf6a2.jpg\" width=\"300\" height=\"87\" alt=\"IMG_4924\">",
+        "desc": "<img src=\"https://farm8.staticflickr.com/7298/16283614518_0a863bf6a2.jpg\" width=\"225\" height=\"87\" alt=\"IMG_4924\">",
         "name": "Panorama"
       },
       "geometry": {
@@ -84,7 +84,7 @@
     {
       "type": "Feature",
       "properties": {
-        "desc": "<img src=\"https://c2.staticflickr.com/8/7408/15848721524_08421538d3.jpg\" width=\"225\" height=\"300\" alt=\"IMG_4952\">",
+        "desc": "<img src=\"https://farm9.staticflickr.com/8592/15851144433_a56585074c.jpg\" width=\"225\" height=\"300\" alt=\"IMG_4952\">",
         "name": "Icy Waterfall"
       },
       "geometry": {
