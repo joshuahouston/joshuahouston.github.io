@@ -9,7 +9,7 @@ I'm learning how to add an external geojson file to a map. Well, I've managed to
 
 Here is the map I'm testing out:
 
-<iframe src="http://jfact0ry.com/maps/geojson/test2.html" frameborder="0" width="100%" height="250">Here is where the map should be</iframe>
+<iframe src="http://jfact0ry.com/maps/geojson/test1.html" frameborder="0" width="100%" height="250">Here is where the map should be</iframe>
 
 You can't click on the markers. I can add them this way:
 {% highlight javascript %}
