@@ -2,32 +2,28 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Sunny day in March</title>
+<title>Starrigavan Landslide Area</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
+}
 </style>
 </head>
 <body>
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.038, -135.33], 14);
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.1245, -135.318], 16);
 
-var myStyle = {
-  "color": "#ff7800",
-  "weight": 5,
-  "opacity": 0.7
-  };
-  
-$.getJSON('20150322.geojson', function(data) {
-	    var geojson = L.geoJson(data, {
-		style: myStyle
-	 }).addTo(map);
-	 });
+$.getJSON('landslide.json', function(data) {
+  var geojson = L.geoJson(data);
+geojson.addTo(map);
+	
+});
 </script>
 </body>
 </html>

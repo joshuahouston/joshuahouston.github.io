@@ -1,0 +1,297 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm9.staticflickr.com/8606/16445362676_a81335580a.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4906\">",
+        "name": "USFS Map"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.32655,
+            57.12451
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7284/16469616181_c707337282.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4908\">",
+        "name": "Ice in Creek"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.324446,
+            57.12387
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7305/15848822624_e97913fe65.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4914\">",
+        "name": "Landslide"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.318197,
+            57.123143
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7298/16283614518_0a863bf6a2.jpg\" width=\"500\" height=\"108\" alt=\"IMG_4924\">",
+        "name": "Panorama"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.314629,
+            57.123201
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm9.staticflickr.com/8680/16470295742_a775155bdc.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4946\">",
+        "name": "More Landslide"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.31335,
+            57.124552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm9.staticflickr.com/8592/15851144433_a56585074c.jpg\" width=\"375\" height=\"500\" alt=\"IMG_4952\">",
+        "name": "Icy Waterfall"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.313315,
+            57.124614
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7399/15848705524_d20fdb5c53.jpg\" width=\"375\" height=\"500\" alt=\"IMG_4956\">",
+        "name": "Ice Close-Up"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.313342,
+            57.124715
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7284/15848648854_04abb09bd9.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4961\">",
+        "name": "Looking Back"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.313526,
+            57.125536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://farm8.staticflickr.com/7303/16283424338_6a6c33072f.jpg\" width=\"500\" height=\"375\" alt=\"IMG_4971\">",
+        "name": "Life, Death & Destruction"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -135.313433,
+            57.124814
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -135.326719,
+              57.124659
+            ],
+            [
+              -135.324951,
+              57.124463
+            ],
+            [
+              -135.322372,
+              57.124139
+            ],
+            [
+              -135.308779,
+              57.124159
+            ],
+            [
+              -135.308513,
+              57.122289
+            ],
+            [
+              -135.314062,
+              57.121837
+            ],
+            [
+              -135.320502,
+              57.121653
+            ],
+            [
+              -135.32366,
+              57.122627
+            ],
+            [
+              -135.326955,
+              57.124218
+            ],
+            [
+              -135.326719,
+              57.124659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -135.32655,
+            57.12451
+          ],
+          [
+            -135.326499,
+            57.124315
+          ],
+          [
+            -135.324803,
+            57.124015
+          ],
+          [
+            -135.324446,
+            57.12387
+          ],
+          [
+            -135.323732,
+            57.123787
+          ],
+          [
+            -135.322961,
+            57.12356
+          ],
+          [
+            -135.322587,
+            57.123311
+          ],
+          [
+            -135.321659,
+            57.123172
+          ],
+          [
+            -135.32104,
+            57.122915
+          ],
+          [
+            -135.319987,
+            57.122846
+          ],
+          [
+            -135.318984,
+            57.123012
+          ],
+          [
+            -135.31836,
+            57.12302
+          ],
+          [
+            -135.31786,
+            57.123265
+          ],
+          [
+            -135.316915,
+            57.123096
+          ],
+          [
+            -135.315952,
+            57.123135
+          ],
+          [
+            -135.315098,
+            57.123087
+          ],
+          [
+            -135.313983,
+            57.123471
+          ],
+          [
+            -135.313699,
+            57.123873
+          ],
+          [
+            -135.313246,
+            57.124264
+          ],
+          [
+            -135.313433,
+            57.124814
+          ],
+          [
+            -135.313526,
+            57.125536
+          ]
+        ]
+      }
+    }
+  ]
+}
