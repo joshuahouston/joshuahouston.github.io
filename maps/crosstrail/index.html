@@ -5,8 +5,8 @@
 <title>New Cross Trail</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -16,7 +16,7 @@
 <div id='map'></div>
 <script>
 // create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([57.1, -135.29], 13);
+var map = L.map('map').setView([57.06, -135.316], 16);
 
 // add an OpenStreetMap tile layer
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
@@ -26,14 +26,10 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 $.getJSON('crosstrail.json', function(data) {
     var geojson = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {icon: L.mapbox.marker.icon({
-    'marker-size': 'small',
-    'marker-color': '#2f4f4f',
-    'marker-symbol': 'camera'
-  })})
+			return L.marker(latlng)
 		},
       onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>', {
+		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.url + '\</p\>', {
 			  maxWidth: 420
 		  });
       }
