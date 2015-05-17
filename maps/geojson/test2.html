@@ -17,7 +17,7 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.1245, -135.318], 14);
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.1245, -135.318], 15);
 
 $.getJSON('landslide.json', function(data) {
     var geojson = L.geoJson(data, {

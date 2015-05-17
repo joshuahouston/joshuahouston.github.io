@@ -21,4 +21,4 @@ You can't click on the markers. I can add them this way:
   });`
 Maybe... Let me test that, actually.
 <iframe src="http://jfact0ry.com/maps/geojson/test2.html" frameborder="0" width="100%" height="250">Here is where the map should be</iframe>
-
+Umm... what happened?
