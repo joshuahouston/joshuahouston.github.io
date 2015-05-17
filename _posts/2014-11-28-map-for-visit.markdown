@@ -17,8 +17,8 @@ You can specify the spot you want the map to zoom in on and you pick the level o
     var map = L.map('map', {
 	center: [57.049, -135.322],
 	zoom: 16,
-	layers: [streets, playgrounds, walks], // layers that will be on when the map loads
-	detectRetina: true // changes size of symbols if the map loads on a mobile or tablet
+	layers: [streets, playgrounds, walks],
+	detectRetina: true
 	});
 {% endhighlight %}
 
