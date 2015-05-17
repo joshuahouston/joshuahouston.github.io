@@ -148,7 +148,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "name": "Affected Area",
+		"desc": "Taken from the USFS Map"
       },
       "geometry": {
         "type": "Polygon",
@@ -201,7 +202,8 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "name": "Path",
+		"desc": "GPS'd"
       },
       "geometry": {
         "type": "LineString",
