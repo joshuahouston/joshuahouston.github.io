@@ -29,7 +29,7 @@ $.getJSON('crosstrail.json', function(data) {
 			return L.marker(latlng)
 		},
       onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<h3\>' + feature.properties.name + '\</h3\>\<p\>' + feature.properties.desc + '\</p\>');
+		  layer.bindPopup(feature.properties.desc);
       }
     });
     geojson.addTo(map);
