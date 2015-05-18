@@ -12,3 +12,6 @@ github_username:  joshuahouston
 markdown: kramdown
 data_source: data
 gems: ["jemoji"]
+
+highlighter: pygments
+
