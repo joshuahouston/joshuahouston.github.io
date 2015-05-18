@@ -19,21 +19,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Rocks",
-        "desc": "<img src=\"https://farm9.staticflickr.com/8643/15265421333_ae5f3537a4_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4136\"><br>Rocks to be crushed",
-        "link": "<a href=\"https://flic.kr/p/pfXgVx\">https://flic.kr/p/pfXgVx</a>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.321453,
-          57.0623194
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Wide path",
         "desc": "<img src=\"https://farm8.staticflickr.com/7558/15697757870_6b2c88aa29_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4142\"><br>The new trail is much wider than the old one",
         "link": "<a href=\"https://flic.kr/p/pVa7vL\">https://flic.kr/p/pVa7vL</a>"
@@ -64,36 +49,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Rock delivery",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7463/15697763720_e88fe9f6fd_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4145\"><br>Rocks being delivered to where they will be crushed",
-        "link": "<a href=\"https://flic.kr/p/pVa9fC\">https://flic.kr/p/pVa9fC</a>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.31555,
-          57.06057
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "More Views",
-        "desc": "<img src=\"https://farm8.staticflickr.com/7569/15699297927_f611d7abdb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4147\"><br>Verstovia on the right and to the left (not pictured) is a good view of the Sisters",
-        "link": "<a href=\"https://flic.kr/p/pVi1jt\">https://flic.kr/p/pVi1jt</a>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.3148,
-          57.06068
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Water",
         "desc": "<img src=\"https://farm8.staticflickr.com/7574/15883071171_bbd3b96d72_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4157\"><br>For runners, you had to plan on getting your sneakers muddy",
         "link": "<a href=\"https://flic.kr/p/qcwTGF\">https://flic.kr/p/qcwTGF</a>"
@@ -118,21 +73,6 @@
         "coordinates": [
           -135.31498,
           57.05936
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Sharp turns",
-        "desc": "<img src=\"https://farm9.staticflickr.com/8646/15859239586_c6d7996862_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4163\"><br>It was pretty tough to bike, even on the flat parts",
-        "link": "<a href=\"https://flic.kr/p/qaqKph\">https://flic.kr/p/qaqKph</a>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.3159,
-          57.05916
         ]
       }
     },
