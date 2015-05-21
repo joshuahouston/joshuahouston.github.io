@@ -28,7 +28,7 @@ $.getJSON('campsites.json', function(data) {
   })})
 		},
       onEachFeature: function (feature, layer) {
-		  layer.bindPopup(feature.properties.Name);
+		  layer.bindPopup(feature.properties.name);
       }
     });
     markers.addTo(map);
