@@ -124,7 +124,7 @@
     {
       "type": "Feature",
       "properties": {
-        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\"><br>Fresh new trail smell.",
         "name": "Fresh"
       },
       "geometry": {
@@ -138,7 +138,7 @@
     {
       "type": "Feature",
       "properties": {
-        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\"><br>The end. Turn around.",
         "name": "End"
       },
       "geometry": {
@@ -152,7 +152,7 @@
     {
       "type": "Feature",
       "properties": {
-        "desc": "<img src=\"https://c1.staticflickr.com/9/8820/17724021698_15794da114_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8820/17724021698_15794da114_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\"><br>Kaelke Pond on the right.",
         "name": "Kaelke Pond"
       },
       "geometry": {
