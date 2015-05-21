@@ -1,0 +1,355 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "7 - Chaichei"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.46612,
+          57.078733,
+          -0.250372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "7 - Freds Creek"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.605567,
+          57.065753,
+          4.931041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "8,9 - Brent's Beach"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.565712,
+          57.138073,
+          18.871622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "10 - Neva"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.645749,
+          57.325631,
+          64.756136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "11 - Point Leo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.834097,
+          57.390686,
+          4.176806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "12 - Deuce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.083589,
+          57.570748,
+          1.851303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "13 - Something"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.152664,
+          57.604026,
+          0
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "14 - Myriads"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.200954,
+          57.617607,
+          2.52412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "15 - Lock"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.199427,
+          57.724132,
+          1.16219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "16,17 - White Sulphur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.344658,
+          57.805477,
+          9.106119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "18 - Greentop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.447,
+          57.868322,
+          40.979191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "19 - 3 Sided Shelter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.372648,
+          57.998756,
+          3.843668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "20 - King Day"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.425546,
+          58.125151,
+          2.006988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "21 - Elfin Cove"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.341583,
+          58.191511,
+          127.627052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "22 - Mud Bay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.039167,
+          58.217091,
+          17.181581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "23,24 - Bartlett Cove"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.894422,
+          58.450412,
+          32.316007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "25 - Beardsleys"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.955821,
+          58.492554,
+          9.165802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "26 - North Marble"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.065691,
+          58.672726,
+          -21.84713
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "27 - McBride"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.123994,
+          59.031705,
+          25.279337
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "28 - Wolf Point"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.158414,
+          59.002509,
+          1.58572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "29 - Caroline Pt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.143266,
+          58.779133,
+          0.80819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.391419,
+          58.195698,
+          0.623949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.387456,
+          58.198418,
+          38.311293
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "?"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.431392,
+          57.821501,
+          1.82885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Nun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -136.115,
+          57.581486,
+          -16.509574
+        ]
+      }
+    }
+  ]
+}

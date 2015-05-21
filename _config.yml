@@ -15,3 +15,12 @@ gems: ["jemoji"]
 
 highlighter: pygments
 
+links:
+- text: 3D
+  url: /3d/
+  position: top
+- text: Maps
+  url: /maps/
+  position: top
+- text: Music
+  url: /music/
