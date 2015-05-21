@@ -4,6 +4,7 @@
 <meta charset=utf-8 />
 <title>Sitka To Glacier Bay</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
 <style>
@@ -37,9 +38,6 @@ $.getJSON('campsites.json', function(data) {
     var path = L.geoJson(data);
   path.addTo(map);
   });
-  
-  
-  
 </script>
 </body>
 </html>
