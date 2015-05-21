@@ -33,7 +33,25 @@ $.getJSON('campsites.json', function(data) {
     });
     markers.addTo(map);
   });
-  
+/* 
+  $.getJSON('markers.json', function(data) {
+      var geojson = L.geoJson(data, {
+  		pointToLayer: function(feature, latlng) {
+  			return L.marker(latlng, {icon: L.mapbox.marker.icon({
+      'marker-size': 'small',
+      'marker-color': '#2f4f4f',
+      'marker-symbol': 'camera'
+    })})
+  		},
+        onEachFeature: function (feature, layer) {
+  		  layer.bindPopup(feature.properties.name + feature.properties.desc, {
+  			  maxWidth: 520
+  		  });
+        }
+      });
+      geojson.addTo(map);
+    });
+  */
   $.getJSON('path.json', function(data) {
     var path = L.geoJson(data);
   path.addTo(map);
