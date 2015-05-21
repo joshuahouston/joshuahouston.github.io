@@ -124,6 +124,48 @@
     {
       "type": "Feature",
       "properties": {
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "name": "Fresh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.33214330673218,
+          57.05908832965334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "name": "End"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.33203333616257,
+          57.06005968799262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "<img src=\"https://c1.staticflickr.com/9/8820/17724021698_15794da114_n.jpg\" width=\"300\" height=\"300\" alt=\"IMG_4185\",
+        "name": "Kaelke Pond"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.31179070472717,
+          57.05699967729795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Old Cross Trail",
         "desc": "The old trail in all of its charm"
       },
@@ -1188,48 +1230,6 @@
             -135.311922,
             57.055829
           ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "desc": "https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg",
-        "name": "Fresh"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.33214330673218,
-          57.05908832965334
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "desc": "https://c1.staticflickr.com/9/8771/17725523829_9d124ea7fb_n.jpg",
-        "name": "End"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.33203333616257,
-          57.06005968799262
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "desc": "https://c1.staticflickr.com/9/8820/17724021698_15794da114_n.jpg",
-        "name": "Kaelke Pond"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.31179070472717,
-          57.05699967729795
         ]
       }
     }
