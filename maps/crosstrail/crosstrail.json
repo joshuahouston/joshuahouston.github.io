@@ -476,7 +476,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "desc": "The new multi-modal trail"
       },
       "geometry": {
         "type": "LineString",
@@ -827,7 +827,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "desc": "The new multi-modal trail currently being constructed. Updated 2015-05-17"
       },
       "geometry": {
         "type": "LineString",
@@ -1026,7 +1026,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "desc": "The new multi-modal trail"
       },
       "geometry": {
         "type": "LineString",
@@ -1069,7 +1069,7 @@
     {
       "type": "Feature",
       "properties": {
-        "id": null
+        "desc": "The new multi-modal trail"
       },
       "geometry": {
         "type": "LineString",
