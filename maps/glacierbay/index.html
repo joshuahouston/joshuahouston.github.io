@@ -15,9 +15,17 @@
 <body>
 <div id='map'></div>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+/* L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.12, -135.35], 11);
-	
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'https://www.mapbox.com/mapbox-gl-styles/styles/outdoors-v7.json', //stylesheet location
+  center: [57.12, -135.35], // starting position
+  zoom: 11 // starting zoom
+});
+
 $.getJSON('campsites.json', function(data) {
     var markers = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
