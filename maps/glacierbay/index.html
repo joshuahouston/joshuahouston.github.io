@@ -34,8 +34,8 @@ $.getJSON('campsites.json', function(data) {
     markers.addTo(map);
   });
 /* 
-  $.getJSON('markers.json', function(data) {
-      var geojson = L.geoJson(data, {
+  $.getJSON('photos.json', function(data) {
+      var photos = L.geoJson(data, {
   		pointToLayer: function(feature, latlng) {
   			return L.marker(latlng, {icon: L.mapbox.marker.icon({
       'marker-size': 'small',
@@ -49,7 +49,7 @@ $.getJSON('campsites.json', function(data) {
   		  });
         }
       });
-      geojson.addTo(map);
+      photos.addTo(map);
     });
   */
   $.getJSON('path.json', function(data) {

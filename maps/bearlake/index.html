@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>New Cross Trail</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+// create a map in the "map" div, set the view to a given place and zoom
+var map = L.map('map').setView([57.06, -135.316], 16);
+
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+$.getJSON('crosstrail.json', function(data) {
+    var geojson = L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng)
+		},
+      onEachFeature: function (feature, layer) {
+		  layer.bindPopup(feature.properties.desc);
+      }
+    });
+    geojson.addTo(map);
+  });
+</script>
+</body>
+</html>
