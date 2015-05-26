@@ -4,7 +4,7 @@
 <meta charset=utf-8 />
 <title>Bear Mountain</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="paths.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
@@ -19,29 +19,24 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.037, -135.178], 15);
 
-$.getJSON('gps_up.json', function(data) {
-  var gpsUp = L.geoJson(data,
-  opacity: .5,
-  color: "#ff0000"
-  });
-gpsUp.addTo(map);
-});
-/*
-$.getJSON('gps_down.json', function(data) {
-  var gpsDown = L.geoJson(data,
-  opacity: .5,
-  color: "#7F00FF"
-  });
-gpsDown.addTo(map);
-});
+// Generate a GeoJSON line. You could also load GeoJSON via AJAX
+// or generate it some other way.
+var red = '#f86767'
+var blue = '#1087BF'
+var gray = '#2e2e2e'
 
-$.getJSON('watch.json', function(data) {
-  var gpsWatch = L.geoJson(data,
-  opacity: .5
-  });
-gpsWatch.addTo(map);
-});
-*/
+var path = function (place,color) {
+var geojson = { type: 'LineString', coordinates: place };
+
+    L.geoJson(geojson, {
+        opacity: 0.5,
+        color: color
+    }).addTo(map);
+};
+
+path(gpsup,blue);
+path(gpsdown,red);
+path(watch,gray);
 </script>
 </body>
 </html>
