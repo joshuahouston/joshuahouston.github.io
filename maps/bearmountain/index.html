@@ -17,11 +17,29 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.037, -135.178], 15);
+
+$.getJSON('gps_up.json', function(data) {
+  var gpsUp = L.geoJson(data,
+  opacity: .5,
+  color: "#ff0000"
+  });
+gpsUp.addTo(map);
+});
+
+$.getJSON('gps_down.json', function(data) {
+  var gpsDown = L.geoJson(data,
+  opacity: .5,
+  color: "#7F00FF"
+  });
+gpsDown.addTo(map);
+});
 
 $.getJSON('watch.json', function(data) {
-  var geojson = L.geoJson(data);
-geojson.addTo(map);
-	
+  var gpsWatch = L.geoJson(data,
+  opacity: .5
+  });
+gpsWatch.addTo(map);
 });
 </script>
 </body>
