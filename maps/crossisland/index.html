@@ -17,7 +17,7 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.05, -135], 15);
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.05, -135.0], 15);
 
 $.getJSON('path.json', function(data) {
   var geojson = L.geoJson(data,
@@ -31,14 +31,16 @@ geojson.addTo(map);
 $.getJSON('ray.json', function(data) {
   var gpsRay = L.geoJson(data,
   opacity: .5,
-  color: "#ff0000"
+  color: "#ff0000",
+  weight: 2
   });
 gpsRay.addTo(map);
 });
 
 $.getJSON('david.json', function(data) {
   var gpsDavid = L.geoJson(data,
-  opacity: .5
+  opacity: .5,
+  weight: 2
   });
 gpsDavid.addTo(map);
 });
