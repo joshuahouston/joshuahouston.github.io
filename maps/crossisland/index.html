@@ -2,31 +2,46 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>New Cross Trail</title>
+<title>Crossing the Island</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
+}
 </style>
 </head>
 <body>
 <div id='map'></div>
 <script>
-// create a map in the "map" div, set the view to a given place and zoom
-var map = L.map('map').setView([57.016, -135.16], 15);
-
-// add an OpenStreetMap tile layer
-L.tileLayer('http://a.tiles.mapbox.com/v3/jfactory.usgs/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.l0diaa22').setView([57.05, -135], 15);
 
 $.getJSON('path.json', function(data) {
-    var geojson = L.geoJson(data);
-    geojson.addTo(map);
+  var geojson = L.geoJson(data,
+  opacity: .5,
+  color: "#000000",
+  weight: 5
   });
+geojson.addTo(map);
+});
+
+$.getJSON('ray.json', function(data) {
+  var gpsRay = L.geoJson(data,
+  opacity: .5,
+  color: "#ff0000"
+  });
+gpsRay.addTo(map);
+});
+
+$.getJSON('david.json', function(data) {
+  var gpsDavid = L.geoJson(data,
+  opacity: .5
+  });
+gpsDavid.addTo(map);
+});
 </script>
 </body>
 </html>
