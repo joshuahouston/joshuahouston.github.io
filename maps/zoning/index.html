@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sitka Zoning Test</title>
+	<link rel='stylesheet' href='style.css'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+</head>
+<body>
+<div id="map"></div>
+<script>
+var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
+
+	    var grayscale   = L.tileLayer(mbUrl, {id: 'examples.map-y7l23tes'}),
+		    zoning  = L.tileLayer(mbUrl, {id: 'jfactory.44cs1yvi'}),
+			streets  = L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7'});
+
+		var map = L.map('map', {
+			center: [57.049, -135.332],
+			zoom: 15,
+			layers: [grayscale],
+			detectRetina: true
+		});
+		var baseLayers = {
+			"Grayscale": grayscale,
+			"Streets": streets,
+			"Zoning": zoning
+		};
+		
+		L.control.layers(baseLayers).addTo(map);
+</script>
+</body>
+</html>
