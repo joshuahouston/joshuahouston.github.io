@@ -16,23 +16,29 @@
 <script>
 var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
-	    var grayscale   = L.tileLayer(mbUrl, {id: 'examples.map-y7l23tes'}),
+	    var night   = L.tileLayer(mbUrl, {id: 'examples.map-y7l23tes'}),
 		    zoning  = L.tileLayer(mbUrl, {id: 'jfactory.44cs1yvi'}),
-			streets  = L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7'});
+			streets  = L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7'}),
+			classic = L.tileLayer(mbUrl, {id: 'examples.map-i86nkdio'}),
+			grayscale = L.tileLayer(mbUrl, {id: 'examples.map-20v6611k'}),
+			anotherstreets = L.tileLayer(mbUrl, {id: 'examples.map-i87786ca'});
 
 		var map = L.map('map', {
 			center: [57.049, -135.332],
 			zoom: 15,
-			layers: [grayscale],
+			layers: [streets],
 			detectRetina: true
 		});
 		var baseLayers = {
 			"Grayscale": grayscale,
 			"Streets": streets,
+			"Night": night 	
+		};
+		var overlays = {
 			"Zoning": zoning
 		};
 		
-		L.control.layers(baseLayers).addTo(map);
+		L.control.layers(baseLayers, overlays).addTo(map);
 </script>
 </body>
 </html>
