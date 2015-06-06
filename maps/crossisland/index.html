@@ -4,6 +4,7 @@
 <meta charset=utf-8 />
 <title>Crossing The Island</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
 <script src="paths.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
@@ -19,13 +20,13 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.73009218').setView([57.037, -135.178], 11);
 
-/*
+
 $.getJSON('markers.json', function(data) {
-    var markers = L.geoJson(data, {
+    var geojson = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {icon: L.mapbox.marker.icon({
     'marker-size': 'medium',
-    'marker-color': '#BE9A6B',
+    'marker-color': '#2f4f4f',
     'marker-symbol': 'campsite'
   })})
 		},
@@ -33,28 +34,28 @@ $.getJSON('markers.json', function(data) {
 		  layer.bindPopup(feature.properties.name);
       }
     });
-    markers.addTo(map);
+    geojson.addTo(map);
   });
-  */
+  
 // Generate a GeoJSON line. You could also load GeoJSON via AJAX
 // or generate it some other way.
 var white = '#ffffff'
 var blue = '#1087BF'
 var pencil = '#444444'
 
-var path = function (place,color) {
+var path = function (place,color,strength) {
 var geojson = { type: 'LineString', coordinates: place };
 
     L.geoJson(geojson, {
-        opacity: 0.5,
-		weight: 5,
+        opacity: strength,
+		weight: 3,
         color: color
     }).addTo(map);
 };
 
-path(canoe,blue);
-path(flight,white);
-path(baranof,pencil);
+path(canoe,blue,0.8);
+path(flight,white,0.6);
+path(baranof,pencil,1);
 
 </script>
 </body>
