@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Night 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -135.062752,
+          57.043373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Night 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.977689,
+          57.086848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Night 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -134.861158,
+          57.102584
+        ]
+      }
+    }
+  ]
+}

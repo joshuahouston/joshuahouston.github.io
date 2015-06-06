@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Crossing the Island</title>
+<title>Crossing The Island</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="paths.js"></script>
 <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
@@ -16,9 +16,44 @@
 <body>
 <div id='map'></div>
 <script>
-var map = L.mapbox.map('map', 'jfactory.jxzgp66r',{
-  zoomControl: false})
-  .setView([57.05,-135, 13);
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.73009218').setView([57.037, -135.178], 11);
+
+$.getJSON('markers.json', function(data) {
+    var markers = L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {icon: L.mapbox.marker.icon({
+    'marker-size': 'medium',
+    'marker-color': '#BE9A6B',
+    'marker-symbol': 'campsite'
+  })})
+		},
+      onEachFeature: function (feature, layer) {
+		  layer.bindPopup(feature.properties.name);
+      }
+    });
+    markers.addTo(map);
+  });
+// Generate a GeoJSON line. You could also load GeoJSON via AJAX
+// or generate it some other way.
+var white = '#ffffff'
+var blue = '#1087BF'
+var pencil = '#444444'
+
+var path = function (place,color) {
+var geojson = { type: 'LineString', coordinates: place };
+
+    L.geoJson(geojson, {
+        opacity: 0.5,
+		weight: 5,
+        color: color
+    }).addTo(map);
+};
+
+path(canoe,blue);
+path(flight,white);
+path(baranof,pencil);
+
 </script>
 </body>
 </html>
