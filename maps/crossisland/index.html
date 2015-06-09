@@ -16,7 +16,7 @@
 <body>
 <div id='map'></div>
 <script>
-var mbUrl = 'https://{s}.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png';
+var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
 var satellite = L.tileLayer(mbUrl, {id: 'jfactory.l3pal08p'}),
 	topo = L.tileLayer(mbUrl, {id: 'jfactory.73009218'});
@@ -25,7 +25,8 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = L.mapbox.map('map', {
 	maxZoom: 15,
 	minZoom: 11,
-	layers: [topo]
+	layers: [topo],
+	detectRetina: true
 }).setView([57.06, -135], 11);
 
 var baseLayers = {
