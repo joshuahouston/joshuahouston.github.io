@@ -17,11 +17,12 @@
 var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
 	    var night   = L.tileLayer(mbUrl, {id: 'examples.map-y7l23tes'}),
-		    zoning  = L.tileLayer(mbUrl, {id: 'jfactory.nz4wvcxr'}),
+		    zoning  = L.tileLayer(mbUrl, {id: 'jfactory.yd7h9f6r'}),
 			streets  = L.tileLayer(mbUrl, {id: 'examples.map-i875mjb7'}),
 			classic = L.tileLayer(mbUrl, {id: 'examples.map-i86nkdio'}),
 			grayscale = L.tileLayer(mbUrl, {id: 'examples.map-20v6611k'}),
-			anotherstreets = L.tileLayer(mbUrl, {id: 'examples.map-i87786ca'});
+			anotherstreets = L.tileLayer(mbUrl, {id: 'examples.map-i87786ca'}),
+			morezoning = L.tileLayer(mbUrl, {id: 'jfactory.yd7h9f6r'});
 
 		var map = L.map('map', {
 			center: [57.049, -135.332],
@@ -32,7 +33,8 @@ var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 		var baseLayers = {
 			"Grayscale": grayscale,
 			"Streets": streets,
-			"Night": night 	
+			"Night": night,
+			"Zoning": morezoning
 		};
 		var overlays = {
 			"Zoning": zoning
