@@ -18,9 +18,16 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.73009218', {
-	maxZoom: 12,
-	minZoom: 11
+	zoomControl: false
 }).setView([57.06, -135], 11);
+
+map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+
+// Disable tap handler, if present.
+if (map.tap) map.tap.disable();
 
 L.marker([57.043373, -135.062752], {
     icon: L.mapbox.marker.icon({
@@ -65,7 +72,7 @@ var geojson = { type: 'LineString', coordinates: place };
 
 path(canoe,blue,0.8);
 path(flight,white,0.6);
-//path(baranof,pencil,0.8);
+path(baranof,pencil,0.8);
 </script>
 </body>
 </html>
