@@ -53,12 +53,32 @@ L.geoJson(geojson, {
 var j = 0;
 
 // Create a marker and add it to the map.
+function randomText() {
+var items = new Array(
+            "Ow",
+            "Stop poking me",
+            "Stop",
+            "Leave me alone",
+            "Don't you have anything better to do?",
+            "You're hurting me",
+            "Go away"
+);
+
+var i = Math.floor(Math.random() * items.length);
+
+return items[i];}
+
+function bindNewPopup(){
+	this.bindPopup(randomText());
+}
+
 var marker = L.marker([0, 0], {
   icon: L.mapbox.marker.icon({
     'marker-color': '#f86767',
 	'marker-size': 'small'
   })
-}).addTo(map);
+}).on('click', bindNewPopup)
+.addTo(map);
 
 tick();
 function tick() {
