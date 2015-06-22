@@ -7,6 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jfact0ry.com" # the base hostname & protocol for your site
 twitter_username: sleepyjoshua
 github_username:  joshuahouston
+blenderartists_username: Jfact0ry
 
 # Build settings
 markdown: kramdown
