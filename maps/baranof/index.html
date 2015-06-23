@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Crossing The Island</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="paths.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.73009218', {
+	zoomControl: false
+}).setView([57.06, -135], 11);
+
+map.dragging.disable();
+map.touchZoom.disable();
+map.doubleClickZoom.disable();
+map.scrollWheelZoom.disable();
+
+// Disable tap handler, if present.
+if (map.tap) map.tap.disable();
+
+L.marker([57.043373, -135.062752], {
+    icon: L.mapbox.marker.icon({
+    'marker-size': 'medium',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'campsite'
+  })
+ }).addTo(map)
+    .bindPopup('<strong>Night 1</strong><br>We were in bed early the first day.');
+
+L.marker([57.086848, -134.977689], {
+    icon: L.mapbox.marker.icon({
+    'marker-size': 'medium',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'campsite'
+  })
+ }).addTo(map)
+    .bindPopup('<strong>Night 2</strong><br>We had to camp in snow the second night.');
+
+L.marker([57.102584, -134.861158], {
+    icon: L.mapbox.marker.icon({
+    'marker-size': 'medium',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'campsite'
+  })
+ }).addTo(map)
+    .bindPopup('<strong>Night 3</strong><br>So close... or so we thought.');
+
+var white = '#fff'
+var blue = '#1087BF'
+var pencil = '#444444'
+
+var path = function (place,color,strength) {
+var geojson = { type: 'LineString', coordinates: place };
+
+    L.geoJson(geojson, {
+        opacity: strength,
+		weight: 3,
+        color: color
+    }).addTo(map);
+};
+
+path(canoe,blue,0.8);
+path(flight,white,0.6);
+path(baranof,pencil,0.8);
+</script>
+</body>
+</html>
