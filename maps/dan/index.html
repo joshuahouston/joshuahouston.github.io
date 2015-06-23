@@ -17,8 +17,9 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.73009218', {
-	maxZoom: 13,
-	minZoom: 10
+    	maxZoom: 14,
+        minZoom: 10,
+        maxBounds: [[56.0,-136.0],[57.5,-134.0]]
 }).setView([56.7565, -134.99133], 10);
 
 var geojson = { type: 'LineString', coordinates: path };
