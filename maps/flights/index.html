@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Flight</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="paths.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.73009218', {
+	zoomControl: false
+}).setView([57.06, -135.1], 13);
+
+// Generate a GeoJSON line. You could also load GeoJSON via AJAX
+// or generate it some other way.
+function path() {
+var geojson = { type: 'LineString', coordinates: flight26 };
+var start = [-135.114117, 57.081357];
+var momentum = [0, 0];
+
+for (var i = 0; i < 300; i++) {
+    start[0] += momentum[0];
+    start[1] += momentum[1];
+    if (start[1] > 0 || start[1] < 0) momentum[1] *= -1;
+    if (start[0] > 0 || start[0] < 0) momentum[0] *= -1;
+    geojson.coordinates.push(start.slice());
+}
+
+// Add this generated geojson object to the map.
+L.geoJson(geojson, {
+    opacity: 0
+}).addTo(map);
+
+// Create a counter with a value of 0.
+var j = 0;
+
+// Create a marker and add it to the map.
+var marker = L.marker([57.0, -135.0], {
+  icon: L.mapbox.marker.icon({
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'airport'
+  })
+}).addTo(map);
+
+    marker.bindPopup('<iframe width="560" height="315" src="https://www.youtube.com/embed/ADTh-qZ_PuY?autoplay=1" frameborder="0" allowfullscreen></iframe>', {
+        maxWidth: 580
+    }).openPopup();
+    
+tick();
+function tick() {
+    // Set the marker to be at the same point as one
+    // of the segments or the line.
+    marker.setLatLng(L.latLng(
+        geojson.coordinates[j][1],
+        geojson.coordinates[j][0]));
+
+    // Move to the next point of the line
+    // until `j` reaches the length of the array.
+    if (++j < geojson.coordinates.length) setTimeout(tick, 500);
+}
+};
+
+//marker.on('click', path());
+path();
+</script>
+</body>
+</html>
