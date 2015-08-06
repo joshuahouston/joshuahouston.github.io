@@ -22,7 +22,7 @@ var map = L.mapbox.map('map', 'examples.map-i86nkdio');
 
 
 
-var garmin = omnivore.gpx('20150804.gpx')
+var garmin = omnivore.gpx('20150805.gpx')
     .on('ready', function() {
         map.fitBounds(garmin.getBounds());
     })
