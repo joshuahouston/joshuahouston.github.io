@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Run through Ponderosa Park</title>
+<title>Run</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
@@ -22,13 +22,13 @@ var map = L.mapbox.map('map', 'examples.map-i86nkdio');
 
 
 
-var garmin = omnivore.gpx('20150805.gpx')
+var garmin = omnivore.gpx('20150817.gpx')
     .on('ready', function() {
         map.fitBounds(garmin.getBounds());
     })
     .addTo(map);
 
-	
+
 </script>
 </body>
 </html>
