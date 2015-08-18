@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title>Run</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.4/mapbox.css' rel='stylesheet' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'>
-</script>
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
+    <meta charset='utf-8' />
+    <title>Run</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.9.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
 </head>
 <body>
 
 <div id='map'></div>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'examples.map-i86nkdio');
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var tileset = 'mapbox.streets';
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: {
+    "version": 7,
+    "sources": {
+      "simple-tiles": {
+        "type": "raster",
+        "url": "mapbox://" + tileset,
+        "tileSize": 256
+      }
+    },
+    "layers": [{
+      "id": "simple-tiles",
+      "type": "raster",
+      "source": "simple-tiles",
+      "minzoom": 0,
+      "maxzoom": 22
+    }]
+  }
+});
 
-
-
-var garmin = omnivore.gpx('20150817.gpx')
+var watch = omnivore.gpx('20150817.gpx')
     .on('ready', function() {
-        map.fitBounds(garmin.getBounds());
+        map.fitBounds(watch.getBounds());
     })
     .addTo(map);
 
