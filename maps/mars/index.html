@@ -15,7 +15,14 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.ndnbmek5').setView([10, 20], 3);
+var map = L.mapbox.map('map', 'jfactory.ndnbmek5', {
+	tileLayer: {
+	        // This map option disables world wrapping. by default, it is false.
+	        continuousWorld: false,
+	        // This option disables loading tiles outside of the world bounds.
+	        noWrap: true
+	}
+}).setView([10, 20], 3);
 
 </script>
 </body>
