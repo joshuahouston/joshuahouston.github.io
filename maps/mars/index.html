@@ -15,14 +15,45 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.ndnbmek5', {
+var geojson = [
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-28.5,31.2]
+    },
+    "properties": {
+      "title": "The Hab",
+      "description": "The base for Ares 3",
+      "marker-color": "#1087bf",
+      "marker-size": "medium",
+      "marker-symbol": "campsite"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-29.6, 28.9]
+    },
+    "properties": {
+      "title": "Mark Watley",
+      "description": "Sirius 4, Sol 72",
+      "marker-color": "#1087bf",
+      "marker-size": "medium",
+      "marker-symbol": "rocket"
+    }
+  }
+];
+var map = L.mapbox.map('map', 'matt.72ca085f', {
 	tileLayer: {
 	        // This map option disables world wrapping. by default, it is false.
 	        continuousWorld: false,
 	        // This option disables loading tiles outside of the world bounds.
 	        noWrap: true
 	}
-}).setView([10, 20], 3);
+}).setView([10, 20], 3)
+.featureLayer.setGeoJSON(geojson);
 
 </script>
 </body>
