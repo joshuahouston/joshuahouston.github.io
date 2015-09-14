@@ -34,14 +34,14 @@
 <script>
 var myIcon = L.icon({
 	iconUrl: 'photos.png',
-	iconSize: [10, 12],
+	iconSize: [12, 10],
 	iconAnchor: [0, 0],
 	popupAnchor: [0, 0]
 	});
 	
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.6e414030')
-	.setView([57.0493, -135.317], 16);
+	.setView([57.078, -135.369], 16);
 	L.control.locate().addTo(map);
 	
 	$.getJSON('photos.json', function(data) {
@@ -71,9 +71,7 @@ var momentum = [0, 0];
 
 	  var j = 0; 
 
-	  var marker = L.marker([0, 0], { 
-	      icon: person 
-	  }).addTo(map); 
+	  var marker = L.marker([0, 0]).addTo(map); 
 
 	  tick(); 
 	  function tick() { 
