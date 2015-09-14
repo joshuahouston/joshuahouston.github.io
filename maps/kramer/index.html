@@ -16,8 +16,8 @@
 <body>
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
 <link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
-
-
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.css' rel='stylesheet' />
 <style>
 .leaflet-control-locate {
   border:1px solid rgba(0,0,0,0.4);
@@ -40,7 +40,7 @@ var myIcon = L.icon({
 	});
 	
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.6e414030')
+var map = L.mapbox.map('map', 'jfactory.6e414030', {drawControl: true})
 	.setView([57.078, -135.369], 16);
 	L.control.locate().addTo(map);
 	
