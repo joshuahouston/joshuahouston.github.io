@@ -5,14 +5,14 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 // map and the data.
 var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
-  properties: { id: "cover", "marker-symbol": "building", zoom: 7 }, type: 'Feature' },
+  properties: { id: "cover", "marker-symbol": "building", zoom: 6 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
-  properties: { id: "sol7", zoom: 10 }, type: 'Feature' },
+  properties: { id: "sol7", zoom: 12 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.1623] },
 	properties: { id: "rtg", zoom: 10 }, type: 'Feature' }
 ]};
 
-var map = L.mapbox.map('map', 'matt.72ca085f', {
+var map = L.mapbox.map('map', 'jfactory.e2c0a79a', {
     zoomControl: false
 });
 
