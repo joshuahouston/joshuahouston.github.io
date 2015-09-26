@@ -5,7 +5,7 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 // map and the data.
 var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
-  properties: { id: "cover", "marker-symbol": "building", zoom: 6 }, type: 'Feature' },
+  properties: { id: "cover", zoom: 6 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
   properties: { id: "sol7", zoom: 12 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.1623] },
