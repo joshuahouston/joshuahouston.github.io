@@ -7,6 +7,8 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
   properties: { id: "cover", zoom: 6 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.2] },
+  properties: { id: "sol6", zoom: 8 }, type: 'Feature' },
+{ geometry: { type: "Point", coordinates: [-28.5, 31.2] },
   properties: { id: "sol67", zoom: 10 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-28.5, 31.1623] },
   properties: { id: "sol69", zoom: 12 }, type: 'Feature' },
