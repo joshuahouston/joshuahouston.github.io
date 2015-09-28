@@ -111,26 +111,3 @@ narrative.onscroll = function(e) {
     };
     setId(newId);
 };
-
-/*
-$.getJSON('paths.json', function(data) {
-	  var geojson = L.geoJson(data);
-geojson.addTo(map);
-	
-	$.getJSON('markers.json', function(data) {
-    var geojson = L.geoJson(data, {
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {icon: L.mapbox.marker.icon({
-    'marker-size': 'small',
-    'marker-color': '#2f4f4f',
-    'marker-symbol': 'camera'
-  })})
-		},
-      onEachFeature: function (feature, layer) {
-		  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6\>\<p\>' + feature.properties.desc + '\</p\>', {
-			  maxWidth: 520
-		  });
-      }
-    });
-    geojson.addTo(map);
-  }); */
