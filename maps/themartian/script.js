@@ -33,11 +33,11 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [-12.7, 18.9] },
   properties: { id: "sol466", zoom: 7 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-8.36, 16.84] },
-  properties: { id: "triangle", zoom: 6 }, type: 'Feature' },
+  properties: { id: "sol473", zoom: 6 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-4.14, 13.82] },
-  properties: { id: "marth", zoom: 7 }, type: 'Feature' },
+  properties: { id: "sol475", zoom: 7 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-4.4, 13.1] },
-  properties: { id: "storm", zoom: 8 }, type: 'Feature' },
+  properties: { id: "sol477", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-4.21, 12.4] },
   properties: { id: "sol478", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-4.14, 13.82] },
@@ -47,9 +47,9 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [14.14, -0.55] },
   properties: { id: "sol498", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [15.3, -3.2] },
-  properties: { id: "mav", zoom: 7 }, type: 'Feature' },
+  properties: { id: "sol505", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [15.3, -3.2] },
-	properties: { id: "hermes", zoom: 1 }, type: 'Feature' }
+	properties: { id: "sol549", zoom: 1 }, type: 'Feature' }
 ]};
 
 var map = L.mapbox.map('map', 'jfactory.e2c0a79a', {

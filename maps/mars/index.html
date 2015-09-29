@@ -4,8 +4,8 @@
 <meta charset=utf-8 />
 <title>The Martian</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,48 +13,18 @@
 </head>
 <body>
 <div id='map'></div>
+<script src='poi.js'></script>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var geojson = [
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-28.5,31.2]
-    },
-    "properties": {
-      "title": "The Hab",
-      "description": "The base for Ares 3",
-      "marker-color": "#1087bf",
-      "marker-size": "medium",
-      "marker-symbol": "campsite"
-    }
-  },
-  {
-    "type": "Feature",
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-29.6, 28.9]
-    },
-    "properties": {
-      "title": "Mark Watley",
-      "description": "Sirius 4, Sol 72",
-      "marker-color": "#1087bf",
-      "marker-size": "medium",
-      "marker-symbol": "rocket"
-    }
-  }
-];
-var map = L.mapbox.map('map', 'matt.72ca085f', {
-	tileLayer: {
+  var map = L.mapbox.map('map', 'jfactory.e2c0a79a', {
+  tileLayer: {
 	        // This map option disables world wrapping. by default, it is false.
 	        continuousWorld: false,
 	        // This option disables loading tiles outside of the world bounds.
 	        noWrap: true
 	}
-}).setView([10, 20], 3)
+ }).setView([22.76, -25.84], 5)
 .featureLayer.setGeoJSON(geojson);
-
 </script>
 </body>
 </html>
