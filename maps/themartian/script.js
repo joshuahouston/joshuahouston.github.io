@@ -49,7 +49,7 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [15.3, -3.2] },
   properties: { id: "sol505", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [15.3, -3.2] },
-	properties: { id: "sol549", zoom: 1 }, type: 'Feature' }
+  properties: { id: "sol549", zoom: 4 }, type: 'Feature' }
 ]};
 
 var map = L.mapbox.map('map', 'jfactory.e2c0a79a', {

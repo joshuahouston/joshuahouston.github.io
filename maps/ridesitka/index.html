@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The RIDE</title>
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:100%; }
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+</head>
+<body>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.24.0/L.Control.Locate.css' rel='stylesheet' />
+<!--[if lt IE 9]>
+<link href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.21.0/L.Control.Locate.ie.css' rel='stylesheet' />
+<![endif]-->
+
+<style>
+.leaflet-control-locate {
+  border:1px solid rgba(0,0,0,0.4);
+  }
+.leaflet-control-locate a {
+  background-color:#fff;
+  background-position:-3px, -2px;
+  }
+.leaflet-control-locate.active a {
+  background-position:-33px -2px;
+  }
+</style>
+<script src='buslines.js'></script>
+<div id="map"></div>
+<script>
+		var redLine = new L.geoJson(redLine, {
+			style: {color: "#de2d26", weight: 5}
+			});
+			
+			blueLine = new L.geoJson(blueLine, {
+			style: {color: "#2b8cbe", weight: 5}
+			});
+			
+			greenLine = new L.geoJson(greenLine, {
+			style: {color: "#2ca25f", weight: 5}
+			});
+		
+/*		var blueLine = new L.geoJson(blueLine, {
+			style: {color: "#0000ff"};
+				},
+	 			onEachFeature: function (feature, layer) {
+       		layer.bindPopup(feature.properties.desc);
+				}
+		});
+		
+		var greenLine = new L.geoJson(greenLine, {
+			style: {color: "#00ff00"};
+				},
+	 			onEachFeature: function (feature, layer) {
+       		layer.bindPopup(feature.properties.desc);
+				}
+		}); */
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.nf8kln00', {
+	infoControl: false,
+	attributionControl: true,
+	layers: [redLine, blueLine, greenLine]
+}).setView([57.05,-135.3233], 14);
+	L.control.locate().addTo(map);
+
+		var overlays = {
+			"Blue Line": blueLine,
+			"Red Line": redLine,
+			"Green Line": greenLine
+		};
+
+		L.control.layers(overlays).addTo(map);
+</script>
+</body>
+</html>
