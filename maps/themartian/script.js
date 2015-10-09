@@ -14,11 +14,11 @@ var places = { type: 'FeatureCollection', features: [
   properties: { id: "sol73", zoom: 5 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-29.87, 27.17] },
   properties: { id: "sol74", zoom: 8 }, type: 'Feature' },
-{ geometry: { type: "Point", coordinates: [-30.75, 24.54] },
+{ geometry: { type: "Point", coordinates: [-30.755, 24.54] },
   properties: { id: "sol76", zoom: 8 }, type: 'Feature' },
-{ geometry: { type: "Point", coordinates: [-31.86, 22.86] },
+{ geometry: { type: "Point", coordinates: [-31.865, 22.86] },
   properties: { id: "sol78", zoom: 8 }, type: 'Feature' },
-{ geometry: { type: "Point", coordinates: [-32.44, 20.76] },
+{ geometry: { type: "Point", coordinates: [-32.445, 20.76] },
   properties: { id: "sol80", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-33.33, 19.52] },
   properties: { id: "sol82", zoom: 8 }, type: 'Feature' },
@@ -49,7 +49,7 @@ var places = { type: 'FeatureCollection', features: [
 { geometry: { type: "Point", coordinates: [15.3, -3.2] },
   properties: { id: "sol505", zoom: 8 }, type: 'Feature' },
 { geometry: { type: "Point", coordinates: [-12.7, 18.9] },
-  properties: { id: "sol549", zoom: 3 }, type: 'Feature' }
+  properties: { id: "sol549", zoom: 4 }, type: 'Feature' }
 ]};
 
 var map = L.mapbox.map('map', 'jfactory.e2c0a79a', {
