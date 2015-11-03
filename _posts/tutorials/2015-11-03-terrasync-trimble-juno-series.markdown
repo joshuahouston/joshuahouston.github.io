@@ -57,21 +57,14 @@ categories: tutorial
 *	The prompt asks for a location of the file, enter a new name and this will create a unique folder for the file*
 *	Prompt says, “The folder __ does not exist. Would you like to create it?” Select ‘Yes’
 *	Results should read “Shape conversion complete” you may select “Close”
-
-	*Repeat for other files naming new folders each time to avoid overwriting data.
+*	Repeat for other files naming new folders each time to avoid overwriting data.
 
 6.	Transferring data
-
-	*Plug in GPS to computer
-
-	*Open folder where data was saved
-
-	*Copy to desktop
-
-	*Open QGIS
-
-	*Drag and drop data folders into QGIS
-
-	*Select Coordinate Reference System (Usually WGS 84 – EPSG: 4326)
+*	Plug in GPS to computer
+*	Open folder where data was saved
+*	Copy to desktop
+*	Open QGIS
+*	Drag and drop data folders into QGIS
+*	Select Coordinate Reference System (Usually WGS 84 – EPSG: 4326)
 
 #####*The shapefile that is created is given a generic name based on its geometry e.g. ‘Line_gen.shp’. If saving multiple files to one folder, matching geometries will be overwritten. Unique names for each file will subsequently create unique folders and avoid overwriting data.
