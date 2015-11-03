@@ -8,45 +8,35 @@ categories: tutorial
 
 #Part 1 - In the Field
 
-###1. Open Terrasync
+1.	Open Terrasync
+*	Tap on Start
+*	Tap on TerraSync
 
-	*Tap on Start
-	*Tap on TerraSync
+2.	Data Mode
+*	In the top left, you will see you are in the ‘Status’ mode, for data acquisition we want to be in ‘Data’ mode.
+*	Tap the arrow next to status and select ‘Data’
 
-###2. Data Mode
-
-	*In the top left, you will see you are in the ‘Status’ mode, for data acquisition we want to be in ‘Data’ mode.
-	*Tap the arrow next to status and select ‘Data’
-
-###3. New file
-
-	*By default, selecting data should bring up ‘Create New Data File’ dialogue and options. If not, click the arrow belonging to the button below ‘Data’ and select ‘New File (T)’
-	*A dialogue with options is brought up. Here, the default settings are fine, but it helps to enter a memorable name for the file and to remember the location of where you are saving the file, which is either on the card or on the device (Default / SD-MMC card). A folder can be specified later.
-	*Tap ‘Create’
+3.	New file
+*	By default, selecting data should bring up ‘Create New Data File’ dialogue and options. If not, click the arrow belonging to the button below ‘Data’ and select ‘New File (T)’
+*	A dialogue with options is brought up. Here, the default settings are fine, but it helps to enter a memorable name for the file and to remember the location of where you are saving the file, which is either on the card or on the device (Default / SD-MMC card). A folder can be specified later.
+*	Tap ‘Create’
 
 4.	Antenna Height
-
-	*You are prompted to enter the height of the antenna
+*	You are prompted to enter the height of the antenna
 
 5.	Type of Geometry – Point, Line, Area
-
-	*Which type of geometry would best represent the feature you are GPS’ing?
-
-	*Once you select, data recording begins.
+*	Which type of geometry would best represent the feature you are GPS’ing?
+*	Once you select, data recording begins.
 
 6.	Recording
-
-	*Data points are being collected now, so either walk if you are representing a line or an area, or stand in place if you are collecting data for a point. For a point, 40 seconds may be required for sufficient accuracy.
+*	Data points are being collected now, so either walk if you are representing a line or an area, or stand in place if you are collecting data for a point. For a point, 40 seconds may be required for sufficient accuracy.
 
 7.	Multiple features
-
-	*If you have a single feature to collect you may tap ‘OK’ and then ‘Close’ the file. Otherwise, keep on collecting data for the feature using multiple geometries if needed.
-
-	*Once you have collected enough data, you may tap ‘OK’ and ‘Close’
+*	If you have a single feature to collect you may tap ‘OK’ and then ‘Close’ the file. Otherwise, keep on collecting data for the feature using multiple geometries if needed.
+*	Once you have collected enough data, you may tap ‘OK’ and ‘Close’
 
 8.	Multiple Features
-
-	*Once you have acquired data for one feature, another may be created (by selecting again ‘New File) And existing features may be added to (by selecting ‘Existing File’ > choosing the file > selecting ‘Open’)
+*	Once you have acquired data for one feature, another may be created (by selecting again ‘New File) And existing features may be added to (by selecting ‘Existing File’ > choosing the file > selecting ‘Open’)
 	
 #Part 2 - At the Computer
 
@@ -55,27 +45,18 @@ categories: tutorial
 2.	Enter ‘Data’ Mode
 
 3.	File Manager
-
-	*Below ‘Data’ select ‘File Manager’ (same place you’d see ‘Existing’)
-
+*	Below ‘Data’ select ‘File Manager’ (same place you’d see ‘Existing’)
 
 4.	Find data
-
-	*“Choose File Type” should be “Data Files”
-
-	*“Location” is where you saved your files to when you were in the field. If you don’t see your data, change it.
+*	“Choose File Type” should be “Data Files”
+*	“Location” is where you saved your files to when you were in the field. If you don’t see your data, change it.
 	
 5.	Convert data
-
-	*Select one of the files you created
-
-	*Tap on ‘Options’ in the top right and select ’Write data to Shape’
-
-	*The prompt asks for a location of the file, enter a new name and this will create a unique folder for the file*
-
-	*Prompt says, “The folder __ does not exist. Would you like to create it?” Select ‘Yes’
-
-	*Results should read “Shape conversion complete” you may select “Close”
+*	Select one of the files you created
+*	Tap on ‘Options’ in the top right and select ’Write data to Shape’
+*	The prompt asks for a location of the file, enter a new name and this will create a unique folder for the file*
+*	Prompt says, “The folder __ does not exist. Would you like to create it?” Select ‘Yes’
+*	Results should read “Shape conversion complete” you may select “Close”
 
 	*Repeat for other files naming new folders each time to avoid overwriting data.
 
