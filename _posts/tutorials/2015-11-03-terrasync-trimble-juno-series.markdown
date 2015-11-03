@@ -8,24 +8,20 @@ categories: tutorial
 
 #Part 1 - In the Field
 
-1.	Open Terrasync
+###1. Open Terrasync
 
 	*Tap on Start
-
 	*Tap on TerraSync
 
-2.	Data Mode
+###2. Data Mode
 
 	*In the top left, you will see you are in the ‘Status’ mode, for data acquisition we want to be in ‘Data’ mode.
-
 	*Tap the arrow next to status and select ‘Data’
 
-3.	New file
+###3. New file
 
 	*By default, selecting data should bring up ‘Create New Data File’ dialogue and options. If not, click the arrow belonging to the button below ‘Data’ and select ‘New File (T)’
-
 	*A dialogue with options is brought up. Here, the default settings are fine, but it helps to enter a memorable name for the file and to remember the location of where you are saving the file, which is either on the card or on the device (Default / SD-MMC card). A folder can be specified later.
-
 	*Tap ‘Create’
 
 4.	Antenna Height
