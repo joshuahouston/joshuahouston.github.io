@@ -45,30 +45,28 @@
 			style: {color: "#2ca25f", weight: 5, opacity: 1}
 			}); 
 			
-			var myIcon = L.icon({
-				iconUrl: 'bus.png',
-				iconRetinaUrl: 'busx2.png',
-				iconSize: [17, 19],
-				iconAnchor: [0, 0],
-				popupAnchor: [0, 0]
-				});
-		
 
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.nf8kln00', {
 	infoControl: false,
-	attributionControl: true
-//	layers: [redLine, blueLine, greenLine]
+	attributionControl: true,
+	layers: [redLine, blueLine, greenLine]
 }).setView([57.055,-135.333], 14);
 	L.control.locate().addTo(map);
+map.attributionControl
+	.addAttribution('<a href="http://ridesitka.com"><img src="logo.png" alt="logo"></a>');
 	
 	$.getJSON('stops.json', function(data) {
 	    var geojson = L.geoJson(data, {
 			pointToLayer: function(feature, latlng) {
-				return L.marker(latlng, {icon: myIcon})
+				return L.marker(latlng, {icon:  L.mapbox.marker.icon({
+    'marker-size': 'small',
+    'marker-color': '#4f4f4f',
+    'marker-symbol': 'bus'
+  })})
 			},
 	      onEachFeature: function (feature, layer) {
-			  layer.bindPopup(feature.properties.name + feature.properties.desc);
+			  layer.bindPopup('\<h6\>' + feature.properties.name + '\</h6/>\<p\>' + feature.properties.route + ' Line '+ '\<br\>' + feature.properties.time + '\<br\>\<br\>' + feature.properties.desc + '\</p\>');
 	      }
 	    });
 	    geojson.addTo(map);
