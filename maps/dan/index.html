@@ -19,13 +19,13 @@ L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = L.mapbox.map('map', 'jfactory.ckb04dho', {
     	maxZoom: 14,
         minZoom: 10,
-        maxBounds: [[56.0,-136.0],[57.5,-134.0]]
-}).setView([56.7565, -134.99133], 10);
+        maxBounds: [[56.0,-136.0],[57.0,-134.0]]
+}).setView([56.2565, -134.99133], 10);
 
 var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
-        opacity: 0.6,
+        opacity: 0.8,
         color: '#2e2e2e',
 		weight: 3
     }).addTo(map);
