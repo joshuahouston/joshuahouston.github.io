@@ -48,6 +48,7 @@ path(legTwo,blue);
 path(legThree,purple);
 path(legFour,green);
 
+/* 
 L.marker([56.843373, -134.962752], {
     icon: L.mapbox.marker.icon({
     'marker-size': 'medium',
@@ -56,6 +57,7 @@ L.marker([56.843373, -134.962752], {
   })
  }).addTo(map)
     .bindPopup('<strong>Night 1</strong><br>We were in bed early the first day.');
+*/
 
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
@@ -67,6 +69,19 @@ $.getJSON('camps.json', function(data) {
     });
     campsites.addTo(map);
   });
+  
+/*
+  $.getJSON('crosstrail.json', function(data) {
+    var geojson = L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng)},
+      onEachFeature: function (feature, layer) {
+		  layer.bindPopup(feature.properties.desc);
+      }
+    });
+    geojson.addTo(map);
+  });
+*/
 </script>
 </body>
 </html>
