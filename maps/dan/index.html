@@ -48,17 +48,19 @@ path(legTwo,blue);
 path(legThree,purple);
 path(legFour,green);
 
+L.marker([56.843373, -134.962752], {
+    icon: L.mapbox.marker.icon({
+    'marker-size': 'medium',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'campsite'
+  })
+ }).addTo(map)
+    .bindPopup('<strong>Night 1</strong><br>We were in bed early the first day.');
+
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng), {
-				icon: L.mapbox.marker.icon({
-   				'marker-size': 'medium',
-    			'marker-color': '#2f4f4f',
-    			'marker-symbol': 'campsite'
-			})
-		}
-		},
+			return L.marker(latlng)},
       onEachFeature: function (feature, layer) {
 		  layer.bindPopup(feature.properties.seq);
       }
