@@ -62,7 +62,11 @@ L.marker([56.843373, -134.962752], {
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng)},
+			return L.marker(latlng, {icon: L.mapbox.marker.icon({
+    'marker-size': 'small',
+    'marker-color': '#2f4f4f',
+    'marker-symbol': 'campsite'
+  })})},
       onEachFeature: function (feature, layer) {
 		  layer.bindPopup(feature.properties.seq);
       }
