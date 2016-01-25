@@ -26,19 +26,19 @@ var map = L.mapbox.map('map', 'jfactory.d6ulxe49', {
 }).setView([56.64, -134.99], 10);
 
 map.attributionControl
-.addAttribution('Created with data from<a href="http://ifsar.gina.alaska.edu/">GINA</a>');
+.addAttribution('<a href="http://jfact0ry.com/about/">JFactory</a>, <a href="http://ifsar.gina.alaska.edu/">GINA</a>');
 
-var orange = '#ff6600'
-var blue = '#0000ff'
-var yellow = '#ffdd55'
-var green = '#00ff00'
+var orange = '#FF6600'
+var blue = '#0000FF'
+var yellow = '#FFDD55'
+var green = '#00FF00'
 
 var path = function (path,color) {
 var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
         opacity: .7,
-		weight: 3,
+	weight: 4,
         color: color
 /*		onEachFeature: function (feature, layer) {
 		layer.bindPopup(desc); */
