@@ -30,14 +30,14 @@ map.attributionControl
 
 var orange = '#ff6600'
 var blue = '#0000ff'
-var purple = '#cc00ff'
+var yellow = '#ffdd55'
 var green = '#00ff00'
 
 var path = function (path,color) {
 var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
-        opacity: .5,
+        opacity: .7,
 		weight: 3,
         color: color
 /*		onEachFeature: function (feature, layer) {
@@ -47,7 +47,7 @@ var geojson = { type: 'LineString', coordinates: path };
 
 path(legOne,orange);
 path(legTwo,blue);
-path(legThree,purple);
+path(legThree,yellow);
 path(legFour,green);
 
 /* 
