@@ -20,7 +20,7 @@
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = L.mapbox.map('map', 'jfactory.d6ulxe49', {
     maxZoom: 14,
-    minZoom: 10,
+    minZoom: 9,
     maxBounds: [[56.0,-136.0],[57.0,-134.0]],
 	infoControl: false,
 	attributionControl: true
@@ -41,10 +41,8 @@ var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
         opacity: .8,
-	weight: 4,
+		weight: 4,
         color: color
-/*		onEachFeature: function (feature, layer) {
-		layer.bindPopup(desc); */
     }).addTo(map);
 };
 
@@ -52,17 +50,6 @@ path(legOne,orange);
 path(legTwo,red);
 path(legThree,yellow);
 path(legFour,green);
-
-/* 
-L.marker([56.843373, -134.962752], {
-    icon: L.mapbox.marker.icon({
-    'marker-size': 'medium',
-    'marker-color': '#2f4f4f',
-    'marker-symbol': 'campsite'
-  })
- }).addTo(map)
-    .bindPopup('<strong>Night 1</strong><br>We were in bed early the first day.');
-*/
 
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
@@ -79,18 +66,21 @@ $.getJSON('camps.json', function(data) {
     campsites.addTo(map);
   });
   
-/*
-  $.getJSON('crosstrail.json', function(data) {
-    var geojson = L.geoJson(data, {
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng)},
-      onEachFeature: function (feature, layer) {
-		  layer.bindPopup(feature.properties.desc);
+
+$.getJSON('photos.json', function(data) {
+  var photos = L.geoJson(data, {
+	pointToLayer: function(feature, latlng) {
+		return L.marker(latlng, {icon: L.mapbox.marker.icon({
+    'marker-size': 'small',
+    'marker-color': '#C0C0C0',
+    'marker-symbol': 'camera'
+  })})},
+		onEachFeature: function (feature, layer) {
+		  layer.bindPopup(feature.properties.description);
       }
     });
-    geojson.addTo(map);
+    photos.addTo(map);
   });
-*/
 </script>
 </body>
 </html>
