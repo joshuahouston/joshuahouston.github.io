@@ -1,88 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8 />
-<title>Hike to Port Alexander</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src="paths.js"></script>
-<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:100%; }
-</style>
+<meta http-equiv="refresh" content="0; URL=http://jfact0ry.com/maps/sitkatoportalexander/">
 </head>
 <body>
-<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
-<div id='map'></div>
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var map = L.mapbox.map('map', 'jfactory.d6ulxe49', {
-    maxZoom: 14,
-    minZoom: 9,
-    maxBounds: [[56.0,-136.0],[57.5,-134.0]],
-	infoControl: false,
-	attributionControl: true
-}).setView([56.64, -134.99], 10);
-
-map.attributionControl
-.addAttribution('<a href="https://twitter.com/sleepyjoshua">Joshua Houston</a>, <a href="http://ifsar.gina.alaska.edu/">GINA</a>');
-
-var hash = L.hash(map);
-
-var orange = '#FF6600'
-var red = '#FF2A2A'
-var yellow = '#FFCC00'
-var green = '#00FF00'
-
-var path = function (path,color) {
-var geojson = { type: 'LineString', coordinates: path };
-
-    L.geoJson(geojson, {
-        opacity: .8,
-		weight: 4,
-        color: color
-    }).addTo(map);
-};
-
-path(legOne,orange);
-path(legTwo,red);
-path(legThree,yellow);
-path(legFour,green);
-
-$.getJSON('camps.json', function(data) {
-    var campsites = L.geoJson(data, {
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {icon: L.mapbox.marker.icon({
-    'marker-size': 'small',
-    'marker-color': '#2f4f4f',
-    'marker-symbol': 'campsite'
-  })})},
-      onEachFeature: function (feature, layer) {
-		  layer.bindPopup(feature.properties.seq);
-      }
-    });
-    campsites.addTo(map);
-  });
-  
-
-$.getJSON('photos.json', function(data) {
-  var photos = L.geoJson(data, {
-	pointToLayer: function(feature, latlng) {
-		return L.marker(latlng, {icon: L.mapbox.marker.icon({
-    'marker-size': 'small',
-    'marker-color': '#C0C0C0',
-    'marker-symbol': 'camera'
-  })})},
-		onEachFeature: function (feature, layer) {
-		  layer.bindPopup(feature.properties.description, {
-		  maxWidth: 520
-		  });
-      }
-    });
-    photos.addTo(map);
-  });
-</script>
+Redirect
 </body>
 </html>
