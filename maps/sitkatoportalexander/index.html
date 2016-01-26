@@ -30,7 +30,7 @@ map.attributionControl
 .addAttribution('<a href="https://twitter.com/sleepyjoshua">Joshua Houston</a>, <a href="http://ifsar.gina.alaska.edu/">GINA</a>');
 
 var hash = L.hash(map);
-/*
+
 var orange = '#FF6600'
 var red = '#FF2A2A'
 var yellow = '#FFCC00'
@@ -51,7 +51,6 @@ path(legTwo,red);
 path(legThree,yellow);
 path(legFour,green);
 
-*/
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
@@ -86,7 +85,7 @@ $.getJSON('photos.json', function(data) {
     });
     photos.addTo(map);
   });
-
+	
 </script>
 </body>
 </html>
