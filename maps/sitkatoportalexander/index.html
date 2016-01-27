@@ -36,13 +36,13 @@ var red = '#FF2A2A'
 var yellow = '#FFCC00'
 var green = '#00FF00'
 
-var path = function (path,color) {
+var path = function (path) {
 var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
         opacity: .8,
-		weight: 4,
-        color: color
+		weight: 5,
+        color: #1a1a1a
     }).addTo(map);
 };
 
