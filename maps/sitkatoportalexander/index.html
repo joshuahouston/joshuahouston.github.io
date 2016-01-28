@@ -31,20 +31,25 @@ map.attributionControl
 
 var hash = L.hash(map);
 
-var path = function (path) {
+var orange = '#FF6600'
+var red = '#FF2A2A'
+var yellow = '#FFCC00'
+var green = '#00FF00'
+
+var path = function (path,color) {
 var geojson = { type: 'LineString', coordinates: path };
 
     L.geoJson(geojson, {
-        opacity: .7,
-		weight: 5,
-        color: '#1a1a1a'
+        opacity: .8,
+		weight: 4,
+        color: color
     }).addTo(map);
 };
 
-path(legOne);
-path(legTwo);
-path(legThree);
-path(legFour);
+path(legOne,orange);
+path(legTwo,red);
+path(legThree,yellow);
+path(legFour,green);
 
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
