@@ -14,7 +14,7 @@ markdown: kramdown
 data_source: data
 gems: ["jemoji"]
 
-highlighter: pygments
+highlighter: rouge
 
 links:
 - text: 3D
