@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset=utf-8 />
-<title>Sunny day in March</title>
+<title>Sunny day in February</title>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
@@ -12,40 +12,18 @@
 </style>
 </head>
 <body>
-<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'>
+<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 </script>
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-L.mapbox.map('map', 'mapbox.streets');
-/*	
-$.getJSON('20150322.json', function(data) {
-	    var geojson = L.geoJson(data, {
-		style: myStyle
-	 }).addTo(map);
-	 });
-  
-  
-var myStyle = {
-  "color": "#ff7800",
-  "weight": 5,
-  "opacity": 0.7
-  };
-  
-$.getJSON('20150322w.json', function(data) {
-	    L.geoJson(data, {
-		style: myStyle
-	}).addTo(map);
-});
-*/
+var map = L.mapbox.map('map', 'mapbox.streets');
 
-var garmin = omnivore.gpx('20160217.gpx')
+var runLayer = omnivore.gpx('20160217.gpx')
     .on('ready', function() {
-        map.fitBounds(garmin.getBounds());
+        map.fitBounds(runLayer.getBounds());
     })
     .addTo(map);
-
-	
 </script>
 </body>
 </html>
