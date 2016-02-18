@@ -17,7 +17,8 @@
 <div id='map'></div>
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-L.mapbox.map('map', 'jfactory.lm17m7nm');
+L.mapbox.map('map', 'mapbox.streets')
+	.setView([57, -135.33], 12)
 /*	
 $.getJSON('20150322.json', function(data) {
 	    var geojson = L.geoJson(data, {
