@@ -21,7 +21,7 @@ var markers = {
         "type": "Feature",
         "properties": {
             "description": "<div class=\"marker-title\">Realized I just saw someone I know from online</div><p><img src=\"https://farm2.staticflickr.com/1719/25022613261_aa7804865a_n.jpg\" width=\"320\" height=\"240\" alt=\"Looking West\"></p>",
-            "marker-symbol": "marker"
+            "marker-symbol": "generic_icon"
         },
         "geometry": {
             "type": "Point",
@@ -31,7 +31,7 @@ var markers = {
         "type": "Feature",
         "properties": {
             "description": "<div class=\"marker-title\">Looking at Bear Mountain</div><p><img src=\"https://farm2.staticflickr.com/1591/25089671846_bbf8c65fa8_n.jpg\" width=\"320\" height=\"240\" alt=\"Bear Mountain\"></p>",
-            "marker-symbol": "marker"
+            "marker-symbol": "generic_icon"
         },
         "geometry": {
             "type": "Point",
@@ -41,7 +41,7 @@ var markers = {
         "type": "Feature",
         "properties": {
             "description": "<div class=\"marker-title\">Circling Buoys</div><p><img src=\"https://farm2.staticflickr.com/1466/24820094680_6dde568315_n.jpg\" width=\"240\" height=\"320\" alt=\"Sealion-free buoy\"></p>",
-            "marker-symbol": "marker"
+            "marker-symbol": "generic_icon"
         },
         "geometry": {
             "type": "Point",
@@ -51,7 +51,7 @@ var markers = {
         "type": "Feature",
         "properties": {
             "description": "<div class=\"marker-title\">Distant Whales, Rough Seas</div><p><img src=\"https://farm2.staticflickr.com/1510/25115703325_33a332468e_n.jpg\" width=\"320\" height=\"320\" alt=\"Mt. Edgecumbe\"></p>",
-            "marker-symbol": "marker"
+            "marker-symbol": "generic_icon"
         },
         "geometry": {
             "type": "Point",
@@ -111,7 +111,7 @@ map.on('style.load', function () {
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "{marker-symbol}-11",
+            "icon-image": "{marker-symbol}",
             "icon-allow-overlap": true
         }
     });
