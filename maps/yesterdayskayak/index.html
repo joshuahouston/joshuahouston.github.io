@@ -15,6 +15,51 @@
 <body>
 <div id='map'></div>
 <script>
+var markers = {
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Realized I just saw someone I know from online</div><p><img src=\"https://farm2.staticflickr.com/1719/25022613261_aa7804865a_n.jpg\" width=\"320\" height=\"240\" alt=\"Looking West\"></p>",
+            "marker-symbol": "camera"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-135.302129,57.033338]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Looking at Bear Mountain</div><p><img src=\"https://farm2.staticflickr.com/1591/25089671846_bbf8c65fa8_n.jpg\" width=\"320\" height=\"240\" alt=\"Bear Mountain\"></p>",
+            "marker-symbol": "camera"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-135.327702,57.022341]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Circling Buoys</div><p><img src=\"https://farm2.staticflickr.com/1466/24820094680_6dde568315_n.jpg\" width=\"240\" height=\"320\" alt=\"Sealion-free buoy\"></p>",
+            "marker-symbol": "camera"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-135.345848,57.019035]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "description": "<div class=\"marker-title\">Distant Whales, Rough Seas</div><p><img src=\"https://farm2.staticflickr.com/1510/25115703325_33a332468e_n.jpg\" width=\"320\" height=\"320\" alt=\"Mt. Edgecumbe\"></p>",
+            "marker-symbol": "camera"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-135.349327,57.018088]
+        }
+    }]
+};
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
     container: 'map', // container id
