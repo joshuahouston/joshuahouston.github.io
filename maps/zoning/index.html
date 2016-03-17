@@ -3,8 +3,8 @@
 <head>
 <title>Sitka Zoning Test</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
 <style>
   body { margin:0; padding:0; }
   #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -14,6 +14,14 @@
 <body>
 <div id="map"></div>
 <script>
+L.mapbox.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = L.mapbox.map('map', 'jfactory.yd7h9f6r', {
+    	maxNativeZoom: 17,
+    	maxZoom: 18,
+      minZoom: 12,
+      maxBounds: [[57.015,-135.478],[57.138,-135.214]]
+}).setView([57.05, -135.33], 14);
+/*
 var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 
 	    var night   = L.tileLayer(mbUrl, {id: 'examples.map-y7l23tes'}),
@@ -40,7 +48,8 @@ var mbUrl = 'https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png';
 			"Zoning": zoning
 		};
 		
-		L.control.layers(baseLayers, overlays).addTo(map);
+		L.control.layers(baseLayers, overlays).addTo(map); */
+		
 </script>
 </body>
 </html>
