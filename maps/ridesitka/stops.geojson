@@ -9,7 +9,7 @@
         "route": "Blue",
         "time": "to Crescent Harbor=:30, to Whale Park=:02",
         "name": "Price St / Burkhart Dr",
-        "desc": "Near Sawmill Creek Plaza",
+        "description": "Near Sawmill Creek Plaza",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -26,7 +26,7 @@
         "route": "Blue",
         "time": ":33",
         "name": "Cascade Laundry",
-        "desc": "Cascade Laundry & Convenience Store - Sawmill Creek Blvd",
+        "description": "Cascade Laundry & Convenience Store - Sawmill Creek Blvd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -43,7 +43,7 @@
         "route": "Blue",
         "time": ":36",
         "name": "SJ Campus",
-        "desc": "Sheldon Jackson Campus / Sitka Fine Arts Camp - Near Hames Center and Sitka International Hostel",
+        "description": "Sheldon Jackson Campus / Sitka Fine Arts Camp - Near Hames Center and Sitka International Hostel",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -60,7 +60,7 @@
         "route": "Blue",
         "time": ":39",
         "name": "Totem Park",
-        "desc": "Main entrance to Sitka National Historical Park (Totem Park)",
+        "description": "Main entrance to Sitka National Historical Park (Totem Park)",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -77,7 +77,7 @@
         "route": "Blue, Green, Red",
         "time": "Red, Blue=:45 Green=:15,:45",
         "name": "Crescent Harbor",
-        "desc": "Crescent Harbor parking lot near Harrigan Centennial Hall - All Line Transfer",
+        "description": "Crescent Harbor parking lot near Harrigan Centennial Hall - All Line Transfer",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -94,7 +94,7 @@
         "route": "Blue",
         "time": ":47",
         "name": "Swan Lake Senior Center",
-        "desc": "Swan Lake Senior Center and Salvation Army on Lake St",
+        "description": "Swan Lake Senior Center and Salvation Army on Lake St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -111,7 +111,7 @@
         "route": "Blue",
         "time": ":49",
         "name": "Arrowhead St / Monastery St",
-        "desc": "Between Shennett St and Kinkead St",
+        "description": "Between Shennett St and Kinkead St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -128,7 +128,7 @@
         "route": "Blue",
         "time": ":50",
         "name": "Verstovia St / A St",
-        "desc": "Just south of Sitka High School between Sirstad St and Monastery St",
+        "description": "Just south of Sitka High School between Sirstad St and Monastery St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -145,7 +145,7 @@
         "route": "Blue, Red",
         "time": ":54",
         "name": "Sitka High School",
-        "desc": "Sitka High School, Performing Arts Center, and Cross Trail access - Red Line & Blue Line Transfer",
+        "description": "Sitka High School, Performing Arts Center, and Cross Trail access - Red Line & Blue Line Transfer",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -162,7 +162,7 @@
         "route": "Blue, Green",
         "time": "Blue=:56 Green=:05, :35",
         "name": "Baranof St / Sawmill Creek Rd",
-        "desc": "Near Baranof Elementary School and Market Center",
+        "description": "Near Baranof Elementary School and Market Center",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -179,7 +179,7 @@
         "route": "Blue",
         "time": ":57",
         "name": "Biorka St / Sawmill Creek Rd",
-        "desc": "Near Sitka Recycling Center and Sitka National Cemetery",
+        "description": "Near Sitka Recycling Center and Sitka National Cemetery",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -196,7 +196,7 @@
         "route": "Blue",
         "time": ":59",
         "name": "Sitka National Historical Park",
-        "desc": "Sawmill Creek Road entrance to Sitka National Historical Park",
+        "description": "Sawmill Creek Road entrance to Sitka National Historical Park",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -213,7 +213,7 @@
         "route": "Blue",
         "time": ":09",
         "name": "Whale Park",
-        "desc": "Whale Park overlooks the entrance to Silver Bay and is at the head of the new pedestrian path that follows along Sawmill Creek Rd to the industrial park",
+        "description": "Whale Park overlooks the entrance to Silver Bay and is at the head of the new pedestrian path that follows along Sawmill Creek Rd to the industrial park",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -230,7 +230,7 @@
         "route": "Blue",
         "time": ":17",
         "name": "GPIP",
-        "desc": "Gary Paxton Industrial Park Admin building near Blue Lake Rd - Final stop along Sawmill Creek Rd",
+        "description": "Gary Paxton Industrial Park Admin building near Blue Lake Rd - Final stop along Sawmill Creek Rd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -247,7 +247,7 @@
         "route": "Blue",
         "time": ":22",
         "name": "Thimbleberry Lake",
-        "desc": "Thimbleberry Lake and Heart Lake Trailhead",
+        "description": "Thimbleberry Lake and Heart Lake Trailhead",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -264,7 +264,7 @@
         "route": "Blue",
         "time": ":25",
         "name": "Anna Drive / Sawmill Creek Rd",
-        "desc": "Across from Knutson Dr and Cedar Beach Rd",
+        "description": "Across from Knutson Dr and Cedar Beach Rd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -281,7 +281,7 @@
         "route": "Blue",
         "time": ":28",
         "name": "Arrowhead Transfer",
-        "desc": "Near Foreign Auto and Mt Verstovia Trailhead",
+        "description": "Near Foreign Auto and Mt Verstovia Trailhead",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -298,7 +298,7 @@
         "route": "Red",
         "time": ":30",
         "name": "McDonalds",
-        "desc": "McDonald's Parking Lot across from Peterson Ave",
+        "description": "McDonald's Parking Lot across from Peterson Ave",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -315,7 +315,7 @@
         "route": "Red",
         "time": ":32",
         "name": "Lakeside Grocery",
-        "desc": "AC Lakeside Grocery and shopping center",
+        "description": "AC Lakeside Grocery and shopping center",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -332,7 +332,7 @@
         "route": "Red",
         "time": ":39",
         "name": "Random House",
-        "desc": "Downtown near Ernie's, Old Harbor Books, and Harry Race Pharmacy & Ice Cream Parlor",
+        "description": "Downtown near Ernie's, Old Harbor Books, and Harry Race Pharmacy & Ice Cream Parlor",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -349,7 +349,7 @@
         "route": "Red",
         "time": ":51",
         "name": "Sitka Community Hospital",
-        "desc": "Near Sitka Community Hospital and Moller Field",
+        "description": "Near Sitka Community Hospital and Moller Field",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -366,7 +366,7 @@
         "route": "Red",
         "time": ":55",
         "name": "Kashevaroff St / Edgecumbe Dr",
-        "desc": "Near Keet Gooshi Heen Elementary, Kimsham Ball Fields, and Cross Trail access",
+        "description": "Near Keet Gooshi Heen Elementary, Kimsham Ball Fields, and Cross Trail access",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -383,7 +383,7 @@
         "route": "Red",
         "time": ":57",
         "name": "Mills St / Edgecumbe Dr",
-        "desc": "Near 1300 block of Edgecumbe Dr between Kostrometinoff St & Neva St",
+        "description": "Near 1300 block of Edgecumbe Dr between Kostrometinoff St & Neva St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -400,7 +400,7 @@
         "route": "Red",
         "time": ":58",
         "name": "Charteris St / Edgecumbe Dr",
-        "desc": "End of stops along Edgecumbe Dr, Cross Trail access via Charteris St",
+        "description": "End of stops along Edgecumbe Dr, Cross Trail access via Charteris St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -417,7 +417,7 @@
         "route": "Red",
         "time": ":00",
         "name": "Sea Mart",
-        "desc": "Sea Mart Quality Foods grocery store",
+        "description": "Sea Mart Quality Foods grocery store",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -434,7 +434,7 @@
         "route": "Red",
         "time": ":01",
         "name": "Grace Harbor Church",
-        "desc": "Outbound (to ferry terminal) - Near 1900 block of HPR & Cascade Creek Rd",
+        "description": "Outbound (to ferry terminal) - Near 1900 block of HPR & Cascade Creek Rd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -451,7 +451,7 @@
         "route": "Red",
         "time": ":02",
         "name": "Cascade Creek Bridge - Outbound",
-        "desc": "Outbound (to ferry terminal) - Near 2100 block of HPR & Kramer Ave",
+        "description": "Outbound (to ferry terminal) - Near 2100 block of HPR & Kramer Ave",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -468,7 +468,7 @@
         "route": "Red",
         "time": ":03",
         "name": "Sand Dollar Dr / Halibut Point Rd",
-        "desc": "Outbound (to ferry terminal) - Near 2200 block of HPR & Sand Dollar Dr",
+        "description": "Outbound (to ferry terminal) - Near 2200 block of HPR & Sand Dollar Dr",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -485,7 +485,7 @@
         "route": "Red",
         "time": ":04",
         "name": "Sharon Dr / Halibut Point Rd",
-        "desc": "Outbound (to ferry terminal) - Near 2700 block of HPR & Sharon Dr",
+        "description": "Outbound (to ferry terminal) - Near 2700 block of HPR & Sharon Dr",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -502,7 +502,7 @@
         "route": "Red",
         "time": ":05",
         "name": "Channel Club",
-        "desc": "Outbound (to ferry terminal) - Near 2900 block of HPR & Channel Club Restaurant",
+        "description": "Outbound (to ferry terminal) - Near 2900 block of HPR & Channel Club Restaurant",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -519,7 +519,7 @@
         "route": "Red",
         "time": ":06",
         "name": "Sollars Ct / Halibut Point Rd - Outbound",
-        "desc": "Outbound (to ferry terminal) - Near 3200 block of HPR & Sollars Ct",
+        "description": "Outbound (to ferry terminal) - Near 3200 block of HPR & Sollars Ct",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -536,7 +536,7 @@
         "route": "Red",
         "time": ":08",
         "name": "HPR Rec - Outbound",
-        "desc": "Outbound (to ferry terminal) - Near 3800 block of HPR & Granite Creek Rd and across from the Rec",
+        "description": "Outbound (to ferry terminal) - Near 3800 block of HPR & Granite Creek Rd and across from the Rec",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -553,7 +553,7 @@
         "route": "Red",
         "time": ":09",
         "name": "Horizon Way / Halibut Point Rd",
-        "desc": "Outbound (to ferry terminal) - Near 4400 block of HPR & Mini Storage",
+        "description": "Outbound (to ferry terminal) - Near 4400 block of HPR & Mini Storage",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -570,7 +570,7 @@
         "route": "Red",
         "time": ":10",
         "name": "Blue Apartments",
-        "desc": "Outbound (to ferry terminal) - Near 4700 block of HPR & Blue Apartments",
+        "description": "Outbound (to ferry terminal) - Near 4700 block of HPR & Blue Apartments",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -587,7 +587,7 @@
         "route": "Red",
         "time": ":14",
         "name": "Ferry Terminal",
-        "desc": "Ferry Terminal, Alaska Marine Highway - Final stop along Halibut Point Rd",
+        "description": "Ferry Terminal, Alaska Marine Highway - Final stop along Halibut Point Rd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -604,7 +604,7 @@
         "route": "Red",
         "time": ":15",
         "name": "Wildlife Troopers",
-        "desc": "Inbound (to downtown) - Near 4700 block of HPR & Alaska Wildlife Troopers",
+        "description": "Inbound (to downtown) - Near 4700 block of HPR & Alaska Wildlife Troopers",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -621,7 +621,7 @@
         "route": "Red",
         "time": ":17",
         "name": "Pirates Wy / Halibut Point Rd",
-        "desc": "Inbound (to downtown) - Near 4300 block of HPR & Mini Storage",
+        "description": "Inbound (to downtown) - Near 4300 block of HPR & Mini Storage",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -638,7 +638,7 @@
         "route": "Red",
         "time": ":18",
         "name": "HPR Rec - Inbound",
-        "desc": "Inbound (to downtown) - Near 3700 block of HPR & Granite Creek Rd and across from the Rec",
+        "description": "Inbound (to downtown) - Near 3700 block of HPR & Granite Creek Rd and across from the Rec",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -655,7 +655,7 @@
         "route": "Red",
         "time": ":19",
         "name": "Sollars Ct / Halibut Point Rd - Inbound",
-        "desc": "Inbound (to downtown) - Near 3200 block of HPR & Sollars Ct",
+        "description": "Inbound (to downtown) - Near 3200 block of HPR & Sollars Ct",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -672,7 +672,7 @@
         "route": "Red",
         "time": ":21",
         "name": "Eagles Roost",
-        "desc": "Inbound (to downtown) - Near 2700 block of HPR & Where Eagles Roost",
+        "description": "Inbound (to downtown) - Near 2700 block of HPR & Where Eagles Roost",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -689,7 +689,7 @@
         "route": "Red",
         "time": ":23",
         "name": "Sandy Beach",
-        "desc": "Inbound (to downtown) - Near 2200 block of HPR & Sandy Beach",
+        "description": "Inbound (to downtown) - Near 2200 block of HPR & Sandy Beach",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -706,7 +706,7 @@
         "route": "Red",
         "time": ":24",
         "name": "Cascade Creek Bridge - Inbound",
-        "desc": "Inbound (to downtown) - Near 2100 block of HPR & Kramer Ave",
+        "description": "Inbound (to downtown) - Near 2100 block of HPR & Kramer Ave",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -723,7 +723,7 @@
         "route": "Red",
         "time": ":28",
         "name": "Alder Wy / Halibut Point Rd",
-        "desc": "Inbound (to downtown) - Near 1800 block of HPR & Cascade Creek Rd",
+        "description": "Inbound (to downtown) - Near 1800 block of HPR & Cascade Creek Rd",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -740,7 +740,7 @@
         "route": "Green",
         "time": ":00, :30",
         "name": "Community House",
-        "desc": "Sheetka Kwaan Naa Kahidi Community House - 200 Katlian St",
+        "description": "Sheetka Kwaan Naa Kahidi Community House - 200 Katlian St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -757,7 +757,7 @@
         "route": "Green",
         "time": ":01, :31",
         "name": "Sitka Tribe",
-        "desc": "Sitka Tribe of Alaska offices - 456 Katlian St",
+        "description": "Sitka Tribe of Alaska offices - 456 Katlian St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -774,7 +774,7 @@
         "route": "Green",
         "time": ":03, :33",
         "name": "Center For Community",
-        "desc": "Center For Community & Sitka Medical Center - 700 Katlian St",
+        "description": "Center For Community & Sitka Medical Center - 700 Katlian St",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -791,7 +791,7 @@
         "route": "Green",
         "time": ":07, :37",
         "name": "Kaasdaa Heen Cr / Indian River Rd",
-        "desc": "Across from ANB Cemetery",
+        "description": "Across from ANB Cemetery",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -808,7 +808,7 @@
         "route": "Green",
         "time": ":08, :38",
         "name": "Peter Simpson Rd / Indian River Rd",
-        "desc": "Near Yaw Dr and Indian River Trailhead",
+        "description": "Near Yaw Dr and Indian River Trailhead",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -825,7 +825,7 @@
         "route": "Green",
         "time": ":19, :49",
         "name": "UAS",
-        "desc": "University of Alaska Southeast Sitka extension and Mt Edgecumbe High School",
+        "description": "University of Alaska Southeast Sitka extension and Mt Edgecumbe High School",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -842,7 +842,7 @@
         "route": "Green",
         "time": ":20, :50",
         "name": "US Coast Guard",
-        "desc": "United States Coast Guard Maple parking lot",
+        "description": "United States Coast Guard Maple parking lot",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -859,7 +859,7 @@
         "route": "Green",
         "time": ":24, :54",
         "name": "SEARHC - Mt Edgecumbe Hospital",
-        "desc": "Main entrance to SEARHC - Mt Edgecumbe Hospital near Seward Ave",
+        "description": "Main entrance to SEARHC - Mt Edgecumbe Hospital near Seward Ave",
         "marker-symbol": "bus"
       },
       "geometry": {
@@ -876,7 +876,7 @@
         "route": "Green",
         "time": ":27, :57",
         "name": "Sealing Cove",
-        "desc": "Sealing Cove Harbor parking lot near Alice Lp",
+        "description": "Sealing Cove Harbor parking lot near Alice Lp",
         "marker-symbol": "bus"
       },
       "geometry": {
