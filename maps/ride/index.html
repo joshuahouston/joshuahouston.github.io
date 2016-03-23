@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title></title>
+    <title>Sitka's The RIDE Stops and Routes</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
@@ -63,7 +63,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/light-v8',
+  style: 'mapbox://styles/mapbox/streets-v8',
   center: [-135.33, 57.0505],
   zoom: 13
 });
@@ -179,6 +179,21 @@ function addLayer(name, id) {
   layers.appendChild(link);
 }
 
+map.on('style.load', function () {
+    map.addSource("markers", {
+        type: "geojson",
+        data: "stops.geojson"
+	});
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "bus-11"
+        }
+    });
+});
 </script>
 </body>
 </html>
