@@ -179,6 +179,21 @@ function addLayer(name, id) {
   layers.appendChild(link);
 }
 
+map.on('style.load', function () {
+    map.addSource("markers", {
+        type: "geojson",
+        data: "stops.geojson"
+	});
+
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "bus-11"
+        }
+    });
+});
 </script>
 </body>
 </html>
