@@ -187,10 +187,12 @@ map.on('style.load', function () {
 
     map.addLayer({
         "id": "markers",
+		"interactive": true,
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "bus-11"
+            "icon-image": "bus-11",
+			"icon-allow-overlap": true
         }
     });
 });
