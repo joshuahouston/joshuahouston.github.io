@@ -8,21 +8,4 @@
       "title": "Mapbox DC",
       "marker-symbol": "monument"
     }
-  },
-  {
-  "type": "Feature",
-  "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -135.304524,
-          57.048981
-        ]
-      },
-	  "properties": {
-        "route": "Blue",
-        "time": "to Crescent Harbor=:30, to Whale Park=:02",
-        "name": "Price St / Burkhart Dr",
-        "desc": "Near Sawmill Creek Plaza",
-        "marker-symbol": "bus"
-      }
-	  }
+  }
