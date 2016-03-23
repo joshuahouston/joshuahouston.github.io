@@ -187,11 +187,48 @@ map.on('style.load', function () {
 
     map.addLayer({
         "id": "markers",
+		"interactive": true,
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "bus-11"
+            "icon-image": "bus-11",
+			"icon-allow-overlap": true
         }
+    });
+});
+
+var popup = new mapboxgl.Popup();
+
+map.on('click', function (e) {
+    map.featuresAt(e.point, {
+        radius: 7.5, // Half the marker size (15px).
+        includeGeometry: true,
+        layer: 'markers'
+    }, function (err, features) {
+
+        if (err || !features.length) {
+            popup.remove();
+            return;
+        }
+
+        var feature = features[0];
+
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(feature.geometry.coordinates)
+            .setHTML(feature.properties.description)
+            .addTo(map);
+    });
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    map.featuresAt(e.point, {
+        radius: 7.5, // Half the marker size (15px).
+        layer: 'markers'
+    }, function (err, features) {
+        map.getCanvas().style.cursor = (!err && features.length) ? 'pointer' : '';
     });
 });
 </script>
