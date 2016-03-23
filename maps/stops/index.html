@@ -24,8 +24,8 @@ var map = new mapboxgl.Map({
 
 map.on('style.load', function () {
     map.addSource("markers", {
-        "type": "geojson",
-        "data": "stops.geojson"
+        type: "geojson",
+        data: "stops.geojson"
 		}
 	});
 
