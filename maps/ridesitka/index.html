@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+<script src='buslines.js'>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v8',
+    center: [-135.32, 57.050348],
+    zoom: 13
+});
+
+map.on('style.load', function () {
+    map.addSource("blue", {
+        "type": "geojson",
+        "data": blueLine
+    });
+
+    map.addLayer({
+        "id": "blue",
+        "type": "line",
+        "source": "blue",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#2d5ed1",
+            "line-width": 4
+        }
+    });
+});
+
+map.on('style.load', function () {
+    map.addSource("red", {
+        "type": "geojson",
+        "data": redLine
+    });
+
+    map.addLayer({
+        "id": "red",
+        "type": "line",
+        "source": "red",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#ce2d18",
+            "line-width": 4
+        }
+    });
+});
+map.on('style.load', function () {
+    map.addSource("green", {
+        "type": "geojson",
+        "data": greenLine
+    });
+
+    map.addLayer({
+        "id": "green",
+        "type": "line",
+        "source": "green",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#9fdf81",
+            "line-width": 4
+        }
+    });
+});
+</script>
+
+</body>
+</html>
