@@ -19,7 +19,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/bright-v8',
+    style: 'mapbox://styles/mapbox/basic-v8',
     center: [-135.3, 57.05],
     zoom: 10,
 });
@@ -43,7 +43,7 @@ map.on('style.load', function(){
         "type": "symbol",
         "source": "earthquakes",
         "layout": {
-            "icon-image": "bus-15"
+            "icon-image": "bus-11"
         }
     });
 });
