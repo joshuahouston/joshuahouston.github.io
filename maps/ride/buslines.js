@@ -1,12 +1,7 @@
 var blueLine = [
     {
       "type": "Feature",
-      "properties": {
-        "stroke": "#2d5ed1",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Blue Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -1616,12 +1611,7 @@ var blueLine = [
 	
 	var redLine = [{
       "type": "Feature",
-      "properties": {
-        "stroke": "#ce2d18",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Red Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -2759,12 +2749,7 @@ var blueLine = [
 
 	var greenLine = [{
       "type": "Feature",
-      "properties": {
-        "stroke": "#9fdf81",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Green Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
