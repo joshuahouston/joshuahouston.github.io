@@ -1,12 +1,100 @@
-var blueLine = [
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v8',
+    zoom: 13,
+    center: [-135.33, -57.0505]
+});
+
+map.on('style.load', function () {
+    map.addSource('blue', {
+        type: 'geojson',
+        data: blueLine
+    });
+    map.addLayer({
+        'id': 'blue',
+        'type': 'line',
+        'source': 'blue',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#2d5ed1',
+            'line-width': 4
+        }
+    });
+
+    map.addSource('red', {
+        type: 'geojson',
+        data: redLine
+    });
+    map.addLayer({
+        'id': 'red',
+        'type': 'line',
+        'source': 'red',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#ce2d18',
+            'line-width': 4
+        }
+    });
+    
+	map.addSource('green', {
+        type: 'geojson',
+        data: greenLine
+    });
+    map.addLayer({
+        'id': 'green',
+        'type': 'line',
+        'source': 'green',
+        'layout': {
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-color': '#9fdf81',
+            'line-width': 4
+        }
+    });
+});
+
+addLayer('Blue Line', 'blue');
+addLayer('Green Line', 'green');
+addLayer('Red Line', 'red');
+
+function addLayer(name, id) {
+    var link = document.createElement('a');
+    link.href = '#';
+    link.className = 'active';
+    link.textContent = name;
+
+    link.onclick = function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        var visibility = map.getLayoutProperty(id, 'visibility');
+
+        if (visibility === 'visible') {
+            map.setLayoutProperty(id, 'visibility', 'none');
+            this.className = '';
+        } else {
+            this.className = 'active';
+            map.setLayoutProperty(id, 'visibility', 'visible');
+        }
+    };
+
+    var layers = document.getElementById('menu');
+    layers.appendChild(link);
+}
+
+var blueLine = 
     {
       "type": "Feature",
-      "properties": {
-        "stroke": "#2d5ed1",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Blue Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -1612,16 +1700,11 @@ var blueLine = [
 			          ]
         ]
       }
-    }];
+    };
 	
-	var redLine = [{
+	var redLine = {
       "type": "Feature",
-      "properties": {
-        "stroke": "#ce2d18",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Red Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -2755,16 +2838,11 @@ var blueLine = [
 			          ]
         ]
       }
-    }];
+    };
 
-	var greenLine = [{
+	var greenLine = {
       "type": "Feature",
-      "properties": {
-        "stroke": "#9fdf81",
-        "stroke-width": 3,
-        "stroke-opacity": 1,
-        "title": "Green Line"
-      },
+      "properties": {},
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -3446,4 +3524,4 @@ var blueLine = [
           ]
         ]
       }
-    }];
+    };
