@@ -4,7 +4,7 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src="buslines.js"></script>
+    <script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -70,9 +70,17 @@ var map = new mapboxgl.Map({
 
 map.on('style.load', function () {
     map.addSource('blue', {
-        type: 'geojson',
-        data: blueLine
+        'type': 'geojson',
+        'data': {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": blueLine
+            }
+        }
     });
+	
     map.addLayer({
         'id': 'blue',
         'type': 'line',
@@ -86,11 +94,21 @@ map.on('style.load', function () {
             'line-width': 4
         }
     });
+});
 
+map.on('style.load', function () {
     map.addSource('red', {
-        type: 'geojson',
-        data: redLine
+        'type': 'geojson',
+        'data': {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": redLine
+            }
+		}
     });
+	
     map.addLayer({
         'id': 'red',
         'type': 'line',
@@ -104,11 +122,21 @@ map.on('style.load', function () {
             'line-width': 4
         }
     });
-    
+});
+
+map.on('style.load', function () {
 	map.addSource('green', {
         type: 'geojson',
-        data: greenLine
+        data: {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": greenLine
+            }
+		}
     });
+	
     map.addLayer({
         'id': 'green',
         'type': 'line',
