@@ -4,13 +4,13 @@
     <meta charset='utf-8' />
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
-	<script src="lines.js"></script>
 </head>
 <body>
 <style>
@@ -62,125 +62,123 @@
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v8',
-    center: [-135.32, 57.050348],
-    zoom: 13
+  container: 'map',
+  style: 'mapbox://styles/mapbox/light-v8',
+  center: [-135.33, 57.0505],
+  zoom: 13
 });
 
-map.on('style.load', function () {
-    map.addSource("blue", {
-        "type": "geojson",
-        "data": {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "LineString",
-                "coordinates": blueLine
-                ]
-            }
-        }
-    });
+map.on('style.load', function() {
+  map.addSource("blue", {
+    "type": "geojson",
+    "data": {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": blueLine
+      }
+    }
+  });
 
-    map.addLayer({
-        "id": "blue",
-        "type": "line",
-        "source": "blue",
-        "layout": {
-            "line-join": "round",
-            "line-cap": "round"
-        },
-        "paint": {
-            "line-color": "#2d5ed1",
-            "line-width": 4
-        }
-    });
+  map.addLayer({
+    "id": "blue",
+    "type": "line",
+    "source": "blue",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#2d5ed1",
+      "line-width": 4
+    }
+  });
 });
 
-map.on('style.load', function () {
-    map.addSource("red", {
-        "type": "geojson",
-        "data": {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "LineString",
-                "coordinates": redLine
-            }
-        }
-    });
+map.on('style.load', function() {
+  map.addSource("red", {
+    "type": "geojson",
+    "data": {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": redLine
+      }
+    }
+  });
 
-    map.addLayer({
-        "id": "red",
-        "type": "line",
-        "source": "red",
-        "layout": {
-            "line-join": "round",
-            "line-cap": "round"
-        },
-        "paint": {
-            "line-color": "#ce2d18",
-            "line-width": 4
-        }
-    });
+  map.addLayer({
+    "id": "red",
+    "type": "line",
+    "source": "red",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#ce2d18",
+      "line-width": 4
+    }
+  });
 });
-map.on('style.load', function () {
-    map.addSource("green", {
-        "type": "geojson",
-        "data": {
-            "type": "Feature",
-            "properties": {},
-            "geometry": {
-                "type": "LineString",
-                "coordinates": blueLine
-            }
-        }
-    });
+map.on('style.load', function() {
+  map.addSource("green", {
+    "type": "geojson",
+    "data": {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": greenLine
+      }
+    }
+  });
 
-    map.addLayer({
-        "id": "green",
-        "type": "line",
-        "source": "green",
-        "layout": {
-            "line-join": "round",
-            "line-cap": "round"
-        },
-        "paint": {
-            "line-color": "#9fdf81",
-            "line-width": 4
-        }
-    });
+  map.addLayer({
+    "id": "green",
+    "type": "line",
+    "source": "green",
+    "layout": {
+      "line-join": "round",
+      "line-cap": "round"
+    },
+    "paint": {
+      "line-color": "#9fdf81",
+      "line-width": 4
+    }
+  });
 });
-
 addLayer('Blue Line', 'blue');
 addLayer('Green Line', 'green');
 addLayer('Red Line', 'red');
 
 function addLayer(name, id) {
-    var link = document.createElement('a');
-    link.href = '#';
-    link.className = 'active';
-    link.textContent = name;
+  var link = document.createElement('a');
+  link.href = '#';
+  link.className = 'active';
+  link.textContent = name;
 
-    link.onclick = function (e) {
-        e.preventDefault();
-        e.stopPropagation();
+  link.onclick = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
 
-        var visibility = map.getLayoutProperty(id, 'visibility');
+    var visibility = map.getLayoutProperty(id, 'visibility');
 
-        if (visibility === 'visible') {
-            map.setLayoutProperty(id, 'visibility', 'none');
-            this.className = '';
-        } else {
-            this.className = 'active';
-            map.setLayoutProperty(id, 'visibility', 'visible');
-        }
-    };
+    if (visibility === 'visible') {
+      map.setLayoutProperty(id, 'visibility', 'none');
+      this.className = '';
+    } else {
+      this.className = 'active';
+      map.setLayoutProperty(id, 'visibility', 'visible');
+    }
+  };
 
-    var layers = document.getElementById('menu');
-    layers.appendChild(link);
+  var layers = document.getElementById('menu');
+  layers.appendChild(link);
 }
-</script>
 
+</script>
 </body>
 </html>
