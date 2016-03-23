@@ -216,7 +216,7 @@ map.on('click', function (e) {
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description)
+            .setHTML(feature.properties.desc)
             .addTo(map);
     });
 });
