@@ -18,26 +18,26 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v8',
-    center: [-96, 37],
-    zoom: 3
+    center: [-135.33, 57],
+    zoom: 11
 });
 
 map.on('style.load', function () {
     map.addSource("markers", {
         "type": "geojson",
-        "data": markers.geojson
-    });
+        "data": "stops.json"
+		},
+		"properties": {
+			"marker-symbol": "bus"
+		}
+	});
 
     map.addLayer({
         "id": "markers",
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "{marker-symbol}-15",
-            "text-field": "{title}",
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, 0.6],
-            "text-anchor": "top"
+            "icon-image": "{marker-symbol}-11"
         }
     });
 });
