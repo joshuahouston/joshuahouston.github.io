@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title></title>
+    <title>Sitka's The RIDE Stops and Routes</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
@@ -63,7 +63,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/emerald-v8',
+  style: 'mapbox://styles/mapbox/light-v8',
   center: [-135.33, 57.0505],
   zoom: 13
 });
@@ -187,12 +187,10 @@ map.on('style.load', function () {
 
     map.addLayer({
         "id": "markers",
-		"interactive": true,
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "bus-11",
-			"icon-allow-overlap": true
+            "icon-image": "bus-11"
         }
     });
 });
@@ -216,7 +214,7 @@ map.on('click', function (e) {
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.desc)
+            .setHTML(feature.properties.name + '\<br\>' + feature.properties.route + ' Line '+ '\<br\>' + feature.properties.time + '\<br\>' + feature.properties.desc)
             .addTo(map);
     });
 });
