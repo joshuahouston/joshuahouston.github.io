@@ -25,10 +25,7 @@ var map = new mapboxgl.Map({
 map.on('style.load', function () {
     map.addSource("markers", {
         "type": "geojson",
-        "data": "stops.json"
-		},
-		"properties": {
-			"marker-symbol": "bus"
+        "data": "stops.geojson"
 		}
 	});
 
@@ -37,7 +34,7 @@ map.on('style.load', function () {
         "type": "symbol",
         "source": "markers",
         "layout": {
-            "icon-image": "{marker-symbol}-11"
+            "icon-image": "bus-11"
         }
     });
 });
