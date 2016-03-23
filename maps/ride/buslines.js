@@ -1,4 +1,4 @@
-var blueLine = [
+var blueLine = 
     {
       "type": "Feature",
       "properties": {},
@@ -1607,9 +1607,9 @@ var blueLine = [
 			          ]
         ]
       }
-    }];
+    };
 	
-	var redLine = [{
+	var redLine = {
       "type": "Feature",
       "properties": {},
       "geometry": {
@@ -2745,9 +2745,9 @@ var blueLine = [
 			          ]
         ]
       }
-    }];
+    };
 
-	var greenLine = [{
+	var greenLine = {
       "type": "Feature",
       "properties": {},
       "geometry": {
@@ -3431,4 +3431,4 @@ var blueLine = [
           ]
         ]
       }
-    }];
+    };
