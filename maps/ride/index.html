@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Sitka's The RIDE Stops and Routes</title>
+    <title>the RIDE</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
@@ -64,7 +64,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/mapbox/streets-v8',
-  center: [-135.33, 57.0505],
+  center: [-135.33, 57.0506],
   zoom: 13
 });
 
@@ -90,8 +90,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#2d5ed1",
-      "line-width": 4
+      "line-color": "#6666ff",
+	  "line-width": 5
     }
   });
 });
@@ -118,8 +118,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#ce2d18",
-      "line-width": 4
+      "line-color": "#ff6666",
+	  "line-width": 5
     }
   });
 });
@@ -145,8 +145,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#9fdf81",
-      "line-width": 4
+      "line-color": "#00803e",
+	  "line-width": 5
     }
   });
 });
