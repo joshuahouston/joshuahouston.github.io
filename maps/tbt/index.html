@@ -40,19 +40,21 @@ body * {
 <div id='after' class='map'></div>
 
 <script>
-mapboxgl.accessToken = '<your access token here>';
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var before = new mapboxgl.Map({
     container: 'before',
-    style: 'mapbox://styles/mapbox/light-v8',
-    center: [0, 0],
-    zoom: 0
+    style: 'mapbox://styles/jfactory/cimqgzbx600k9ahm7pl3wpimy',
+    center: [-135.3519, 57.04823],
+    zoom: 15,
+	bearing: 21
 });
 
 var after = new mapboxgl.Map({
     container: 'after',
-    style: 'mapbox://styles/mapbox/dark-v8',
-    center: [0, 0],
-    zoom: 0
+    style: 'mapbox://styles/jfactory/cimqgritx00k2b3kl06k2yypv',
+    center: [-135.3519, 57.04823],
+    zoom: 15,
+	bearing, 21
 });
 
 new mapboxgl.Compare(before, after);
