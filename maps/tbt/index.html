@@ -54,17 +54,13 @@ var after = new mapboxgl.Map({
     style: 'mapbox://styles/jfactory/cimqgritx00k2b3kl06k2yypv',
     center: [-135.3518, 57.04823],
     zoom: 16,
-	bearing: 21
+	bearing: 21,
+	maxBounds: [[-135.35714149475098,
+	          57.04507227167669],[-135.3447389602661,
+	          57.05096642937449]]
 });
 
 new mapboxgl.Compare(before, after);
-map.scrollZoom.disable();
-map.dragPan.disable();
-map.boxZoom.disable();
-map.touchZoomRotate.disableRotation();
-map.dragRotate.disable();
-map.doubleClickZoom.disable();
-map.keyboard.disable();
 </script>
 
 </body>
