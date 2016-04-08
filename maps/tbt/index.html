@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title></title>
+    <title>Sitka Sealing Cove</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
@@ -58,6 +58,13 @@ var after = new mapboxgl.Map({
 });
 
 new mapboxgl.Compare(before, after);
+map.scrollZoom.disable();
+map.dragPan.disable();
+map.boxZoom.disable();
+map.touchZoomRotate.disableRotation();
+map.dragRotate.disable();
+map.doubleClickZoom.disable();
+map.keyboard.disable();
 </script>
 
 </body>
