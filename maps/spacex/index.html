@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Travel-focused mapping with the new Mapbox Streets</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <style>
+        body { margin:0; padding:0; display: block; height: 100%; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+
+<body>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v0.1.0/mapbox-gl-geocoder.css' type='text/css' />
+<div class='col12 fill-grey'>
+<style>
+#geocoder-container {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    margin-top: 10px;
+}
+
+#geocoder-container > div {
+    margin-left:5%;
+}
+</style>
+
+<div id='map'></div>
+
+<div class='hide-mobile' id='geocoder-container'></div>
+
+  <div class='col4 fill-lighten3 pin-right scroll-styled hide-mobile clearfix'>
+    <div class='col12 pad2x pad1y fill-light'><h2>European capitals</h2></div>
+    <div class='col12 pad2x pad1y caption quiet fill-lighten1'>We're highlighting museums, monuments, castles, forts, memorials, ruins, and archaeological sites to inspire wanderlust with Mapbox Streets v7.</div>
+    <div class='pill pad2x pad1y mobile-cols clearfix'><!--
+      --><a href='#' onclick='fly(id);' id='key' class='fr col12 short button'>Sitka</a><!--
+      --><a href='#' onclick='fly(id);' id='aft' class='fr col12 short button'>Barrow</a><!--
+      --><a href='#' onclick='fly(id);' id='mtb' class='fr col12 short button'>Anchorage</a><!--
+      --><a href='#' onclick='fly(id);' id='ara' class='fr col12 short button'>Fairbanks</a><!--
+      --><a href='#' onclick='fly(id);' id='hea' class='fr col12 short button'>Denali</a><!--
+      --><a href='#' onclick='fly(id);' id='whi' class='fr col12 short button'>Unalaska</a><!--
+      --><a href='#' onclick='fly(id);' id='bre' class='fr col12 short button'>Yakutat</a><!--
+      --><a href='#' onclick='fly(id);' id='han' class='fr col12 short button'>Juneau</a><!--
+      --><a href='#' onclick='fly(id);' id='bir' class='fr col12 short button'>St. Paul</a><!--
+      --><a href='#' onclick='fly(id);' id='war' class='fr col12 short button'>Petersburg</a><!--
+    --></div>
+  </div>
+
+
+  <div class='pin-top show-mobile'>
+    <div class='col12 pad2 fill-light'><h3>European capitals</h3></div>
+    <div class='pill col6 space-bottom8'><!--
+      --><a href='#' onclick='fly(id);' id='key' class='fr col12 button'>Sitka</a><!--
+      --><a href='#' onclick='fly(id);' id='aft' class='fr col12 button'>Barrow</a><!--
+      --><a href='#' onclick='fly(id);' id='mtb' class='fr col12 button'>Anchorage</a><!--
+      -->
+    </div>
+  </div>
+
+</div>
+
+
+<br />
+
+<script>
+$( "a" ).click(function(ev) {
+  ev.preventDefault();
+if($('a').hasClass('fill-green')) {
+    $('a').removeClass('fill-green');
+    $(this).addClass('fill-green');
+    ev.preventDefault();
+} else {
+    $(this).addClass('fill-green');
+    ev.preventDefault();
+}});
+</script>
+
+
+<script src="index.js"></script>
+</body>
+</html>

@@ -2,69 +2,25 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Sitka's The RIDE Stops and Routes</title>
+    <title>the RIDE</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 	<script src="lines.js"></script>
 	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+	<link href='style.css' rel='stylesheet' />
 </head>
 <body>
-<style>
-    #menu {
-        background: #fff;
-        position: absolute;
-        z-index: 1;
-        top: 10px;
-        right: 10px;
-        border-radius: 3px;
-        width: 120px;
-        border: 1px solid rgba(0,0,0,0.4);
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    #menu a {
-        font-size: 13px;
-        color: #404040;
-        display: block;
-        margin: 0;
-        padding: 0;
-        padding: 10px;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(0,0,0,0.25);
-        text-align: center;
-    }
-
-    #menu a:last-child {
-        border: none;
-    }
-
-    #menu a:hover {
-        background-color: #f8f8f8;
-        color: #404040;
-    }
-
-    #menu a.active {
-        background-color: #3887be;
-        color: #ffffff;
-    }
-
-    #menu a.active:hover {
-        background: #3074a4;
-    }
-</style>
-
 <nav id="menu"></nav>
 <div id="map"></div>
+<span class="logo">
+    <a href="https://ridesitka.com/"><img src="http://jfact0ry.com/theRIDE/logo.png" width=76 height=34></a>
+</span>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/light-v8',
-  center: [-135.33, 57.0505],
+  style: 'mapbox://styles/mapbox/streets-v8',
+  center: [-135.33, 57.0507],
   zoom: 13
 });
 
@@ -90,8 +46,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#2d5ed1",
-      "line-width": 4
+      "line-color": "#6666ff",
+	  "line-width": 5
     }
   });
 });
@@ -118,8 +74,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#ce2d18",
-      "line-width": 4
+      "line-color": "#ff5555",
+	  "line-width": 5
     }
   });
 });
@@ -145,8 +101,8 @@ map.on('style.load', function() {
       "line-cap": "round"
     },
     "paint": {
-      "line-color": "#9fdf81",
-      "line-width": 4
+      "line-color": "#00803e",
+	  "line-width": 5
     }
   });
 });
@@ -179,6 +135,8 @@ function addLayer(name, id) {
   layers.appendChild(link);
 }
 
+
+/*
 map.on('style.load', function () {
     map.addSource("markers", {
         type: "geojson",
@@ -216,7 +174,7 @@ map.on('click', function (e) {
         // Populate the popup and set its coordinates
         // based on the feature found.
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.name + '\<br\>' + feature.properties.route + ' Line '+ '\<br\>' + feature.properties.time + '\<br\>' + feature.properties.desc)
+            .setHTML(feature.properties.description)
             .addTo(map);
     });
 });
@@ -231,6 +189,63 @@ map.on('mousemove', function (e) {
         map.getCanvas().style.cursor = (!err && features.length) ? 'pointer' : '';
     });
 });
+*/
+
+map.on('load', function () {
+    // Add marker data as a new GeoJSON source.
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": "stops.geojson"
+    });
+
+    // Add a layer showing the markers.
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15",
+            "icon-allow-overlap": true
+        }
+    });
+});
+
+
+// When a click event occurs near a marker icon, open a popup at the location of
+// the feature, with description HTML from its properties.
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    var popup = new mapboxgl.Popup()
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(feature.properties.description)
+        .addTo(map);
+});
+
+// Use the same approach as above to indicate that the symbols are clickable
+// by changing the cursor style to 'pointer'.
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['markers'] });
+    map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+});
+
+map.addControl(new mapboxgl.Navigation({
+   position: 'top-left'
+}));
+
+map.addControl(new mapboxgl.Geolocate({
+   position: 'top-left'
+}));
+
+
 </script>
 </body>
 </html>
