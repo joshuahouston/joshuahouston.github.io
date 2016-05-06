@@ -11,6 +11,8 @@
 </head>
 <body>
 <nav id="menu"></nav>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v1.0.0/mapbox-gl-geocoder.css' type='text/css' />
 <div id="map"></div>
 <span class="logo">
     <a href="https://ridesitka.com/"><img src="http://jfact0ry.com/theRIDE/logo.png" width=76 height=34></a>
@@ -182,6 +184,10 @@ map.on('mousemove', function (e) {
     map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 });
 
+map.addControl(new mapboxgl.Geocoder({
+   position: 'top-left'
+}));
+
 map.addControl(new mapboxgl.Navigation({
    position: 'top-left'
 }));
@@ -189,8 +195,6 @@ map.addControl(new mapboxgl.Navigation({
 map.addControl(new mapboxgl.Geolocate({
    position: 'top-left'
 }));
-
-
 </script>
 </body>
 </html>
