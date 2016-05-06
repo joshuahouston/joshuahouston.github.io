@@ -24,7 +24,7 @@ var map = new mapboxgl.Map({
   zoom: 13
 });
 
-map.on('style.load', function() {
+map.on('load', function() {
   map.addSource("blue", {
     "type": "geojson",
     "data": {
@@ -52,7 +52,7 @@ map.on('style.load', function() {
   });
 });
 
-map.on('style.load', function() {
+map.on('load', function() {
   map.addSource("red", {
     "type": "geojson",
     "data": {
@@ -79,7 +79,7 @@ map.on('style.load', function() {
     }
   });
 });
-map.on('style.load', function() {
+map.on('load', function() {
   map.addSource("green", {
     "type": "geojson",
     "data": {
@@ -106,6 +106,7 @@ map.on('style.load', function() {
     }
   });
 });
+
 addLayer('Blue Line', 'blue');
 addLayer('Green Line', 'green');
 addLayer('Red Line', 'red');
@@ -134,62 +135,6 @@ function addLayer(name, id) {
   var layers = document.getElementById('menu');
   layers.appendChild(link);
 }
-
-
-/*
-map.on('style.load', function () {
-    map.addSource("markers", {
-        type: "geojson",
-        data: "stops.geojson"
-	});
-
-    map.addLayer({
-        "id": "markers",
-		"interactive": true,
-        "type": "symbol",
-        "source": "markers",
-        "layout": {
-            "icon-image": "bus-15",
-			"icon-allow-overlap": true
-        }
-    });
-});
-
-var popup = new mapboxgl.Popup();
-
-map.on('click', function (e) {
-    map.featuresAt(e.point, {
-        radius: 7.5, // Half the marker size (15px).
-        includeGeometry: true,
-        layer: 'markers'
-    }, function (err, features) {
-
-        if (err || !features.length) {
-            popup.remove();
-            return;
-        }
-
-        var feature = features[0];
-
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.description)
-            .addTo(map);
-    });
-});
-
-// Use the same approach as above to indicate that the symbols are clickable
-// by changing the cursor style to 'pointer'.
-map.on('mousemove', function (e) {
-    map.featuresAt(e.point, {
-        radius: 7.5, // Half the marker size (15px).
-        layer: 'markers'
-    }, function (err, features) {
-        map.getCanvas().style.cursor = (!err && features.length) ? 'pointer' : '';
-    });
-});
-*/
 
 map.on('load', function () {
     // Add marker data as a new GeoJSON source.
