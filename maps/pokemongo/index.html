@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8' />
+    <title>Sitka Pokemon Go Map</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css' rel='stylesheet' />
+	<style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var url = 'https://spreadsheets.google.com/feeds/list/1-Ugz_ygI1ftxqmIjFMBZ3krrmUU6jp9adXe7wQEGuSM/od6/public/basic?alt=json';
+var bounds = [
+  [-135.95, 56.5], // sw
+  [-134.88734573364435, 57.8716061665] // ne
+];
+
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v9',
+  center: [-135.331, 57.052],
+  maxBounds: bounds,
+  minZoom: 10,
+  zoom: 11
+});
+
+map.addControl(new mapboxgl.Navigation({
+  position: 'top-left'
+}));
+
+if (window.location.search.indexOf('embed') !== -1) map.scrollZoom.disable();
+
+var popup = new mapboxgl.Popup({
+  closeButton: false
+});
+map.on('load', function() {
+
+  mapboxgl.util.getJSON(url, function(err, data) {
+    document.body.classList.remove('loading');
+    if (err) return console.warn(err);
+
+    // From the requested source we'll need to do a bit of
+    // data processing to get it into a format for our needs.
+    // The finished output looks like GeoJSON
+    var geojson = {
+      type: 'FeatureCollection',
+      features: []
+    };
+
+    data.feed.entry.forEach(function(d) {
+      var fields = d.content.$t.split(', ');
+      var lng = parseFloat(fields[2].split(': ')[1]);
+      var lat = parseFloat(fields[1].split(': ')[1]);
+      var category = fields[0].split(': ')[1];
+//      var pokemon = parseInt(fields[3].split(': ')[1], 10);
+
+      geojson.features.push({
+        type: 'Feature',
+        properties: {
+          name: d.title.$t,
+          category: category
+//          pokemon: pokemon
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [lng, lat]
+        }
+      });
+    });
+
+    // Add reponse data as a new source on the map
+    map.addSource('data', {
+      type: 'geojson',
+      data: geojson
+    });
+
+    map.addLayer({
+      id: 'point',
+      type: 'symbol',
+      source: 'data',
+      layout: {
+        'icon-image': 'monument-15'}
+    });
+
+    // Point popup to display Graffiti count
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['point']
+      });
+
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+      if (!features.length) {
+          popup.remove();
+          return;
+      }
+
+      var feature = features[0];
+
+      var contents = document.createElement('div');
+
+      var title = document.createElement('strong');
+      title.textContent = feature.properties.name;
+      var category = document.createElement('p');
+      category.textContent = feature.properties.category;
+/*
+      var plots = document.createElement('span');
+      plots.className = 'block';
+      plots.textContent = feature.properties.plots + ' plots';
+*/
+      contents.appendChild(title);
+      contents.appendChild(category);
+ //     contents.appendChild(plots);
+
+      popup.setLngLat(feature.geometry.coordinates)
+        .setHTML(contents.innerHTML)
+        .addTo(map);
+    }); 
+  });
+});
+</script>
+</body>
+</html>
