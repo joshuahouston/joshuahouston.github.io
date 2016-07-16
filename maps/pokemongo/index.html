@@ -19,8 +19,8 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
 var url = 'https://spreadsheets.google.com/feeds/list/1-Ugz_ygI1ftxqmIjFMBZ3krrmUU6jp9adXe7wQEGuSM/od6/public/basic?alt=json';
 var bounds = [
-  [-135.95, 56.5], // sw
-  [-134.88734573364435, 57.8716061665] // ne
+  [-136.0, 56.5], // sw
+  [-134.5, 58.0] // ne
 ];
 
 var map = new mapboxgl.Map({
@@ -60,14 +60,14 @@ map.on('load', function() {
       var lng = parseFloat(fields[2].split(': ')[1]);
       var lat = parseFloat(fields[1].split(': ')[1]);
       var category = fields[0].split(': ')[1];
-//      var pokemon = parseInt(fields[3].split(': ')[1], 10);
+      var symbol = fields[3].split(': ')[1];
 
       geojson.features.push({
         type: 'Feature',
         properties: {
           name: d.title.$t,
           category: category
-//          pokemon: pokemon
+//        'marker-symbol': symbol
         },
         geometry: {
           type: 'Point',
@@ -87,7 +87,7 @@ map.on('load', function() {
       type: 'symbol',
       source: 'data',
       layout: {
-        'icon-image': 'monument-15'}
+        'icon-image': '{marker-symbol}-15'}
     });
 
     // Point popup to display Graffiti count
@@ -111,14 +111,9 @@ map.on('load', function() {
       title.textContent = feature.properties.name;
       var category = document.createElement('p');
       category.textContent = feature.properties.category;
-/*
-      var plots = document.createElement('span');
-      plots.className = 'block';
-      plots.textContent = feature.properties.plots + ' plots';
-*/
+
       contents.appendChild(title);
       contents.appendChild(category);
- //     contents.appendChild(plots);
 
       popup.setLngLat(feature.geometry.coordinates)
         .setHTML(contents.innerHTML)
