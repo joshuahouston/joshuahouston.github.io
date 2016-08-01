@@ -75,8 +75,8 @@ map.on('load', function() {
 
     data.feed.entry.forEach(function(d) {
       var fields = d.content.$t.split(', ');
-      var lng = parseFloat(fields[2].split(': ')[1]);
-      var lat = parseFloat(fields[1].split(': ')[1]);
+      var lng = parseFloat(fields[1].split(': ')[1]);
+      var lat = parseFloat(fields[2].split(': ')[1]);
       var category = fields[0].split(': ')[1];
       var symbol = fields[3].split(': ')[1];
 
