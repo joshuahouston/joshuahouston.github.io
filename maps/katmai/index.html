@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src="paths.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v9',
+    center: [-155.27, 58.32],
+    zoom: 12
+});
+
+map.on('load', function () {
+    map.addSource("day1", {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": path1
+            }
+        }
+    });
+
+    map.addLayer({
+        "id": "day1",
+        "type": "line",
+        "source": "route",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#2AD4FF",
+            "line-width": 4
+        }
+    });
+});
+map.on('load', function () {
+    map.addSource("day2", {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": path2
+            }
+        }
+    });
+
+    map.addLayer({
+        "id": "day2",
+        "type": "line",
+        "source": "route",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#89A02C",
+            "line-width": 4
+        }
+    });
+});
+map.on('load', function () {
+    map.addSource("day3", {
+        "type": "geojson",
+        "data": {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "LineString",
+                "coordinates": path3
+            }
+        }
+    });
+
+    map.addLayer({
+        "id": "day3",
+        "type": "line",
+        "source": "route",
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#A02C2C",
+            "line-width": 4
+        }
+    });
+});
+</script>
+
+</body>
+</html>
