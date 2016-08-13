@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Katmai Natl Park and The Valley of Ten Thousand Smokes</title>
+    <title>Katmai Natl Park</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css' rel='stylesheet' />
@@ -83,7 +83,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [-135.3381, 57.0498],
-    zoom: 15.5,
+    zoom: 10,
     bearing: 90,
     pitch: 45
 });
@@ -99,27 +99,27 @@ var chapters = {
         duration: 6000,
         center: [-150.0, 61.179],
         bearing: 150,
-        zoom: 15,
-        pitch: 2
+        zoom: 6.6,
+        pitch: 20
     },
     'king-salmon': {
         bearing: 90,
         center: [-156.6614, 58.679],
-        zoom: 13,
+        zoom: 8,
         speed: 0.6,
         pitch: 40
     },
     'brooks-camp': {
         bearing: 90,
         center: [-155.78, 58.557],
-        zoom: 12.3,
+        zoom: 11,
 		pitch: 20,
 		speed: 0.5
     },
     'valley': {
         bearing: 180,
         center: [-155.395624, 58.36584],
-        zoom: 15.3,
+        zoom: 8,
         pitch: 20,
         speed: 0.5
     },
