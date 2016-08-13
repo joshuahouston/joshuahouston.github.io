@@ -44,12 +44,12 @@ section:last-child {
 <div id='map'></div>
 <div id='features'>
     <section id='alaska' class='active'>
-        <h3>Alaska</h3>
-        <p>August 2016. Sitka is shrouded in fog. Beyond the horizon lies a sleeping giant under a blanket of ash. Some think Smaug sleeps in a fictional world made up in books or at best beneath a catacomb somewhere in the highlands of Scotland, but you will learn now that Smaug sleeps in a remote Alaskan wilderness hardly spoken of in the modern day.</p>
+        <h3>Sitka</h3>
+        <p>August 2016, 5:00 AM. Sitka is shrouded in fog. Beyond the horizon lies a sleeping giant under a blanket of ash. Some think Smaug sleeps in a fictional world made up in books or at best beneath a catacomb somewhere in the highlands of Scotland, but you will learn now that Smaug sleeps in a remote Alaskan wilderness hardly spoken of in the modern day.</p>
     </section>
     <section id='anchorage'>
         <h3>All Flights Lead To Anchorage</h3>
-        <p>If you plan on heading to any remote places in Alaska you will have to go through Anchorage to get there. Unless of course, you are not hell-bent on traveling only using your Alaska Airline miles that you've amassed going to weddings over the past few summer months and you can afford a bush plane or something. Then, perhaps, you don't have to go through Anchorage. But, anyway, Anchorage is a hub of sorts... like Rome, pretty much. And as the saying goes, when in Alaska, use air-miles.<img src="http://images.airlineroutemaps.com/maps/Pen_Air_alaska.gif"></p>
+        <p>If you plan on heading to any remote places in Alaska you will have to go through Anchorage to get there. Unless of course, you are not hell-bent on traveling only using your Alaska Airline miles that you've amassed going to weddings over the past few summer months and you can afford a bush plane or something. Then, perhaps, you don't have to go through Anchorage. But, anyway, Anchorage is a hub of sorts... like Rome, pretty much. And as the saying goes, when in Alaska, use air-miles.<img src="http://images.airlineroutemaps.com/maps/Pen_Air_alaska.gif" width='160' height='120'></p>
     </section>
     <section id='king-salmon'>
         <h3>King Salmon</h3>
@@ -74,9 +74,6 @@ section:last-child {
     <section id='baked-mountain'>
         <h3>Charing Cross Hotel</h3>
         <p>Walter writes to Oberstein and convinces him to meet in the smoking room of the Charing Cross Hotel where he promises additional plans for the submarine in exchange for money. The plan works and Holmes and Watson catch both criminals.</p>
-        <small id="citation">
-            Adapted from <a href='http://www.gutenberg.org/files/2346/2346-h/2346-h.htm'>Project Gutenberg</a>
-        </small>
     </section>
 </div>
 <script>
@@ -85,9 +82,9 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [-149.81, 59.867],
+    center: [-135.3381, 57.0498],
     zoom: 15.5,
-    bearing: 27,
+    bearing: 90,
     pitch: 45
 });
 
@@ -103,7 +100,7 @@ var chapters = {
         center: [-150.0, 61.179],
         bearing: 150,
         zoom: 15,
-        pitch: 0
+        pitch: 2
     },
     'king-salmon': {
         bearing: 90,
