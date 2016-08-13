@@ -49,7 +49,7 @@ section:last-child {
     </section>
     <section id='anchorage'>
         <h3>All Flights Lead To Anchorage</h3>
-        <p>If you plan on heading to any remote places in Alaska you will have to go through Anchorage to get there. Unless of course, you are not hell-bent on traveling only using your Alaska Airline miles that you've amassed going to weddings over the past few summer months and you can afford a bush plane or something. Then, perhaps, you don't have to go through Anchorage. But, anyway, Anchorage is a hub of sorts... like Rome, pretty much. And as the saying goes, when in Alaska, use air-miles.<img src="http://images.airlineroutemaps.com/maps/Pen_Air_alaska.gif" width=50% height=50%></p>
+        <p>If you plan on heading to any remote places in Alaska you will have to go through Anchorage to get there. Unless of course, you are not hell-bent on traveling only using your Alaska Airline miles that you've amassed going to weddings over the past few summer months and you can afford a bush plane or something. Then, perhaps, you don't have to go through Anchorage. But, anyway, Anchorage is a hub of sorts... like Rome, pretty much. And as the saying goes, when in Alaska, use air-miles.<br /><br /><img src="http://images.airlineroutemaps.com/maps/Pen_Air_alaska.gif" width=70% height=70%></p>
     </section>
     <section id='king-salmon'>
         <h3>King Salmon</h3>
@@ -84,21 +84,21 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v9',
     center: [-135.3381, 57.0498],
     zoom: 10,
-    bearing: 90,
-    pitch: 45
+    bearing: 10,
+    pitch: 35
 });
 
 var chapters = {
     'alaska': {
-        bearing: 4,
+        bearing: 10,
         center: [-149.81, 59.867],
-        zoom: 5.5,
-        pitch: 20
+        zoom: 4,
+        pitch: 15
     },
     'anchorage': {
         duration: 6000,
         center: [-150.0, 61.179],
-        bearing: 150,
+        bearing: 0,
         zoom: 6.6,
         pitch: 20
     },
