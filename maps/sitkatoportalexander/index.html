@@ -35,6 +35,7 @@ var orange = '#FF6600'
 var red = '#FF2A2A'
 var yellow = '#FFCC00'
 var green = '#00FF00'
+var blue = '#1F78B4'
 
 var path = function (path,color) {
 var geojson = { type: 'LineString', coordinates: path };
@@ -50,6 +51,7 @@ path(legOne,orange);
 path(legTwo,red);
 path(legThree,yellow);
 path(legFour,green);
+path(legFive,blue);
 
 $.getJSON('camps.json', function(data) {
     var campsites = L.geoJson(data, {
