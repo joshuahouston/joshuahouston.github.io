@@ -9,7 +9,7 @@ I'm learning how to use Three.js to embed 3D models into websites. So far I've m
 
 Here is the model I'm testing out: 
 
-#####Move mouse over to rotate object, doesn't seem to work on mobile devices :grin:
+#####Move mouse over to rotate object, doesn't seem to work on mobile devices :grimace:
 
 <iframe src="http://jfact0ry.com/threejs/models/fedora.html" frameborder="0" width="100%" height="320">Here is where the fedora model should be</iframe>
 
