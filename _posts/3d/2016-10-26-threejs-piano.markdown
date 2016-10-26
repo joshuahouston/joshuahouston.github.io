@@ -7,6 +7,7 @@ categories: 3D
 I took this model from SketchUp's 3D Warehouse
 
 ![Piano][id]
+
 Opened it in SketchUp 8 (wish I had SketchUp 7 tbh), exploded all the components, and exported to a .dae.
 
 Then I opened it in Blender, exported as a JSON and here is the result.
