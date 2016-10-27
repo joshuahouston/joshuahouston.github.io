@@ -16,3 +16,4 @@ Then I opened it in Blender, exported as a JSON and here is the result.
 
 [id]: https://c8.staticflickr.com/9/8672/30585509055_8959c97079.jpg "piano"
 [View in full screen]: http://jfact0ry.com/threejs/models/piano.html "View Full Screen"
+[this]: https://3dwarehouse.sketchup.com/model.html?id=1f0153042cceff37d20e6bdf4e0f4a18 "model"
