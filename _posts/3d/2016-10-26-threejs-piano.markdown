@@ -4,7 +4,7 @@ title:  "From SketchUp to JSON"
 date:   2016-10-26 15:54:31
 categories: 3D
 ---
-I took this model from SketchUp's 3D Warehouse
+I took [this] old model of mine from SketchUp's 3D Warehouse.
 
 ![Piano][id]
 
@@ -12,4 +12,7 @@ Opened it in SketchUp 8 (wish I had SketchUp 7 tbh), exploded all the components
 
 Then I opened it in Blender, exported as a JSON and here is the result.
 <iframe src="http://jfact0ry.com/threejs/models/piano.html" frameborder="0" width="100%" height="320px">Here is where the piano model should be</iframe>
+[View in full screen] <--works better for mobile
+
 [id]: https://c8.staticflickr.com/9/8672/30585509055_8959c97079.jpg "piano"
+[View in full screen]: http://jfact0ry.com/threejs/models/piano.html "View Full Screen"
