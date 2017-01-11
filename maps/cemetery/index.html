@@ -1,25 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta charset='utf-8' />
-    <title>Cemetery</title>
+  <meta charset='utf-8' />
+    <title>Sitka Cemetery Map</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.30.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.30.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
+	<style>
+	 body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+        .mapboxgl-popup { max-width: 260px; font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+	</style>
 </head>
 <body>
 <div id='map'></div>
+<pre id='info'></pre>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var url = 'https://spreadsheets.google.com/feeds/list/1JirHHa1NNYXWhXkUI4IVaqNSAl-KX2g_meslRseHAtE/od6/public/basic?alt=json';
+var bounds = [
+  [-136.0, 56.5], // sw
+  [-134.5, 58.0] // ne
+];
+
 var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/jfactory/cixq3c45y003j2snu7gniikgy', //stylesheet location
-    center: [-135.32385, 57.054688], // starting position
-    zoom: 18 // starting zoom
+  container: 'map',
+  style: 'mapbox://styles/jfactory/cixq3c45y003j2snu7gniikgy',
+  center: [-135.3238, 57.0545],
+  maxBounds: bounds,
+  minZoom: 18,
+  maxZoom: 21,
+  zoom: 18.5,
+  bearing: -33
+});
+
+map.addControl(new mapboxgl.Navigation({
+  position: 'top-left'
+}));
+
+map.addControl(new mapboxgl.Geolocate({position: 'top-left'})); // position is optional
+
+if (window.location.search.indexOf('embed') !== -1) map.scrollZoom.disable();
+
+var popup = new mapboxgl.Popup({
+  closeButton: false
+});
+map.on('load', function() {
+
+  mapboxgl.util.getJSON(url, function(err, data) {
+    document.body.classList.remove('loading');
+    if (err) return console.warn(err);
+
+    // From the requested source we'll need to do a bit of
+    // data processing to get it into a format for our needs.
+    // The finished output looks like GeoJSON
+    var geojson = {
+      type: 'FeatureCollection',
+      features: []
+    };
+
+    data.feed.entry.forEach(function(d) {
+      var fields = d.content.$t.split(', ');
+      var lng = parseFloat(fields[1].split(': ')[1]);
+      var lat = parseFloat(fields[2].split(': ')[1]);
+      var graveId = fields[3].split(': ')[1];
+
+      geojson.features.push({
+        type: 'Feature',
+        properties: {
+          name: d.title.$t,
+          graveId: graveId
+        },
+        geometry: {
+          type: 'Point',
+          coordinates: [lng, lat]
+        }
+      });
+    });
+
+    // Add reponse data as a new source on the map
+    map.addSource('data', {
+      type: 'geojson',
+      data: geojson
+    });
+
+    map.addLayer({
+      id: 'point',
+      type: 'symbol',
+      source: 'data',
+      layout: {
+        'icon-image': 'headstone-11'}
+    });
+
+    // Point popup to display Grave ID
+    map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+        layers: ['point']
+      });
+
+      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+
+      if (!features.length) {
+          popup.remove();
+          return;
+      }
+
+      var feature = features[0];
+
+      var contents = document.createElement('div');
+
+      var graveId = document.createElement('p');
+      graveId.textContent = feature.properties.graveId;
+
+      contents.appendChild(graveId);
+
+      popup.setLngLat(feature.geometry.coordinates)
+        .setHTML(contents.innerHTML)
+        .addTo(map);
+    }); 
+  });
 });
 </script>
 </body>
