@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>CLT Terrain Study</title>
+    <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,51 +13,54 @@
 </head>
 <body>
 
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.0.1/mapbox-gl-compare.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.0.1/mapbox-gl-compare.css' type='text/css' />
-<style>
-body {
-    overflow: hidden;
-}
-
-body * {
-   -webkit-touch-callout: none;
-     -webkit-user-select: none;
-        -moz-user-select: none;
-         -ms-user-select: none;
-             user-select: none;
-}
-
-.map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-</style>
-
-<div id='before' class='map'></div>
-<div id='after' class='map'></div>
-
+<div id='map'></div>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
-var before = new mapboxgl.Map({
-    container: 'before',
-    style: 'mapbox://styles/jfactory/cimqgzbx600k9ahm7pl3wpimy',
-    center: [-135.35529, 57.06354],
-    zoom: 17,
-    bearing: 34
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/jfactory/ciyavi5wc003b2ss71ckosg70', //stylesheet location
+    center: [-135.356, 57.06385], // starting position
+    zoom: 18.5, // starting zoom
+    bearing: 33
 });
 
-var after = new mapboxgl.Map({
-    container: 'after',
-    style: 'mapbox://styles/jfactory/cimqgritx00k2b3kl06k2yypv',
-    center: [-135.35529, 57.06354],
-    zoom: 17,
-    bearing: 34
-});
+map.on('load', function () {
 
-new mapboxgl.Compare(before, after);
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-135.356429, 57.063903]
+                    },
+                    "properties": {
+                        "icon": "marker",
+                        "title": "Guy pole"
+                    }
+                
+                }]
+            }
+        },
+        "layout": {
+            "icon-image": "{icon}-15",
+            "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        },
+        "paint": {
+            "text-color": "#fff",
+            "text-halo-color": "black",
+            "text-halo-width": 1
+        }
+    });
+});
 </script>
 
 </body>
