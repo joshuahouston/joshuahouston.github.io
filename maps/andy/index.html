@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Pixel Art Test Page</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id='map'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+      var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/jfactory/cioojp9dt001bblkkpzkfj0gh', //stylesheet location
+        center: [-135.3413, 
+                 57.0544
+        ], // starting position
+        zoom: 17, // starting zoom
+        maxZoom: 18,
+        hash: true
+      });
+map.on('load', function() {
+  map.addSource("markers", {
+    "type": "geojson",
+    "data": {
+      "type": "FeatureCollection",
+      "features": [{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.3393,
+            57.0486
+          ]
+        },
+        "properties": {
+          "title": "The Larkspur",
+          "marker-symbol": "larkspur"
+        }
+      }, {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.3337,
+            57.03615
+          ]
+        },
+        "properties": {
+          "title": "Rockwell Lighthouse",
+          "marker-symbol": "rockwell"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.3377,
+          57.04995
+          ]
+        },
+        "properties": {
+          "title": "Pioneers Home",
+          "marker-symbol": "pioneers"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.33763,
+          57.04919
+          ]
+        },
+        "properties": {
+          "title": "Sitka Hotel",
+          "marker-symbol": "hotelfront"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.3413,
+            57.0544
+          ]
+        },
+        "properties": {
+          "title": "Marine Manor",
+          "marker-symbol": "marker"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.33878,
+            57.04895
+          ]
+        },
+        "properties": {
+          "title": "GIS Headquarters",
+          "marker-symbol": "marker"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.351546,
+            57.05166
+          ]
+        },
+        "properties": {
+          "title": "Phylogenetic Mobile",
+          "marker-symbol": "marker"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.319,
+            57.0486
+          ]
+        },
+        "properties": {
+          "title": "Totem Park",
+          "marker-symbol": "marker"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.3347,
+            57.05178
+          ]
+        },
+        "properties": {
+          "title": "The Highliner",
+          "marker-symbol": "cafe"
+        }
+      },{
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [-135.337,
+            57.04994
+          ]
+        },
+        "properties": {
+          "title": "The Backdoor",
+          "marker-symbol": "cafe"
+        }
+      }]
+    }
+  });
+
+  map.addLayer({
+    "id": "markers",
+    "type": "symbol",
+    "source": "markers",
+    "layout": {
+      "icon-image": "{marker-symbol}-15",
+      "text-field": "{title}",
+      "text-font": ["Pokemon Pixel Font Regular", "Arial Unicode MS Bold"],
+      "text-offset": [0, 1.0],
+      "text-anchor": "top"
+    }
+  });
+});
+
+/* FONTS
+"8BIT WONDER Nominal", "Arial Unicode MS Bold",
+"Endless Boss Battle Regular", "8-bit Regular",
+"Press Start 2P Regular"
+-135.33763,
+          57.04919
+*/
+    </script>
+  </body>
+</html>
