@@ -4,12 +4,8 @@
     <meta charset='utf-8' />
     <title>Map for Andy</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.22.0/mapbox-gl.css' rel='stylesheet' />
-     <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.35.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <div id='map'></div>
@@ -22,142 +18,141 @@
                  57.0544
         ], // starting position
         zoom: 17, // starting zoom
-        maxZoom: 18,
+        maxZoom: 20,
         hash: true
       });
-map.on('load', function() {
-  map.addSource("markers", {
-    "type": "geojson",
-    "data": {
-      "type": "FeatureCollection",
-      "features": [{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.3393,
-            57.0486
-          ]
-        },
-        "properties": {
-          "title": "The Larkspur",
-          "marker-symbol": "larkspur"
-        }
-      }, {
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.3337,
-            57.03615
-          ]
-        },
-        "properties": {
-          "title": "Rockwell Lighthouse",
-          "marker-symbol": "rockwell"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.3377,
-          57.04995
-          ]
-        },
-        "properties": {
-          "title": "Pioneers Home",
-          "marker-symbol": "pioneers"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.33763,
-          57.04919
-          ]
-        },
-        "properties": {
-          "title": "Sitka Hotel",
-          "marker-symbol": "hotelfront"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.3413,
-            57.0544
-          ]
-        },
-        "properties": {
-          "title": "Marine Manor",
-          "marker-symbol": "marker"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.33878,
-            57.04895
-          ]
-        },
-        "properties": {
-          "title": "GIS Headquarters",
-          "marker-symbol": "marker"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.351546,
-            57.05166
-          ]
-        },
-        "properties": {
-          "title": "Phylogenetic Mobile",
-          "marker-symbol": "marker"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.319,
-            57.0486
-          ]
-        },
-        "properties": {
-          "title": "Totem Park",
-          "marker-symbol": "marker"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.3347,
-            57.05178
-          ]
-        },
-        "properties": {
-          "title": "The Highliner",
-          "marker-symbol": "cafe"
-        }
-      },{
-        "type": "Feature",
-        "geometry": {
-          "type": "Point",
-          "coordinates": [-135.337,
-            57.04994
-          ]
-        },
-        "properties": {
-          "title": "The Backdoor",
-          "marker-symbol": "cafe"
-        }
-      }]
-    }
-  });
+	  map.on('load', function() {
 
   map.addLayer({
-    "id": "markers",
+    "id": "points",
     "type": "symbol",
-    "source": "markers",
+    "source": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [{
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.3393,
+              57.0486
+            ]
+          },
+          "properties": {
+            "title": "The Larkspur",
+            "marker-symbol": "larkspur"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.3337,
+              57.03615
+            ]
+          },
+          "properties": {
+            "title": "Rockwell Lighthouse",
+            "marker-symbol": "rockwell"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.3377,
+              57.04995
+            ]
+          },
+          "properties": {
+            "title": "Pioneers Home",
+            "marker-symbol": "pioneers"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.33763,
+              57.04919
+            ]
+          },
+          "properties": {
+            "title": "Sitka Hotel",
+            "marker-symbol": "hotelfront"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.3413,
+              57.0544
+            ]
+          },
+          "properties": {
+            "title": "Marine Manor",
+            "marker-symbol": "marker"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.33878,
+              57.04895
+            ]
+          },
+          "properties": {
+            "title": "GIS Headquarters",
+            "marker-symbol": "marker"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.351546,
+              57.05166
+            ]
+          },
+          "properties": {
+            "title": "Phylogenetic Mobile",
+            "marker-symbol": "marker"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.319,
+              57.0486
+            ]
+          },
+          "properties": {
+            "title": "Totem Park",
+            "marker-symbol": "marker"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.3347,
+              57.05178
+            ]
+          },
+          "properties": {
+            "title": "The Highliner",
+            "marker-symbol": "cafe"
+          }
+        }, {
+          "type": "Feature",
+          "geometry": {
+            "type": "Point",
+            "coordinates": [-135.337,
+              57.04994
+            ]
+          },
+          "properties": {
+            "title": "The Backdoor",
+            "marker-symbol": "cafe"
+          }
+        }]
+      }
+    },
     "layout": {
       "icon-image": "{marker-symbol}-15",
       "text-field": "{title}",
@@ -167,6 +162,7 @@ map.on('load', function() {
     }
   });
 });
+
 // Add geolocate control to the map.
 map.addControl(new mapboxgl.GeolocateControl());
     </script>
