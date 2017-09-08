@@ -6,6 +6,6 @@ categories: 3D
 ---
 Here is the KMZ file for Sitka's O'Connell bridge.
 
-http://jfact0ry.com/threejs/models/Bridge6.kmz
+[link1](http://jfact0ry.com/threejs/models/Bridge6.kmz)
 
-http://jfact0ry.com/assets/bridge.kmz
+[link2](http://jfact0ry.com/assets/bridge.kmz)
