@@ -1,3 +1,9 @@
+---
+layout: post
+title: "OpenStreetMap Diary Entry"
+date: 2019-06-07 13:00:21
+categories: maps
+---
 # THIS IS A WORK IN PROGRESS. JUST LETTING A FRIEND READ IT BEFORE I HAVE MORE TIME TO FINISH IT
 
 # Southeast Alaska Hydrography
