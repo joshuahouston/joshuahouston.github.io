@@ -13,12 +13,15 @@ The current coastline in OpenStreetMap is lacking in detail for much of Alaska, 
 ![Jaggedy coastlines](https://live.staticflickr.com/65535/48040309923_216b934411_z.jpg)
 
 I'd like to use National Hydrography Data to improve the entirety of Southeast Alaska in OpenStreetMap. Here is a side-by-side comparison map that shows current OpenStreetMap data (as of 2019-06-07) with NHD data.
-[OSM / NHD Comparison](https://jfactory.xyz/maps/hydrography/) 
+
+![OSM / NHD Comparison](https://jfactory.xyz/maps/hydrography/) 
 
 The coastline has been my particular interest ever since I started editing the map. 
+
 ![Before/after of coastline around Sitka area](https://live.staticflickr.com/445/19083715519_7e1b4034d0_z.jpg) 
+
 The current data covers lakes and streams so I hope to include that as well during this import process.
 
 There's a [history of importing NHD into OpenStreetMap](https://wiki.openstreetmap.org/wiki/National_Hydrography_Dataset), but for Alaska's coastline it seems untouched by any National Hydrography Data. Recent improvements to Alaska's hydrography data make now a better time than ever to import data. The [Alaska Hydrography Technical Working Group](http://akhydro.uaa.alaska.edu/) has taken initiative to streamline updating the data for Alaska and making it easily accessible.
 
-OpenStreetMap's wiki page on National Hydrography Dataset ultimately discourages it from happening but I think as far as coastline it will be a huge improvement. I aim to use this data to improve much of my surrounding area and I know a few mappers in my area who are highly supportive of this project. I plan on discussing the process with the OSM-imports mailing list
+OpenStreetMap's wiki page on National Hydrography Dataset ultimately discourages imports but I think as far as coastline it will be a huge improvement. It also seems that the data for Alaska is quite good and missing from the map for the most part, so it won't be a hassle to add features. I aim to use this data to improve much of my surrounding area and I know a few mappers in my area who are highly supportive of this project. I plan on discussing the project with the OSM-imports mailing list.
