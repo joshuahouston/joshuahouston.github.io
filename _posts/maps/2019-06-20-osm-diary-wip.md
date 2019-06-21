@@ -14,7 +14,7 @@ The current coastline in OpenStreetMap is lacking in detail for much of Alaska, 
 
 I'd like to use National Hydrography Data to improve the entirety of Southeast Alaska in OpenStreetMap. Here is a side-by-side comparison map that shows current OpenStreetMap data (as of 2019-06-07) with NHD data.
 
-![OSM / NHD Comparison](https://jfactory.xyz/maps/hydrography/) 
+[OSM / NHD Comparison](https://jfactory.xyz/maps/hydrography/) 
 
 The coastline has been my particular interest ever since I started editing the map. 
 
