@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone
+the_ride,The RIDE,https://sitkatribe.org/our-enterprises/transportation/,America/Sitka,en,907-747-7103
