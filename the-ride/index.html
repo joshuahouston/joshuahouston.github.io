@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the ride transit feed</title>
+	<script type="module" src="/assets/index-transit.js"></script>
+	<link rel="stylesheet" href="/assets/index-transit.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" style="position: absolute; overflow: hidden; height: 0; width: 0;">
+		<defs>
+			<linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+				<stop offset="0%" stop-color="#f7e27f"/>
+				<stop offset="100%" stop-color="#c89b2b"/>
+			</linearGradient>
+			<g id="hamburger-icon">
+				<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+			</g>
+			<g id="dark-mode-icon">
+				<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+				<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+			</g>
+			<g id="light-mode-icon">
+				<path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+			</g>
+			<g id="chevron-left">
+				<path fill-rule="evenodd" d="M11.354 0.646a0.5 0.5 0 0 1 0 0.708l-5.647 5.646l5.647 5.646a0.5 0.5 0 0 1 -0.708 0.708l-6 -6a0.5 0.5 0 0 1 0 -0.708l6 -6a0.5 0.5 0 0 1 0.708 0z"/>
+			</g>
+			<g id="chevron-right">
+				<path fill-rule="evenodd" d="M4.646 0.646a0.5 0.5 0 0 1 0.708 0l6 6a0.5 0.5 0 0 1 0 0.708l-6 6a0.5 0.5 0 0 1 -0.708 -0.708l5.647 -5.646l-5.647 -5.646a0.5 0.5 0 0 1 0 -0.708z"/>
+			</g>
+			<g id="url-icon">
+				<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
+				<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
+			</g>
+			<g id="link-icon">
+				<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+				<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+			</g>
+			<g id="download-icon">
+				<path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+				<path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+			</g>
+			<g id="tag-icon">
+				<path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+			</g>
+			<g id="fly-icon">
+				<path d="M20 5.25a.75.75 0 0 0-.53.22l-10 10a.75.75 0 0 0 0 1.06.75.75 0 0 0 1.06 0L20 7.06 23.94 11l-4.47 4.47a.75.75 0 0 0 0 1.06.75.75 0 0 0 1.06 0l5-5 .47-.47 5.47 5.47a.75.75 0 0 0 1.06 0 .75.75 0 0 0 0-1.06l-6-6a.75.75 0 0 0-1.06 0l-.47.47-4.47-4.47a.75.75 0 0 0-.53-.22Z"/>
+				<path d="M2 1.25a.75.75 0 0 0-.75.75.75.75 0 0 0 .75.75h1.04l.79 1.59a.75.75 0 0 0 .67.41h6a.75.75 0 0 0 .75-.75V2.75H12a.75.75 0 0 0 .75-.75.75.75 0 0 0-.75-.75H9a.75.75 0 0 0-.75.75.75.75 0 0 0 .75.75h.75v.5H4.96l-.25-.5H5A.75.75 0 0 0 5.75 2 .75.75 0 0 0 5 1.25Zm10.09 2.38c-.21 0-.38.16-.38.37v1.41c0 .1.04.2.11.27l.7.7c.15.15.4.15.54 0l1.41-1.4a.38.38 0 0 0 0-.54l-.7-.7a.38.38 0 0 0-.27-.11Z" />
+			</g>
+            <g id="album-icon">
+			  <path d="M5.5 4a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5zm1 7a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z"/>
+			  <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+			  <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+			</g>
+			<g id="info-icon">
+				<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+			</g>
+			<g id="gcp-icon">
+				<path d="M8.5 1.043L1.043 8.5 8.5 15.957 15.957 8.5 8.5 1.043zM2.457 8.5l2.668-2.668L7.793 8.5l-2.668 2.668L2.457 8.5zm6.75 0l2.668-2.668L14.543 8.5l-2.668 2.668L9.207 8.5z"/>
+			</g>
+			<g id="chevron-double-down">
+				<path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+				<path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+			</g>
+			<g id="fullscreen-icon">
+				<path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+			</g>
+			<g id="scroll-icon">
+				<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+			</g>
+			<g id="xls-icon">
+				<path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM6.472 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .254.384q.106.073.25.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422.338-.15.777-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.326.075.566.211a1 1 0 0 1 .375.358q.135.222.135.56 0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-2.945-3.358h-.893L1.81 13.37h-.036l-.832-1.438h-.93l1.227 1.983L0 15.931h.861l.853-1.415h.035l.85 1.415h.908L2.253 13.94zm2.727 3.325H4.557v-3.325h-.79v4h2.487z"/>
+			</g>
+		</defs>
+	</svg>
+    <div class="container-fluid bean-fonts">
+		<header class="p-lg-2 my-3">
+			<div class="row">
+				<div class="col d-flex justify-content-start mt-1">
+					<div class="d-none d-lg-block d-xl-block">
+						<h4>
+							<a href="/" class="home-icon link-body-emphasis text-decoration-none" aria-hidden="true">
+								<svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 34 18" width="51" height="27" fill="currentColor">
+									<use href="#fly-icon"/>
+								</svg>
+							</a> sitka.land
+						</h4>
+					</div>
+					<div class="d-lg-none d-xl-none">
+						<a href="/" class="link-body-emphasis text-decoration-none" aria-hidden="true">
+							<svg viewBox="0 0 34 18" width="34" height="18" fill="currentColor">
+								<use href="#fly-icon"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mt-2">
+					<h4 class="text-center">transit</h4>
+				</div>
+				<div class="col d-flex justify-content-end mb-2">
+					<div class="btn-group" role="group" aria-label="Button options">
+						<button class="btn btn-outline-dark" id="btnSwitch" type="button">
+							<div id="currentTheme" >
+								<div id="lightModeIcon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-sun-fill mb-1" viewBox="0 0 16 16">
+										<use fill="url(#gold)" href="#light-mode-icon"/>
+									</svg>
+								</div>
+								<div id="darkModeIcon" style="display: none;">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-moon-stars-fill mb-1" viewBox="0 0 16 16">
+										<use fill="url(#gold)" href="#dark-mode-icon"/>
+									</svg>
+								</div>
+							</div>
+						</button>
+						<button class="btn btn-outline-dark" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStuff" type="button">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list link-body-emphasis" viewBox="0 0 16 16">
+								<use href="#hamburger-icon"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="row text-center">
+			<div class="col g-0">
+				<div class="d-none d-lg-block d-xl-block">
+					<h2 class="display-6 intro-fonts">
+						sitka.land presents&hellip;
+					</h2>
+					<h1 class="display-2 text-uppercase text-center fw-bold loz-fonts">
+						GTFS Files for The RIDE
+					</h1>
+				</div>
+				<div class="d-lg-none d-xl-none">
+					<h6 class="intro-fonts">
+						sitka.land presents&hellip;
+					</h6>
+					<h1 class="text-uppercase text-center loz-fonts" style="font-size: 2.2em; letter-spacing: -.05em;">
+						GTFS Files for The RIDE
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row my-4">
+			<div class="col-lg-9 mx-auto border rounded py-3 p-md-5 bg-body">
+				<section id="intro">
+					<h1 class="fw-bold my-4">Intro</h1>
+					<div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    General Transit Feed Specification Files
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h6>These files have been optimized for OpenStreetMap sourced maps.</h6>
+                                    <ul>
+                                        <li>
+                                            <a href="feed-files/agency.txt">agency.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/calendar_dates.txt">calendar_dates.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/calendar.txt">calendar.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/fare_attributes.txt">fare_attributes.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/feed_info.txt">feed_info.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/frequencies.txt">frequencies.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/routes.txt">routes.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/shapes.txt">shapes.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/stops.txt">stops.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/stop_times.txt">stop_times.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/transfers.txt">transfers.txt</a>
+                                        </li>
+                                        <li>
+                                            <a href="feed-files/trips.txt">trips.txt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<h3 class="fw-bold text-muted my-4">Overview</h3>
+					<p>
+                        Zipped file: <a class="btn btn-primary my-3" role="button" href="transit_feed.zip" download>transit_feed.zip 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                <use href="#download-icon"/>
+                            </svg>
+                            <span class="visually-hidden">Button</span>
+                        </a>
+                    </p>
+                    <p>Copy this link &#8628; and paste into <a href="https://gtfs-validator.mobilitydata.org/">https://gtfs-validator.mobilitydata.org/</a></p>
+                  <pre class="user-select-all">https://transit.sitka.land/the-ride/transit_feed.zip</pre>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end tws-fonts" tabindex="-1" id="offcanvasStuff" aria-labelledby="offcanvasStuffLabel">
+		<div class="offcanvas-header">
+			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body">
+			<div class="dropdown mt-3">
+				<a class="dropdown-toggle h5" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" style="color: inherit; text-decoration: none;">
+					pages
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<li><a class="dropdown-item" href="/imagery/flights/">flights ✈️</a></li>
+					<li><a class="dropdown-item" href="/imagery/">imagery 🗺️</a></li>
+					<li><a class="dropdown-item" href="/how-to/">how-to 📕</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
