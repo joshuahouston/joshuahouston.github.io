@@ -1,0 +1,53 @@
+stop_id,stop_name,stop_desc,stop_lat,stop_lon
+PRICE_ST,Price St / Burkhart Dr,Near Sawmill Creek Plaza,57.048981,-135.304524
+CASCADE_CONVENIENCE,Cascade Convenience,Cascade Convenience Store - 1211 Sawmill Creek Blvd,57.048555,-135.310752
+SJ_CHILD_CARE,SJ Child-Care,"SJ Child-Care on former SJ Campus, currently Sitka Fine Arts Camp near Hames Gym, Odess Theater, and Sitka International Hostel",57.051864,-135.324116
+NATIONAL_PARK_MAIN,Sitka National Historical Park Main Entrance,Main entrance to Sitka National Historical Park near Lincoln St,57.049091,-135.31924
+CRESC_HARB,Crescent Harbor,Crescent Harbor parking lot near Harrigan Centennial Hall - All Line Transfer,57.05103,-135.33222
+SENIOR_CTR,Swan Lake Senior Center,Swan Lake Senior Center and Salvation Army on Lake St,57.053748,-135.334642
+ARROWHEAD,Arrowhead St / Monastery St,Between Shennett St and Kinkead St,57.058193,-135.334511
+VERSTOVIA,Verstovia St / A St,Just south of Sitka High School between Sirstad St and Monastery St,57.06104,-135.337023
+SITKA_HIGH,Sitka High School,"Sitka High School, Performing Arts Center, and Cross Trail access - Red Line & Blue Line Transfer",57.062774,-135.341931
+BARANOF,Baranof St / Sawmill Creek Rd,Near Baranof Elementary School and Market Center,57.053762,-135.330515
+BIORKA,Biorka St / Sawmill Creek Rd,Near Sitka Recycling Center and Sitka National Cemetery,57.054078,-135.324954
+NATIONAL_PARK_SMC,Sitka National Historical Park Sawmill Creek Rd Entrance,Sawmill Creek Road entrance to Sitka National Historical Park across from the Raptor Center,57.049752,-135.313991
+WHALE_PARK,Whale Park,Whale Park overlooks the entrance to Silver Bay and is at the head of the new pedestrian path that follows along Sawmill Creek Rd to the industrial park,57.033684,-135.253237
+GPIP,Gary Paxton Industrial Park,GPIP Admin building near Blue Lake Rd final stop along Sawmill Creek Rd,57.047016,-135.232633
+THIMBLEBERRY,Thimbleberry Lake,Thimbleberry Lake and Heart Lake Trailhead,57.03776,-135.2555
+ANNA,Anna Drive / Sawmill Creek Rd,Across from Knutson Dr and Cedar Beach Rd,57.043584,-135.280383
+ARR_TRANSF,Arrowhead Transfer,Near Foreign Auto and Mt Verstovia Trailhead,57.04743,-135.299131
+OLD_MCDONALDS,Old McDonalds,"Formerly McDonald's Parking Lot across from Peterson Ave",57.059938,-135.349377
+LAKESIDE,Lakeside Grocery,AC Lakeside Grocery and shopping center,57.057107,-135.34627
+ERNIES,"Ernie's Old Time Saloon","Downtown near Ernie's, Russian American Company Gifts, Old Harbor Books, and Harry Race Pharmacy & Ice Cream Parlor",57.04963,-135.336955
+LONG_TERM_CARE,Sitka Long Term Care,Near Sitka Long Term Care facility and Moller Field,57.059803,-135.345825
+KASHEVAROFF,Kashevaroff St / Edgecumbe Dr,"Near Keet Gooshi Heen Elementary, Kimsham Ball Fields, and Cross Trail access",57.063192,-135.350606
+MILLS,Mills St / Edgecumbe Dr,Near 1300 block of Edgecumbe Dr between Kostrometinoff St & Neva St,57.06487,-135.355222
+CHARTERIS,Charteris St / Edgecumbe Dr,"End of stops along Edgecumbe Dr, Cross Trail access via Charteris St",57.066483,-135.35959
+SEA_MART,Sea Mart,Sea Mart Quality Foods grocery store,57.068345,-135.367561
+GRACE_HARB,Grace Harbor Church,Outbound (to ferry terminal) - Near 1900 block of HPR & Cascade Creek Rd,57.069406,-135.366616
+CASC_OUT,Cascade Creek Bridge - Outbound,Outbound (to ferry terminal) - Near 2100 block of HPR & Kramer Ave,57.073835,-135.369747
+SAND_DOLLAR,Sand Dollar Dr / Halibut Point Rd,Outbound (to ferry terminal) - Near 2200 block of HPR & Sand Dollar Dr,57.077024,-135.373612
+SHARON_DR,Sharon Dr / Halibut Point Rd,Outbound (to ferry terminal) - Near 2700 block of HPR & Sharon Dr,57.08554,-135.381244
+CHANNEL_CLUB,Channel Club,Outbound (to ferry terminal) - Near 2900 block of HPR & Channel Club Restaurant,57.089237,-135.386166
+SOLLARS_OUT,Sollars Ct / Halibut Point Rd - Outbound,Outbound (to ferry terminal) - Near 3200 block of HPR & Sollars Ct,57.092929,-135.391236
+REC_OUT,HPR Rec - Outbound,Outbound (to ferry terminal) - Near 3800 block of HPR & Granite Creek Rd and across from the Rec,57.102726,-135.399641
+HORIZON_WY,Horizon Way / Halibut Point Rd,Outbound (to ferry terminal) - Near 4400 block of HPR & Mini Storage,57.112415,-135.394215
+BLUE_APTS,Blue Apartments,Outbound (to ferry terminal) - Near 4700 block of HPR & Blue Apartments,57.118225,-135.386762
+FERRY_TERM,Ferry Terminal,"Ferry Terminal, Alaska Marine Highway - Final stop along Halibut Point Rd",57.127718,-135.380499
+WILDLIFE,Wildlife Troopers,Inbound (to downtown) - Near 4700 block of HPR & Alaska Wildlife Troopers,57.117925,-135.387213
+PIRATES_WY,Pirates Wy / Halibut Point Rd,Inbound (to downtown) - Near 4300 block of HPR & Mini Storage,57.111178,-135.396329
+REC_IN,HPR Rec - Inbound,Inbound (to downtown) - Near 3700 block of HPR & Granite Creek Rd and across from the Rec,57.100109,-135.398183
+SOLLARS_IN,Sollars Ct / Halibut Point Rd - Inbound,Inbound (to downtown) - Near 3200 block of HPR & Sollars Ct,57.092436,-135.391024
+EAGLES_ROOST,Eagles Roost,Inbound (to downtown) - Near 2700 block of HPR & Where Eagles Roost,57.086078,-135.382114
+SANDY_BEACH,Sandy Beach,Inbound (to downtown) - Near 2200 block of HPR & Sandy Beach,57.076552,-135.37337
+CASC_IN,Cascade Creek Bridge - Inbound,Inbound (to downtown) - Near 2100 block of HPR & Kramer Ave,57.073675,-135.369881
+ALDER_WY,Alder Wy / Halibut Point Rd,Inbound (to downtown) - Near 1800 block of HPR & Cascade Creek Rd,57.068729,-135.366582
+SHEETKA_KWAAN,Sheetka Kwaan Naa Kahidi,Sheetka Kwaan Naa Kahidi Community House - 200 Katlian St,57.050278,-135.339593
+TRIBAL_WY,Tribal Way,Sitka Tribe of Alaska offices - 456 Katlian St,57.053091,-135.344471
+CTR_FOR_COMM,Center For Community,Center For Community & Sitka Medical Center - 700 Katlian St,57.056601,-135.34784
+KAASDAA_HEEN,Kaasdaa Heen Cr / Indian River Rd,Across from ANB Cemetery,57.054417,-135.318199
+PETER_SIMPSON,Peter Simpson Rd / Indian River Rd,Near Yaw Dr and Indian River Trailhead,57.055668,-135.31143
+UAS,UAS,University of Alaska Southeast Sitka extension and Mt Edgecumbe High School,57.052079,-135.351194
+USCG,US Coast Guard,United States Coast Guard Kukui parking lot near Mt Edgecumbe High School Aquatic Facility,57.050326,-135.34876
+SEARHC,SEARHC - Mt Edgecumbe Hospital,Main entrance to SEARHC - Mt Edgecumbe Hospital near Seward Ave,57.052122,-135.355497
+SEALING_COVE,Sealing Cove,Sealing Cove Harbor parking lot near Alice Lp,57.049036,-135.348109
