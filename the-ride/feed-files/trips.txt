@@ -1,0 +1,4 @@
+route_id,service_id,trip_id,trip_headsign,block_id,shape_id,wheelchair_accessible,bikes_allowed
+BLUE,REGWK,BLU,To Gary Paxton Industrial Park,blue_loop,blu,1,1
+GREEN,REGWK,GRN,To Japonski Island,green_loop,grn,1,1
+RED,REGWK,RED,To Ferry Terminal,red_loop,red,1,1
