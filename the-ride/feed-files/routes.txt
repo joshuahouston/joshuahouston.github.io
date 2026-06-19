@@ -1,0 +1,4 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color,route_text_color
+RED,the_ride,,Red Line,Halibut Point Rd to Ferry Terminal,3,FF5555,000000
+BLUE,the_ride,,Blue Line,Sawmill Creek Rd to Whale Park,3,0000AA,FFFFFF
+GREEN,the_ride,,Green Line,Japonski Island to Indian River Rd,3,00803E,FFFFFF
