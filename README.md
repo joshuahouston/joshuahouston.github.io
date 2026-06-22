@@ -1,1 +1,1 @@
-https://joshuahouston.github.io
+https://joshuahouston.github.io/the-ride/
