@@ -42,9 +42,9 @@ EAGLES_ROOST,Eagles Roost,Inbound (to downtown) - Near 2700 block of HPR & Where
 SANDY_BEACH,Sandy Beach,Inbound (to downtown) - Near 2200 block of HPR & Sandy Beach,57.076552,-135.37337
 CASC_IN,Cascade Creek Bridge - Inbound,Inbound (to downtown) - Near 2100 block of HPR & Kramer Ave,57.073675,-135.369881
 ALDER_WY,Alder Wy / Halibut Point Rd,Inbound (to downtown) - Near 1800 block of HPR & Cascade Creek Rd,57.068729,-135.366582
-SHEETKA_KWAAN,Sheetka Kwaan Naa Kahidi,Sheetka Kwaan Naa Kahidi Community House - 200 Katlian St,57.050278,-135.339593
-TRIBAL_WY,Tribal Way,Sitka Tribe of Alaska offices - 456 Katlian St,57.053091,-135.344471
-CTR_FOR_COMM,Center For Community,Center For Community & Sitka Medical Center - 700 Katlian St,57.056601,-135.34784
+SHEETKA_KWAAN,Sheetka Kwaan Naa Kahidi,Sheetka Kwaan Naa Kahidi Community House - 200 Katlian Ave,57.050278,-135.339593
+TRIBAL_WY,Tribal Way,Sitka Tribe of Alaska offices - 456 Katlian Ave,57.053091,-135.344471
+CTR_FOR_COMM,Center For Community,Center For Community & Sitka Medical Center - 700 Katlian Ave,57.056601,-135.34784
 KAASDAA_HEEN,Kaasdaa Heen Cr / Indian River Rd,Across from ANB Cemetery,57.054417,-135.318199
 PETER_SIMPSON,Peter Simpson Rd / Indian River Rd,Near Yaw Dr and Indian River Trailhead,57.055668,-135.31143
 UAS,UAS,University of Alaska Southeast Sitka extension and Mt Edgecumbe High School,57.052079,-135.351194
