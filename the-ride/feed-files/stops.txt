@@ -49,5 +49,5 @@ KAASDAA_HEEN,Kaasdaa Heen Cr / Indian River Rd,Across from ANB Cemetery,57.05441
 PETER_SIMPSON,Peter Simpson Rd / Indian River Rd,Near Yaw Dr and Indian River Trailhead,57.055668,-135.31143
 UAS,UAS,University of Alaska Southeast Sitka extension and Mt Edgecumbe High School,57.052079,-135.351194
 USCG,US Coast Guard,United States Coast Guard Kukui parking lot near Mt Edgecumbe High School Aquatic Facility,57.050326,-135.34876
-SEARHC,SEARHC - Mt Edgecumbe Hospital,Main entrance to SEARHC - Mt Edgecumbe Hospital near Seward Ave,57.052122,-135.355497
+SEARHC,SEARHC - Mt Edgecumbe Medical Center,Main entrance to SEARHC - Mt Edgecumbe Medical Center near Seward Ave,57.052122,-135.355497
 SEALING_COVE,Sealing Cove,Sealing Cove Harbor parking lot near Alice Lp,57.049036,-135.348109
